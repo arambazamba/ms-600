@@ -12,12 +12,11 @@
 - Overview of Microsoft Graph 
 - Optimize Data Usage with Query Parameters 
 - Optimize Network Traffic
+- Access User Data with Microsoft Graph
+- Access Files with Microsoft Graph
+- Manage a Group Lifecycle on Microsoft Graph
 
-- . . . . . . . . . . . Access User Data with Microsoft Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Access Files with Microsoft Graph
-- . . . .
-  Manage a Group Lifecycle on Microsoft Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-## Module 3 Extend and Customize SharePoint . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SharePoint Framework Web Parts
+## Module 3 Extend and Customize SharePoint SharePoint Framework Web Parts
 
 - SharePoint Framework Extension
 - Package and Deploy an SPFx Solution
