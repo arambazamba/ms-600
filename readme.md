@@ -9,8 +9,8 @@
 
 ## Module 2 Work with Microsoft Graph
 
-- Overview of Microsoft Graph 
-- Optimize Data Usage with Query Parameters 
+- Overview of Microsoft Graph
+- Optimize Data Usage with Query Parameters
 - Optimize Network Traffic
 - Access User Data with Microsoft Graph
 - Access Files with Microsoft Graph
@@ -26,13 +26,15 @@
 
 ## Module 4 Extend Teams
 
-- . . . . . . . . . Overview of Building Apps for Microsoft Teams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Webhooks in Microsoft Teams
-- . . . . . . . Tabs in Microsoft Teams
-- . . . . . . . . . . . . Messaging Extensions in Microsoft Teams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-  Conversational Bots in Microsoft Teams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+- Overview of Building Apps for Microsoft Teams
+- Webhooks in Microsoft Teams
+- Tabs in Microsoft Teams
+- Messaging Extensions in Microsoft Teams
+- Conversational Bots in Microsoft Teams
 
 ## Module 5   Extend Office
 
-- . . . . . . . . . Office Add-ins
-- . . . . . . . . . . . . . . . . . . . . Office JS APIs
-- . . . . . . . . . . . . . . . . . . . . . Customize Office Add-ins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Testing Debugging and Deployment Options for Office Add-ins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+- Office Add-ins
+- Office JS APIs
+- Customize Office Add-ins
+- Testing Debugging and Deployment Options for Office Add-ins

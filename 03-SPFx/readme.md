@@ -6,18 +6,6 @@
 
 ## Requirements
 
-Install [VS Code](https://code.visualstudio.com/download)
-
-Install [VS Code Powershell Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-
-Install [NVM Windows](https://github.com/coreybutler/nvm-windows)
-
-Install [Node Version 8.x](https://nodejs.org/en/download/releases/)
-
-```
-nvm install 8.15.1
-```
-
 ## Machine Setup for SPFx Dev
 
 ```
