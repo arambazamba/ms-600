@@ -4,8 +4,6 @@
 
 [Office CLI](https://pnp.github.io/office365-cli/)
 
-## Requirements
-
 ## Machine Setup for SPFx Dev
 
 ```
@@ -13,6 +11,18 @@ npm install -g yo gulp
 npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/generator-spfx
 gulp trust-dev-cert
+```
+
+React:
+
+```
+npm i -g create-react-app
+```
+
+Angular - Used to demonstrate Angular Elements with SPFx:
+
+```
+npm i  -g @angular/cli@8.3.26
 ```
 
 ## REST Client
