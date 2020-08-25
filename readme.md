@@ -6,22 +6,23 @@
 - Overview of authentication and authorization with Microsoft identity
 - Implement authentication and authorization to consume an API
 - Secure custom APIs
-- . . . . . . . . . . . . . . .
 
-## Module 2 Work with Microsoft Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Overview of Microsoft Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Optimize Data Usage with Query Parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Optimize Network Traffic
+## Module 2 Work with Microsoft Graph
 
-- . . . . . . . . . . . Access User Data with Microsoft Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Access Files with Microsoft Graph
-- . . . .
-  Manage a Group Lifecycle on Microsoft Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+- Overview of Microsoft Graph 
+- Optimize Data Usage with Query Parameters 
+- Optimize Network Traffic
+- Access User Data with Microsoft Graph
+- Access Files with Microsoft Graph
+- Manage a Group Lifecycle on Microsoft Graph
 
-## Module 3 Extend and Customize SharePoint . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SharePoint Framework Web Parts
+## Module 3 Extend and Customize SharePoint SharePoint Framework Web Parts
 
-- . . . .
-  SharePoint Framework Extension . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Package and Deploy an SPFx Solution
-- Consumption of Microsoft Graph and Third Party APIs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Web Parts as Teams Tabs
-- . . . . . . . . . . .
-  Branding and Theming in SharePoint
-- .
+- SharePoint Framework Extension
+- Package and Deploy an SPFx Solution
+- Consumption of Microsoft Graph and Third Party APIs
+- Web Parts as Teams Tabs
+- Branding and Theming in SharePoint
 
 ## Module 4 Extend Teams
 
