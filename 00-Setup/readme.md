@@ -1,6 +1,6 @@
 # Setup
 
-Class Setup
+## Class Setup
 
 Install [VS Code](https://code.visualstudio.com/download)
 
@@ -17,3 +17,11 @@ Allow Chrome to server unsafe localhost:
 ```
 chrome://flags/#allow-insecure-localhost
 ```
+
+[Azure CLI Installation Guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+
+## Accounts
+
+[Azure Trial Account](https://azure.microsoft.com/en-us/free/)
+
+[Microsoft 365 Developer Account - Free](https://developer.microsoft.com/en-us/microsoft-365/dev-program)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "h:\\Classes\\SPO365ClientDev\\06 Graph & Webhooks\\GraphMSAL\\GraphTutorial.csproj": {}
+    "H:\\Classes\\MS-600\\01-Identity\\GraphMSAL\\GraphTutorial.csproj": {}
   },
   "projects": {
-    "h:\\Classes\\SPO365ClientDev\\06 Graph & Webhooks\\GraphMSAL\\GraphTutorial.csproj": {
+    "H:\\Classes\\MS-600\\01-Identity\\GraphMSAL\\GraphTutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "h:\\Classes\\SPO365ClientDev\\06 Graph & Webhooks\\GraphMSAL\\GraphTutorial.csproj",
+        "projectUniqueName": "H:\\Classes\\MS-600\\01-Identity\\GraphMSAL\\GraphTutorial.csproj",
         "projectName": "GraphTutorial",
-        "projectPath": "h:\\Classes\\SPO365ClientDev\\06 Graph & Webhooks\\GraphMSAL\\GraphTutorial.csproj",
+        "projectPath": "H:\\Classes\\MS-600\\01-Identity\\GraphMSAL\\GraphTutorial.csproj",
         "packagesPath": "C:\\Users\\AlexanderPajer\\.nuget\\packages\\",
-        "outputPath": "h:\\Classes\\SPO365ClientDev\\06 Graph & Webhooks\\GraphMSAL\\obj\\",
+        "outputPath": "H:\\Classes\\MS-600\\01-Identity\\GraphMSAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

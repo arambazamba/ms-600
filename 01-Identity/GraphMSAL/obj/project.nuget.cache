@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TWECFZKuehEpVEdm54abS4zzIWXvZtQ3dTcpCdpYq9GF4ju5kdnoq5eQ1fVBSn89/oZnjeiQcLaqEPiCpMistA==",
+  "dgSpecHash": "IjnHTlUnAWphXRg+MIbVGdaRpac+ZP/U9qXieQADQ0udfC9NJYN3mlbNeAE/mLj1qcZN0+XnH0Ix4rS5zV9O/A==",
   "success": true,
-  "projectFilePath": "h:\\Classes\\SPO365ClientDev\\06 Graph & Webhooks\\GraphMSAL\\GraphTutorial.csproj",
+  "projectFilePath": "H:\\Classes\\MS-600\\01-Identity\\GraphMSAL\\GraphTutorial.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AlexanderPajer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
