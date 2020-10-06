@@ -1,5 +1,7 @@
 ﻿# Exercise 4: Understanding messaging extensions in Microsoft Teams
 
+> Note: Alternative Guide [here](https://docs.microsoft.com/en-us/learn/modules/msteams-messaging-extensions/3-exercise-action-commands)
+
 ## Task 1: Create a messaging extension with action-based commands
 
 ### Get sample project files

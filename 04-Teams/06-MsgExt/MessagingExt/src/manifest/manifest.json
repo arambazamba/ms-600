@@ -1,7 +1,7 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.6",
-  "id": "{{APPLICATION_ID}}",
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.7",
+  "id": "75050552-38e4-47b1-8308-dc7b0ed84aac",
   "version": "{{VERSION}}",
   "packageName": "{{PACKAGE_NAME}}",
   "developer": {
@@ -27,13 +27,23 @@
   "staticTabs": [],
   "bots": [],
   "connectors": [],
-  "composeExtensions": [],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
+  "composeExtensions": [
+    {
+      "botId": "75050552-38e4-47b1-8308-dc7b0ed84aac",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "planetExpanderAction",
+          "type": "action",
+          "title": "Planet Expander",
+          "description": "Lookup the details of a planet.",
+          "context": ["compose", "message"],
+          "fetchTask": true
+        }
+      ]
+    }
   ],
-  "validDomains": [
-    "{{HOSTNAME}}"
-  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["{{HOSTNAME}}"],
   "showLoadingIndicator": false
 }
