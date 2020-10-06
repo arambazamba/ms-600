@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "$entities": [
+        "datetimeV2"
+    ],
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "timex": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "type",
+        "timex"
+    ],
+    "$templates": [
+        "datetimeV2Entity.lu",
+        "objectProperty.lg",
+        "string-missing.dialog",
+        "datetimeV2Entity-add.dialog",
+        "datetimeV2Entity-remove.dialog",
+        "datetimeV2Entity-clear.dialog",
+        "datetimeV2Entity-show.dialog"
+    ]
+}
