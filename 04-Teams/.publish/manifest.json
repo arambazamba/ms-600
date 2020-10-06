@@ -1,0 +1,45 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "id": "609993e0-0739-11eb-9767-47ddb7738e37",
+    "version": "{version}",
+    "packageName": "firstteamsapp",
+    "developer": {
+        "name": "Integrations",
+        "websiteUrl": "{baseUrl0}",
+        "privacyUrl": "{baseUrl0}/privacy.html",
+        "termsOfUseUrl": "{baseUrl0}/tou.html"
+    },
+    "name": {
+        "short": "{appname}",
+        "full": "{fullappname}"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [
+        {
+            "entityId": "5c63200b-0843-4160-aa06-f9a707cd9773",
+            "name": "First Demo",
+            "contentUrl": "{baseUrl0}/firstDemoTab/?name={loginHint}&tenant={tid}&theme={theme}",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

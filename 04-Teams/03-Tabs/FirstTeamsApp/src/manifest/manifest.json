@@ -29,19 +29,19 @@
       "entityId": "5c63200b-0843-4160-aa06-f9a707cd9773",
       "name": "First Demo",
       "contentUrl": "https://{{HOSTNAME}}/firstDemoTab/?name={loginHint}&tenant={tid}&theme={theme}",
-      "scopes": [
-        "personal"
-      ]
+      "scopes": ["personal"]
+    },
+    {
+      "entityId": "personalTab",
+      "name": "Personal Tab ",
+      "contentUrl": "https://{{HOSTNAME}}/firstDemoTab/personal.html",
+      "websiteUrl": "https://{{HOSTNAME}}",
+      "scopes": ["personal"]
     }
   ],
   "bots": [],
   "connectors": [],
   "composeExtensions": [],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [
-    "{{HOSTNAME}}"
-  ]
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["{{HOSTNAME}}"]
 }

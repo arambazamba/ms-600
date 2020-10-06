@@ -1,0 +1,41 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "version": "{version}",
+    "id": "61462d41-c227-4bc4-b6c9-d9af1abc54af",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Alexander Pajer",
+        "websiteUrl": "{baseUrl0}",
+        "privacyUrl": "{baseUrl1}/privacy",
+        "termsOfUseUrl": "{baseUrl1}/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "{appname}",
+        "full": "{fullappname}"
+    },
+    "description": {
+        "short": "Short description for TeamsToolkit.",
+        "full": "Full description of TeamsToolkit for Microsoft Teams."
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "index",
+            "name": "Personal Tab",
+            "contentUrl": "{baseUrl1}/tab",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
