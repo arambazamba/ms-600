@@ -171,3 +171,15 @@ Finish a release:
 ```
 git flow release finish  RELEASE
 ```
+
+## Github CLI
+
+[GitHub CLI Documentation](https://cli.github.com/manual/)
+
+[GitHub CLI Download](https://github.com/cli/cli/releases/download/v1.1.0/gh_1.1.0_windows_amd64.msi)
+
+Installation using Chocolatey:
+
+```
+choco install gh
+```
