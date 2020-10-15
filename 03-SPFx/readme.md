@@ -22,7 +22,7 @@ npm i -g create-react-app
 Angular - Used to demonstrate Angular Elements with SPFx:
 
 ```
-npm i  -g @angular/cli@8.3.26
+npm i  -g @angular/cli
 ```
 
 ## REST Client
