@@ -1,0 +1,4 @@
+app=sample-app
+uri='https://sample-app.websites.net'
+
+az ad app create --display-name $app --identifier-uris $uri --app-roles manifest.json
