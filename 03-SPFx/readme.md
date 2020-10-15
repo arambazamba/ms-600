@@ -2,7 +2,7 @@
 
 [PnP Generator SharePoint](https://pnp.github.io/generator-spfx/)
 
-[Office CLI](https://pnp.github.io/office365-cli/)
+[Microsoft 365 CLI](https://pnp.github.io/cli-microsoft365/)
 
 ## Machine Setup for SPFx Dev
 
@@ -22,7 +22,7 @@ npm i -g create-react-app
 Angular - Used to demonstrate Angular Elements with SPFx:
 
 ```
-npm i  -g @angular/cli@8.3.26
+npm i  -g @angular/cli
 ```
 
 ## REST Client
@@ -33,12 +33,12 @@ Use [Postman](https://www.getpostman.com/)
 
 as an Alternative you can use [SP REST Client](https://marketplace.visualstudio.com/items?itemName=s-kainet.rest-client)
 
-## Office CLI
+## Microsoft 365 CLI
 
-Install Office CLI
+Install Microsoft 365 CLI
 
 ```
-npm i -g @pnp/office365-cli
+npm i -g @pnp/cli-microsoft365
 ```
 
 [JMESPath Documentation](http://jmespath.org/)
