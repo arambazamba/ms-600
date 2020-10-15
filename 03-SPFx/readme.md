@@ -2,7 +2,7 @@
 
 [PnP Generator SharePoint](https://pnp.github.io/generator-spfx/)
 
-[Office CLI](https://pnp.github.io/office365-cli/)
+[Microsoft 365 CLI](https://pnp.github.io/cli-microsoft365/)
 
 ## Machine Setup for SPFx Dev
 
