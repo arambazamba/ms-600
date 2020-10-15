@@ -32,7 +32,7 @@
 - Messaging Extensions in Microsoft Teams
 - Conversational Bots in Microsoft Teams
 
-## Module 5 Extend Office
+## Module 5 Extend Office
 
 - Office Add-ins
 - Office JS APIs
