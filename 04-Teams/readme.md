@@ -6,6 +6,8 @@
 
 [Microsoft Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
 
+[Single Sign-On for Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
+
 ## Tabs
 
 [Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
