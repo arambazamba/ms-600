@@ -16,6 +16,10 @@
 
 [Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
 
+## Webhooks
+
+[Webhooks & Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
+
 ## Bots
 
 [Bots](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
