@@ -14,6 +14,8 @@
 
 [Bot Framework Composer](https://docs.microsoft.com/en-us/composer/introduction)
 
+## Task Modules & Cards
+
 [Adaptive Cards](https://docs.microsoft.com/en-us/adaptive-cards/)
 
 ## Messaging Extensions
