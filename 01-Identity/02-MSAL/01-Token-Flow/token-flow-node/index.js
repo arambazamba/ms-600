@@ -11,7 +11,7 @@ async function doAuth() {
     scopes: ["user.read"],
   };
 
-  //Login -> Get IDToken
+  //Login -> Get ID Token
   let loginResponse = await client.loginPopup(request);
   logAndShow("Login Request", loginResponse);
 
