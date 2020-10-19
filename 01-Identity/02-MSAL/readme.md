@@ -15,3 +15,5 @@
 [MSAL - APIs - .NET Core](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-sign-user-overview?tabs=aspnetcore)
 
 [MSAL - Daemon App](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-overview)
+
+[SharePoint REST Api v2](https://docs.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph)

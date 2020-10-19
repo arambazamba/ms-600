@@ -6,28 +6,46 @@ async function doAuth() {
       redirectUri: "http://localhost:8080",
     },
   };
-  var client = new Msal.UserAgentApplication(config);
-  var request = {
-    scopes: ["user.read"],
+  const client = new Msal.UserAgentApplication(config);
+  const request = {
+    scopes: ['user.read'],
   };
 
   //Login -> Get ID Token
-  let loginResponse = await client.loginPopup(request);
+  const loginResponse = await client.loginPopup(request);
   logAndShow("Login Request", loginResponse);
 
   //Get AccessToken
-  let tokenResponse = await client.acquireTokenSilent(request);
+  const tokenResponse = await client.acquireTokenSilent(request);
   logAndShow("Token Response", tokenResponse);
 
   //Read Profile
-  let qryProfile = "https://graph.microsoft.com/beta/me";
-  let profileResp = await fetch(qryProfile, {
+  //Notice beta endpoint with extended profile info
+  const qryProfile = "https://graph.microsoft.com/beta/me";
+  const profileResp = await fetch(qryProfile, {
     headers: {
       Authorization: "Bearer " + tokenResponse.accessToken,
     },
   });
-  let profile = await profileResp.json();
+  const profile = await profileResp.json();
   logAndShow("Profile", profile);
+
+  //Call Sharepoint using Graph -> SharePoint REST API v2
+  const spTenant = "integrationsonline";
+  const spScope = {
+    scopes: ['Sites.ReadWrite.All'],
+  };
+  const spTokenResponse = await client.acquireTokenSilent(spScope);
+  logAndShow("Token Response", spTokenResponse);
+
+  const qrySPLists = `https://graph.microsoft.com/v1.0/sites/${spTenant}.sharepoint.com/lists`;
+  const listResp = await fetch(qrySPLists, {
+    headers: {
+      Authorization: "Bearer " + spTokenResponse.accessToken
+    },
+  });
+  const lists = await listResp.json();
+  logAndShow("Lists", lists.value);
 }
 
 function logAndShow(lbl, msg) {
