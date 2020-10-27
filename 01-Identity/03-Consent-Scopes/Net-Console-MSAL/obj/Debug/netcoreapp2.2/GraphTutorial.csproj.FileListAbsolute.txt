@@ -1,0 +1,12 @@
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\bin\Debug\netcoreapp2.2\GraphTutorial.deps.json
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\bin\Debug\netcoreapp2.2\GraphTutorial.runtimeconfig.json
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\bin\Debug\netcoreapp2.2\GraphTutorial.runtimeconfig.dev.json
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\bin\Debug\netcoreapp2.2\GraphTutorial.dll
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\bin\Debug\netcoreapp2.2\GraphTutorial.pdb
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.csprojAssemblyReference.cache
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.AssemblyInfoInputs.cache
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.AssemblyInfo.cs
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.csproj.CoreCompileInputs.cache
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.dll
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.pdb
+H:\Classes\MS-600\01-Identity\03-Consent-Scopes\Net-Console-MSAL\obj\Debug\netcoreapp2.2\GraphTutorial.genruntimeconfig.cache
