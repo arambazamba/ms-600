@@ -12,7 +12,18 @@
 
 [Microsoft Teams Toolkit VS Code Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
 
+### Ngrok 
+
 [ngrok](https://ngrok.com)
+
+> Note: To avoid having the ngrok name changed all the time use from within a Teams project in two seperate terminals, or even better run gulp start-ngrok in a seperate standalone console window.
+
+```
+gulp start-ngrok (from within a Teams proj)
+gulp serve --debug
+```
+
+![ngrok](_images/ngrok.jpg)
 
 ## Tabs
 
