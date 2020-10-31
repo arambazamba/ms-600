@@ -2,6 +2,9 @@
 
 ## Demos
 
+- Explain Token Flow
+- Show Abstaction using Angular MSAL Wrapper 
+
 ## Readings
 
 [Authentication Flows](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-authentication-flows)
