@@ -4,17 +4,17 @@ import TeamsBaseComponent, { ITeamsBaseComponentState } from "msteams-react-base
 import * as microsoftTeams from "@microsoft/teams-js";
 
 
-export interface IConfigTabRemoveState extends ITeamsBaseComponentState {
+export interface IConfigMathTabRemoveState extends ITeamsBaseComponentState {
     value: string;
 }
-export interface IConfigTabRemoveProps {
+export interface IConfigMathTabRemoveProps {
 
 }
 
 /**
- * Implementation of ConfigTab remove page
+ * Implementation of ConfigMathTab remove page
  */
-export class ConfigTabRemove  extends TeamsBaseComponent<IConfigTabRemoveProps, IConfigTabRemoveState> {
+export class ConfigMathTabRemove  extends TeamsBaseComponent<IConfigMathTabRemoveProps, IConfigMathTabRemoveState> {
 
     public async componentWillMount() {
         this.updateTheme(this.getQueryVariable("theme"));

@@ -1,4 +1,4 @@
-// Automatically added for the configTab tab
-export * from "./configTab/ConfigTab";
-export * from "./configTab/ConfigTabConfig";
-export * from "./configTab/ConfigTabRemove";
+// Automatically added for the configMathTab tab
+export * from "./configMathTab/ConfigMathTab";
+export * from "./configMathTab/ConfigMathTabConfig";
+export * from "./configMathTab/ConfigMathTabRemove";
