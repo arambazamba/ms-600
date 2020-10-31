@@ -14,8 +14,9 @@ import * as microsoftTeams from "@microsoft/teams-js";
  * State for the youTubePlayerTabTab React component
  */
 export interface IYouTubePlayerTabState extends ITeamsBaseComponentState {
-    teamsTheme: ThemePrepared;
-    youTubeVideoId?: string;
+  entityId?: string;
+  teamsTheme: ThemePrepared;
+  youTubeVideoId?: string;
 }
 
 /**
@@ -31,10 +32,26 @@ export interface IYouTubePlayerTabProps {
 export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps, IYouTubePlayerTabState> {
 
     public async componentWillMount() {
-        this.updateComponentTheme(this.getQueryVariable("theme"));
-        this.setState(Object.assign({}, this.state, {
+      this.updateComponentTheme(this.getQueryVariable("theme"));
+      this.setState(Object.assign({}, this.state, {
         youTubeVideoId: "VlEH4vtaxp4"
-        }));
+      }));
+  
+      if (await this.inTeams()) {
+        microsoftTeams.initialize();
+        microsoftTeams.registerOnThemeChangeHandler(this.updateComponentTheme);
+        microsoftTeams.getContext((context) => {
+          microsoftTeams.appInitialization.notifySuccess();
+          this.setState({
+            entityId: context.entityId
+          });
+          this.updateTheme(context.theme);
+        });
+      } else {
+        this.setState({
+          entityId: "This is not hosted in Microsoft Teams"
+        });
+      }
     }
 
     /**
@@ -66,7 +83,7 @@ export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps,
     private onShowVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {
       const ytp = {
           title: "YouTube Player",
-          url: this.appRoot() + `/youTubePlayer1Tab/player.html?vid=${this.state.youTubeVideoId}`,
+          url: this.appRoot() + `/youTubePlayerTab/player.html?vid=${this.state.youTubeVideoId}`,
           width: 1000,
           height: 700
       };
