@@ -1,4 +1,0 @@
-botbuilder-integration-aiohttp>=4.10.1
-botbuilder-dialogs>=4.10.1
-requests_oauthlib
-

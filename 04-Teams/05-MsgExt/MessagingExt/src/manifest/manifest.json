@@ -1,18 +1,18 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
   "manifestVersion": "1.7",
-  "id": "75050552-38e4-47b1-8308-dc7b0ed84aac",
-  "version": "1.0.1",
+  "id": "{{APPLICATION_ID}}",
+  "version": "{{VERSION}}",
   "packageName": "{{PACKAGE_NAME}}",
   "developer": {
-    "name": "Integrations",
+    "name": "Alexander Pajer",
     "websiteUrl": "https://{{HOSTNAME}}",
     "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
     "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "First Messaging",
-    "full": "First Messaging"
+    "short": "Planet Messaging",
+    "full": "Planet Messaging"
   },
   "description": {
     "short": "TODO: add short description here",
@@ -27,37 +27,14 @@
   "staticTabs": [],
   "bots": [],
   "connectors": [],
-  "composeExtensions": [
-    {
-      "botId": "75050552-38e4-47b1-8308-dc7b0ed84aac",
-      "canUpdateConfiguration": false,
-      "commands": [
-        {
-          "id": "planetExpanderAction",
-          "type": "action",
-          "title": "Planet Expander",
-          "description": "Lookup the details of a planet.",
-          "context": ["compose", "message"],
-          "fetchTask": true
-        },
-        {
-          "id": "planetExpanderSearch",
-          "type": "query",
-          "title": "Planet Lookup",
-          "description": "Search for a planet.",
-          "context": ["compose"],
-          "parameters": [
-            {
-              "name": "searchKeyword",
-              "description": "Enter 'inner','outer' or the name of a specific planet",
-              "title": "Planet"
-            }
-          ]
-        }
-      ]
-    }
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
   ],
-  "permissions": ["identity", "messageTeamMembers"],
-  "validDomains": ["{{HOSTNAME}}"],
-  "showLoadingIndicator": false
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
 }
