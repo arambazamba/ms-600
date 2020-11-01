@@ -4,6 +4,8 @@
 
 [Teams Client SDK](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/using-teams-client-sdk)
 
+[Microsoft Teams JavaScript client SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest)
+
 [Single Sign-On for Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
 
 [Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)

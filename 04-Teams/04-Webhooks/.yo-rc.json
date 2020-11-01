@@ -1,0 +1,10 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Alexander Pajer",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": false
+    },
+    "libraryName": "webhooks"
+  }
+}

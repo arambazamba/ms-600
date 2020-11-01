@@ -7,7 +7,9 @@ import { Provider,
     ThemePrepared,
     Input } from "@fluentui/react-northstar";
 import { teamsTheme, teamsDarkTheme, teamsHighContrastTheme } from "@fluentui/react-northstar";
+
 import TeamsBaseComponent, { ITeamsBaseComponentState } from "msteams-react-base-component";
+
 import * as microsoftTeams from "@microsoft/teams-js";
 
 /**
