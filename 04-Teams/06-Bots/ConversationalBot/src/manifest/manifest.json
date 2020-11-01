@@ -1,0 +1,55 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.0",
+    "id": "34085797-24b0-48b9-876c-d8c730114a66",
+    "packageName": "convbot.cloud-dev.io",
+    "developer": {
+        "name": "Integrations e. U.",
+        "websiteUrl": "https://www.integrations.at",
+        "privacyUrl": "https://www.integrations.at/",
+        "termsOfUseUrl": "https://www.integrations.at/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "ConvBot",
+        "full": ""
+    },
+    "description": {
+        "short": "Sample Conv Bot",
+        "full": "sample conv bot"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "34085797-24b0-48b9-876c-d8c730114a66",
+            "scopes": [
+                "personal",
+                "team"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "MentionMe",
+                            "description": "Sends message with @mention of the sender"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
