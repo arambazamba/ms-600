@@ -4,10 +4,10 @@
 
 [Microsoft 365 CLI](https://pnp.github.io/cli-microsoft365/)
 
-Scaffold React Apps with Classes:
+Scaffold Standalone React Apps with Classes:
 
 ```
-create-react-app my-app --scripts-version react-scripts@^2
+create-react-app my-app --scripts-version react-scripts@^2 --typescript
 ```
 
 ## Machine Setup for SPFx Dev
