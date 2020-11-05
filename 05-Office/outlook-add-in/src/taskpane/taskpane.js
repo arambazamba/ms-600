@@ -35,4 +35,7 @@ export function saveToAzure() {
       console.log("saving to azure", item);
     }
   });
+
+  //To finish this sample follow the stept documented here:
+  //https://github.com/OfficeDev/office-js-helpers
 }
