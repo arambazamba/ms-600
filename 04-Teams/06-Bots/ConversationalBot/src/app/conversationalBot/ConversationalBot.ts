@@ -10,6 +10,14 @@ import {
   ActivityTypes,
   TeamsActivityHandler,
   MessageFactory,
+  ChannelInfo,
+  TeamsChannelData,
+  ConversationParameters,
+  teamsGetChannelId,
+  Activity,
+  BotFrameworkAdapter,
+  ConversationReference,
+  ConversationResourceResponse,
 } from "botbuilder";
 import HelpDialog from "./dialogs/HelpDialog";
 import WelcomeCard from "./dialogs/WelcomeDialog";
@@ -58,6 +66,12 @@ export class ConversationalBot extends TeamsActivityHandler {
                 case "update":
                   await this.updateCardActivity(context);
                   break;
+                case "newconversation":
+                  const message = MessageFactory.text(
+                    "This will be the first message in a new thread"
+                  );
+                  await this.createConversation(context, message);
+                  break;
                 case "delete":
                   await this.deleteCardActivity(context);
                   break;
@@ -76,6 +90,9 @@ export class ConversationalBot extends TeamsActivityHandler {
                 }
                 return;
               } else if (text.startsWith("hello")) {
+                await context.sendActivity("Oh, hello to you as well!");
+                return;
+              } else if (text.startsWith("help")) {
                 const dc = await this.dialogs.createContext(context);
                 await dc.beginDialog("help");
               } else {
@@ -234,6 +251,11 @@ export class ConversationalBot extends TeamsActivityHandler {
         },
         {
           type: "Action.Submit",
+          title: "Create new thread in this channel",
+          data: { cardAction: "newconversation" },
+        },
+        {
+          type: "Action.Submit",
           title: "Delete card",
           data: { cardAction: "delete" },
         },
@@ -249,5 +271,26 @@ export class ConversationalBot extends TeamsActivityHandler {
 
   private async deleteCardActivity(context): Promise<void> {
     await context.deleteActivity(context.activity.replyToId);
+  }
+
+  private async createConversation(
+    context: TurnContext,
+    message: Partial<Activity>
+  ): Promise<void> {
+    // get a reference to the bot adapter & create a connection to the Teams API
+    const adapter = context.adapter as BotFrameworkAdapter;
+
+    // create a new conversation and get a reference to it
+    const conversationReference = TurnContext.getConversationReference(
+      context.activity
+    ) as ConversationReference;
+
+    // send message
+    await adapter.continueConversation(
+      conversationReference,
+      async (turnContext) => {
+        await turnContext.sendActivity(message);
+      }
+    );
   }
 }
