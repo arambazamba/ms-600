@@ -1,4 +1,8 @@
-app=sample-app
-uri='https://sample-app.websites.net'
+app=CliSampleApp
+uri=[http://localhost/$appName](http://localhost/$appName)
 
-az ad app create --display-name $app --identifier-uris $uri --app-roles manifest.json
+az ad app create --display-name $app --identifier-uris $uri
+
+appId=$(az ad app list --display-name $app --query [].appId -o tsv)
+
+echo "Application ID: "$appId
