@@ -23,7 +23,7 @@ async function doAuth() {
 
   //Read Profile
   //Notice beta endpoint with extended profile info
-  const qryProfile = "https://graph.microsoft.com/beta/me";
+  const qryProfile = "https://graph.microsoft.com/v1.0/me";
   const profileResp = await fetch(qryProfile, {
     headers: {
       Authorization: "Bearer " + tokenResponse.accessToken,

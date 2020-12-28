@@ -2,15 +2,15 @@
 
 Demos require [http-server](https://www.npmjs.com/package/http-server)
 
-- For V1 Demo use MS-600-MSAL.js-V1 app registration
+- For V1 Demo use `MSAL.js-V1-Token-Flow` app registration
 
-### App Registration
+## App Registration
 
 ![appreg](_images/app-reg.jpg)
 
 ![appreg2](_images/app-reg2.jpg)
 
-### Run Demo
+## Run Demo
 
 Replace tanant id und client id in `index.js`:
 
