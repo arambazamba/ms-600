@@ -31,6 +31,7 @@ export default class SkillsReactV2WebPart extends BaseClientSideWebPart<
         SkillsReactV2,
         {
           skills: data,
+          context: this.context
         }
       );
       ReactDom.render(element, this.domElement);

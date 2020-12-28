@@ -28,6 +28,7 @@ export default class SkillsReactV2 extends React.Component<
           <Skills
             removeMsg="Click on item to remove"
             skills={this.props.skills}
+            context={this.props.context}
           />
         </div>
       </div>
