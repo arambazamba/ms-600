@@ -11,8 +11,6 @@
 
 [MSAL Auth Flow Types](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols)
 
-[Application Configuration Options](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-client-application-configuration)
-
 [MSAL - Single Page Apps](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-overview)
 
 [MSAL - Classic Web Apps - .NET Core](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-sign-user-overview?tabs=aspnetcore)
