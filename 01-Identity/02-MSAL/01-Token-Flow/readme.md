@@ -2,7 +2,7 @@
 
 Demos require [http-server](https://www.npmjs.com/package/http-server)
 
-- For V1 Demo use `MSAL.js-V1-Token-Flow` app registration
+- Use `MSAL.js-V1-Token-Flow` app registration
 
 ## App Registration
 

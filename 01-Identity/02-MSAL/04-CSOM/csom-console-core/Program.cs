@@ -22,6 +22,7 @@ namespace csom_console_core
             var pwd = new System.Net.NetworkCredential(string.Empty, getPasswordFromConsole("Enter AZ PWD: ")).Password;
 
             var body = $"resource={resource}&client_id={clientId}&grant_type=password&username={HttpUtility.UrlEncode(username)}&password={HttpUtility.UrlEncode(pwd)}";
+            
             using (var stringContent = new StringContent(body, Encoding.UTF8, "application/x-www-form-urlencoded"))
             {
                 var result = await httpClient.PostAsync(tokenEndpoint, stringContent).ContinueWith((response) =>
