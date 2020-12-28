@@ -1,7 +1,8 @@
 app=CliSampleApp
 uri=[http://localhost/$appName](http://localhost/$appName)
+hp='https://localhost:5001'
 
-az ad app create --display-name $app --identifier-uris $uri
+az ad app create --display-name $app --identifier-uris $uri --homepage $hp
 
 appId=$(az ad app list --display-name $app --query [].appId -o tsv)
 

@@ -3,13 +3,15 @@
 ## Demos
 
 - Explain Token Flow
-- Show Abstaction using Angular MSAL Wrapper 
+- Show Abstaction using Angular MSAL Wrapper
 
 ## Readings
 
 [Authentication Flows](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-authentication-flows)
 
 [MSAL Auth Flow Types](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols)
+
+[Application Configuration Options](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-client-application-configuration)
 
 [MSAL - Single Page Apps](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-overview)
 

@@ -1,22 +1,24 @@
 async function doAuth() {
+  const tenant = "d92b247e-90e0-4469-a129-6a32866c0d0a";
   const config = {
     auth: {
-      clientId: "024bf89c-83e1-45b5-8797-f013cf920cc5",
-      authority: "https://login.microsoftonline.com/common/",
+      clientId: "eeb155cb-d4c6-4864-9184-cf10a6e02715",
+      authority: `https://login.microsoftonline.com/${tenant}`,
       redirectUri: "http://localhost:8080",
     },
   };
   const client = new Msal.UserAgentApplication(config);
-  const request = {
-    scopes: ['user.read'],
+  const scopes = {
+    scopes: ["user.read"],
   };
 
   //Login -> Get ID Token
-  const loginResponse = await client.loginPopup(request);
+  const loginResponse = await client.loginPopup(scopes);
+
   logAndShow("Login Request", loginResponse);
 
   //Get AccessToken
-  const tokenResponse = await client.acquireTokenSilent(request);
+  const tokenResponse = await client.acquireTokenSilent(scopes);
   logAndShow("Token Response", tokenResponse);
 
   //Read Profile
@@ -33,7 +35,7 @@ async function doAuth() {
   //Call Sharepoint using Graph -> SharePoint REST API v2
   const spTenant = "integrationsonline";
   const spScope = {
-    scopes: ['Sites.ReadWrite.All'],
+    scopes: ["Sites.ReadWrite.All"],
   };
   const spTokenResponse = await client.acquireTokenSilent(spScope);
   logAndShow("Token Response", spTokenResponse);
@@ -41,7 +43,7 @@ async function doAuth() {
   const qrySPLists = `https://graph.microsoft.com/v1.0/sites/${spTenant}.sharepoint.com/lists`;
   const listResp = await fetch(qrySPLists, {
     headers: {
-      Authorization: "Bearer " + spTokenResponse.accessToken
+      Authorization: "Bearer " + spTokenResponse.accessToken,
     },
   });
   const lists = await listResp.json();
