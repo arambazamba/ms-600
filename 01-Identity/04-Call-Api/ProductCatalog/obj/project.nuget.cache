@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5tg1gNVV8qR9UfvaaA7JFUkz3t1wKOxCpH0lbLuFbDgxTE79PcFY+Qjza8KwHKRtJ8Rv0jRc0xB/MkQVetTTBw==",
+  "dgSpecHash": "PYOhtvqqHc2EkI/jr+/waUZ0QtKntrmSxyvftsXlD7XB6JeEKoPZ0K0pDs6QkA+lmV+0SbjfTwPj3kVHzgbJzw==",
   "success": true,
-  "projectFilePath": "H:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj",
+  "projectFilePath": "h:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AlexanderPajer\\.nuget\\packages\\azure.core\\1.0.2\\azure.core.1.0.2.nupkg.sha512",
     "C:\\Users\\AlexanderPajer\\.nuget\\packages\\azure.identity\\1.1.1\\azure.identity.1.1.1.nupkg.sha512",

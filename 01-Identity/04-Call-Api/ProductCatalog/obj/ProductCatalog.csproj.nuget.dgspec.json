@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj": {}
+    "h:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj": {}
   },
   "projects": {
-    "H:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj": {
+    "h:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj",
+        "projectUniqueName": "h:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj",
         "projectName": "ProductCatalog",
-        "projectPath": "H:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj",
+        "projectPath": "h:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\ProductCatalog.csproj",
         "packagesPath": "C:\\Users\\AlexanderPajer\\.nuget\\packages\\",
-        "outputPath": "H:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\obj\\",
+        "outputPath": "h:\\Classes\\MS-600\\01-Identity\\04-Call-Api\\ProductCatalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Bogus": {
               "target": "Package",
@@ -74,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
