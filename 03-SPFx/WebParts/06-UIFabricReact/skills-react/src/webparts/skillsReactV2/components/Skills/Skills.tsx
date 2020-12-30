@@ -3,6 +3,9 @@ import styles from "./Skills.module.scss";
 import { Skill } from "../skill";
 import { WebPartContext } from "@microsoft/sp-webpart-base";
 import { SPHttpClient } from "@microsoft/sp-http";
+import { DefaultButton, ButtonType } from "office-ui-fabric-react";
+import { TextField } from "office-ui-fabric-react/lib/TextField";
+import { List } from "office-ui-fabric-react/lib/List";
 
 export interface SkillProps {
   removeMsg: string;
@@ -13,6 +16,11 @@ export interface SkillProps {
 export interface SkillState {
   addSkill: string;
   skills: Skill[];
+}
+
+export interface IButtonProps {
+  disabled?: boolean;
+  checked?: boolean;
 }
 
 export class Skills extends React.Component<SkillProps, SkillState> {
@@ -30,10 +38,19 @@ export class Skills extends React.Component<SkillProps, SkillState> {
       <div className={styles.container}>
         <div>
           Your need the follwowing skills:
-          <div>
-            <label className={styles.lblNewSkill}>Enter a new skill:</label>
-            <input type="text" onChange={this.handleSkillChange} />
-            <button onClick={() => this.addSkill()}>Add</button>
+          <div className={styles.row}>
+            <TextField
+              onChange={this.handleSkillChange}
+              label="Enter a new skill:"
+              style={{ width: "200px" }}
+            ></TextField>
+
+            <DefaultButton
+              buttonType={ButtonType.primary}
+              onClick={() => this.addSkill()}
+            >
+              Add
+            </DefaultButton>
           </div>
           <div className={styles.divResponse}>
             You typed: {this.state.addSkill}

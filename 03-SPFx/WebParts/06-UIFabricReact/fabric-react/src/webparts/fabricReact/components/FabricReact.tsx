@@ -3,7 +3,7 @@ import styles from "./FabricReact.module.scss";
 import { IFabricReactProps } from "./IFabricReactProps";
 import { escape } from "@microsoft/sp-lodash-subset";
 import {
-  Button,
+  DefaultButton,
   ButtonType,
   Nav,
   Panel,
@@ -25,14 +25,14 @@ export default class FabricReact extends React.Component<
     return (
       <div>
         <div className="ms-BasicButtonsExample">
-          <Button data-automation-id="test">Normal button</Button>
-          <Button
+          <DefaultButton data-automation-id="test">Normal button</DefaultButton>
+          <DefaultButton
             data-automation-id="test"
             buttonType={ButtonType.primary}
             onClick={this._buttonOnClickHandler.bind(this)}
           >
             Primary button
-          </Button>
+          </DefaultButton>
         </div>
 
         <div className="ms-NavExample-LeftPane">
@@ -84,20 +84,20 @@ export default class FabricReact extends React.Component<
         </div>
 
         <div className="ms-PanelExample">
-          <Button
+          <DefaultButton
             description="Opens the Sample Panel"
             onClick={this._showPanel.bind(this)}
           >
             Open Panel
-          </Button>
-          <Panel
+          </DefaultButton>
+          <DefaultButton
             isOpen={this.state.showPanel}
             type={PanelType.smallFixedFar}
             onDismiss={this._closePanel.bind(this)}
             headerText="Panel - Small, right-aligned, fixed"
           >
             <span className="ms-font-m">Content goes here.</span>
-          </Panel>
+          </DefaultButton>
         </div>
       </div>
     );
