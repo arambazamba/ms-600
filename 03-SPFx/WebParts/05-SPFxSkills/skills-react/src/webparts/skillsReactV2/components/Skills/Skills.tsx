@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./Skills.module.scss";
-import { Skill } from "../skill";
+import { Skill } from "../skill.model";
 import { WebPartContext } from "@microsoft/sp-webpart-base";
 import { SPHttpClient } from "@microsoft/sp-http";
 
@@ -67,7 +67,12 @@ export class Skills extends React.Component<SkillProps, SkillState> {
       Math,
       this.state.skills.map((item) => item.Id + 1)
     );
-    const param = { Id: newid, Title: this.state.addSkill };
+    const param = {
+      Id: newid,
+      Title: this.state.addSkill,
+      Hours: 3,
+      Completed: false,
+    };
 
     this.addSkillToSP(param).then((resp) => {
       console.log(resp);

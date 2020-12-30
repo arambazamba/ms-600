@@ -7,14 +7,14 @@
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
     "developer": {
-      "name": "",
-      "websiteUrl": "",
+      "name": "Alexander Pajer",
+      "websiteUrl": "http://www.integrations.at",
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": ""
     }
   },
   "paths": {
-    "zippedPackage": "solution/skills-react-data.sppkg"
+    "zippedPackage": "solution/skills-react.sppkg"
   }
 }
