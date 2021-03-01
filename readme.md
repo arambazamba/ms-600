@@ -24,18 +24,14 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
 ## Required Cloud Ressources
 
 - [Github User Account](https://github.com/)
-
 - [Microsoft 365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
-
 - [Azure DevOps Account](https://dev.azure.com/)
-
 - Azure Subscription:
-
-  Please do not use a Production Account for Training
-
   - Using [Azure Passes](https://www.microsoftazurepass.com/)
   - Azure Paid / Sponsored Subscription
   - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
+
+> Note: Please do not use a Production Account for Training
 
 > Note: Azure Passes can only be used once per e-mail account (Live ID)
 
