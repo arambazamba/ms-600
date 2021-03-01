@@ -1,40 +1,44 @@
 # MS-600 - Building Applications and Solutions with Microsoft 365 Core Services
 
-## Module 1 Implement Microsoft Identity
+Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
-- Getting started with Microsoft identity
-- Overview of authentication and authorization with Microsoft identity
-- Implement authentication and authorization to consume an API
-- Secure custom APIs
+- [Requirements / Tooling](./Tooling)
+  - [Register Azure Pass](./Tooling/05-AzurePass)
+  - [Git & GitHub Basics](./Tooling/01-Github)
+  - [Visual Studio Code Intro](./Tooling/02-VSCode)
+  - [Document Repos using Markdown](./Tooling/03-Markdown)
+- [Instructor Demos](./Demos)
+- [Guided Scripts to setup an Azure hosted Development & Lab VM](./Setup)
+  - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./Setup/#basics)
+  - [Setup Windows Subsystem for Linux 2 - WSL2](./Setup/#wsl)
+  - [Setup Docker & Kubernetes](./Setup/#docker-wsl)
+  - [Use Teams in VM](./Setup/#teams)
+- [Labs](./Labs)
 
-## Module 2 Work with Microsoft Graph
+> Note: Labs are taken from the official repo [MS-600: Building Applications and Solutions with Microsoft 365 Core Services](https://github.com/MicrosoftLearning/MS-600-Building-Applications-and-Solutions-with-Microsoft-365-Core-Services)
 
-- Overview of Microsoft Graph
-- Optimize Data Usage with Query Parameters
-- Optimize Network Traffic
-- Access User Data with Microsoft Graph
-- Access Files with Microsoft Graph
-- Manage a Group Lifecycle on Microsoft Graph
+## Exam
 
-## Module 3 Extend and Customize SharePoint SharePoint Framework Web Parts
+[Exam MS-600: Building Applications and Solutions with Microsoft 365 Core Services](https://docs.microsoft.com/en-us/learn/certifications/exams/ms-600)
 
-- SharePoint Framework Extension
-- Package and Deploy an SPFx Solution
-- Consumption of Microsoft Graph and Third Party APIs
-- Web Parts as Teams Tabs
-- Branding and Theming in SharePoint
+## Required Cloud Ressources
 
-## Module 4 Extend Teams
+- [Github User Account](https://github.com/)
 
-- Overview of Building Apps for Microsoft Teams
-- Webhooks in Microsoft Teams
-- Tabs in Microsoft Teams
-- Messaging Extensions in Microsoft Teams
-- Conversational Bots in Microsoft Teams
+- [Microsoft 365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
 
-## Module 5 Extend Office
+- [Azure DevOps Account](https://dev.azure.com/)
 
-- Office Add-ins
-- Office JS APIs
-- Customize Office Add-ins
-- Testing Debugging and Deployment Options for Office Add-ins
+- Azure Subscription:
+
+  Please do not use a Production Account for Training
+
+  - Using [Azure Passes](https://www.microsoftazurepass.com/)
+  - Azure Paid / Sponsored Subscription
+  - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
+
+> Note: Azure Passes can only be used once per e-mail account (Live ID)
+
+## Contributing
+
+Feel free to contribute. When contribute implement your changes / additions on a feature branch in your fork and issue a pull request after completion. An introduction video into forks and pull requests can be found [here](https://www.youtube.com/watch?v=nT8KGYVurIU)
