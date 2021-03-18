@@ -4,21 +4,21 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://leolerchm365.sharepoint.com/sites/Dev/Lists/FieldcustomizerList/AllItems.aspx",
       "fieldCustomizers": {
-        "InternalFieldName": {
-          "id": "342b0f1c-ddfa-44a7-a5d3-b23ec536c165",
+        "SPFxActive": {
+          "id": "ce45f2a4-57b0-4f8d-b206-5c3dd05752a6",
           "properties": {
             "sampleText": "Value"
           }
         }
       }
     },
-    "tasksCustomizer": {
+    "toggle": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "fieldCustomizers": {
-        "InternalFieldName": {
-          "id": "342b0f1c-ddfa-44a7-a5d3-b23ec536c165",
+        "SPFxActive": {
+          "id": "ce45f2a4-57b0-4f8d-b206-5c3dd05752a6",
           "properties": {
             "sampleText": "Value"
           }

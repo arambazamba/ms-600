@@ -1,0 +1,63 @@
+{
+  "id": "ce45f2a4-57b0-4f8d-b206-5c3dd05752a6",
+  "alias": "ToggleFieldCustomizer",
+  "componentType": "Extension",
+  "extensionType": "FieldCustomizer",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "toggle-field-customizer",
+    "scriptResources": {
+      "toggle-field-customizer": {
+        "type": "path",
+        "path": "toggle-field-customizer_140456fe7b3059218d1e.js"
+      },
+      "tslib": {
+        "type": "component",
+        "id": "01c4df03-e775-48cb-aa14-171ee5199a15",
+        "version": "1.10.0"
+      },
+      "ToggleFieldCustomizerStrings": {
+        "type": "localizedPath",
+        "paths": {
+          "en-US": "ToggleFieldCustomizerStrings_en-us_ce82d427bd7080110fe243fad748eae3.js"
+        },
+        "defaultPath": "ToggleFieldCustomizerStrings_en-us_ce82d427bd7080110fe243fad748eae3.js"
+      },
+      "@microsoft/sp-listview-extensibility": {
+        "type": "component",
+        "id": "d37b65ee-c7d8-4570-bc74-2b294ff3b380",
+        "version": "1.12.0"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.12.0"
+      },
+      "@microsoft/sp-page-context": {
+        "type": "component",
+        "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8",
+        "version": "1.12.0"
+      },
+      "react": {
+        "type": "component",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "version": "16.9.0"
+      },
+      "react-dom": {
+        "type": "component",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "version": "16.9.0"
+      },
+      "@microsoft/decorators": {
+        "type": "component",
+        "id": "f97266fb-ccb7-430e-9384-4124d05295d3",
+        "version": "1.12.0"
+      }
+    }
+  }
+}

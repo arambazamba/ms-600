@@ -1,4 +1,4 @@
-# fld-customizer
+# react-field-toggle
 
 ## Summary
 
@@ -8,7 +8,7 @@ Short summary on functionality and used technologies.
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.11-green.svg)
+![version](https://img.shields.io/badge/version-1.12-green.svg)
 
 ## Applies to
 

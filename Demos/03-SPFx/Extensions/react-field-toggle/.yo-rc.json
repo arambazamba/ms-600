@@ -1,8 +1,8 @@
 {
   "@microsoft/generator-sharepoint": {
-    "version": "1.11.0",
-    "libraryName": "fld-customizer",
-    "libraryId": "e32df35f-1d57-4d9d-b241-099b0212af17",
+    "version": "1.12.0",
+    "libraryName": "react-field-toggle",
+    "libraryId": "18373b13-956e-4eb6-b4fd-b63d134f10ff",
     "environment": "spo",
     "packageManager": "npm",
     "isCreatingSolution": true,

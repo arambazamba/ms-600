@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
 
-  "id": "342b0f1c-ddfa-44a7-a5d3-b23ec536c165",
-  "alias": "TasksCustomizerFieldCustomizer",
+  "id": "ce45f2a4-57b0-4f8d-b206-5c3dd05752a6",
+  "alias": "ToggleFieldCustomizer",
   "componentType": "Extension",
   "extensionType": "FieldCustomizer",
 
