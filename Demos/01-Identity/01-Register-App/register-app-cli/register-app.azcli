@@ -1,6 +1,8 @@
 app=CliSampleApp
-uri=[http://localhost/$appName](http://localhost/$appName)
+uri=[http://localhost/$app](http://localhost/$app)
+echo $uri
 hp='https://localhost:5001'
+
 
 az ad app create --display-name $app --identifier-uris $uri --homepage $hp
 

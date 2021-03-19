@@ -1,0 +1,80 @@
+name: "skills-net-api"
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - net-api/*
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  azureSubscription: "Visual Studio Enterprise (78033352-805c-4acd-af80-f8f95083268d)"
+  buildConfiguration: "Release"
+  serviceConnection: "scSkillsApp"
+  apiPath: "net-api/"
+  apiProj: "skills-api"
+  apiScript: "net-api.sh"
+  appService: "skills-net-api"
+
+stages:
+  - stage: "Provision"
+    jobs:
+      - job: "Provision"
+        displayName: "Provision App Service"
+
+        steps:
+          - task: AzureCLI@2
+            displayName: Azure CLI
+            inputs:
+              azureSubscription: $(serviceConnection)
+              scriptType: bash
+              scriptLocation: scriptPath
+              scriptPath: devops/$(apiScript)
+
+  - stage: "Build"
+    jobs:
+      - job: "Build"
+        displayName: "Build App"
+
+        steps:
+          - task: UseDotNet@2
+            displayName: "Install .NET 5 SDK"
+            inputs:
+              packageType: "sdk"
+              version: "5.x"
+
+          - script: dotnet build **/*.csproj --configuration $(buildConfiguration)
+            displayName: "dotnet build $(buildConfiguration)"
+
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: "publish"
+              publishWebProjects: true
+              arguments: "--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)"
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+              ArtifactName: "drop"
+              publishLocation: "Container"
+
+  - stage: "Deploy"
+    jobs:
+      - job: "Deploy"
+        displayName: "Deploy App"
+
+        steps:
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              artifactName: "drop"
+              downloadPath: "$(System.DefaultWorkingDirectory)"
+
+          - task: AzureWebApp@1
+            displayName: "Azure Web App Deploy"
+            inputs:
+              azureSubscription: $(serviceConnection)
+              appType: "webApp"
+              appName: $(appService)
