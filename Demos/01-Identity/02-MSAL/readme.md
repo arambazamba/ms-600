@@ -2,8 +2,7 @@
 
 ## Demos
 
-- Explain Token Flow
-- Show Abstaction using Angular MSAL Wrapper
+- Explain Token Flows in several scenarios
 
 ## Readings
 
