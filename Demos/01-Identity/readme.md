@@ -3,11 +3,13 @@
 ## Demos
 
 - App Registration
-- 
+-
 
 ## Readings
 
 [Microsoft Identity Platform Documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
+
+[Application Roles](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles)
 
 [Authentication Flows](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-authentication-flows)
 

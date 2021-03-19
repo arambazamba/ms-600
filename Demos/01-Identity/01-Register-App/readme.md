@@ -3,9 +3,11 @@
 ## Demos
 
 - Explain App Registration Process
-- Create App Registration using Azure CLI
+- Create App Registration using Azure CLI with permissions
 
 ## Readings
+
+[az ad sp](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create_for_rbac)
 
 [az ad app](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest)
 
