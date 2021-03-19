@@ -6,9 +6,11 @@
 
 ## Readings
 
-[Authentication Flows](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-authentication-flows)
+[oAuth Terms](https://www.soapui.org/docs/oauth2/oauth2-overview/)
 
-[MSAL Auth Flow Types](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols)
+[Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview)
+
+[Authentication Flows](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-authentication-flows)
 
 [MSAL - Single Page Apps](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-overview)
 

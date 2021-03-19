@@ -25,6 +25,8 @@
 
 ## Readings
 
+[Application Roles](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles)
+
 [az ad sp](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create_for_rbac)
 
 [az ad app](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest)
