@@ -4,17 +4,15 @@
 
 [SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
 
+> Note: When testing extensions choose "Load debug scripts"
+
+![debug](./_images/debug.png)
+
 ## App Customizer
 
 Demo `app-customizer`:
 
-Test a specific extension:
-
-```
-gulp serve --config=placeholderSample
-```
-
-Take config from `serve.json` and adjust pageUrl: `"https://tenant.sharepoint.com/sites/SITE/SitePages/Home.aspx"`,
+`serve.json` contains more than one extension.
 
 ```json
 "placeholderSample": {
@@ -42,11 +40,13 @@ Take config from `serve.json` and adjust pageUrl: `"https://tenant.sharepoint.co
 },
 ```
 
-Choose "Load debug scripts"
+> For `toasterSample` execute CreateToastList.ps1 in folder `./Powershell`
 
-![debug](./_images/debug.png)
+To test a specific extension run:
 
-> For Toaster Sample create Powershell to creat the list and insert at least one item to the list
+```
+gulp serve --config=placeholderSample
+```
 
 ## Field Customizer
 
