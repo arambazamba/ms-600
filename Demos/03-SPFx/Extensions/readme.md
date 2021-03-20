@@ -40,7 +40,7 @@ Demo `app-customizer`:
 },
 ```
 
-> For `toasterSample` execute CreateToastList.ps1 in folder `./Powershell`
+> For `toasterSample` execute CreateToastList.ps1 in folder `./powershell`
 
 To test a specific extension run:
 
