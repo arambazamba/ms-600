@@ -8,13 +8,12 @@
 
 [Setup Environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
-Machine Setup for SPFx Dev
+Machine Setup for SPFx Dev:
 
 ```
 npm install -g yo gulp
 npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/generator-spfx
-gulp trust-dev-cert
 ```
 
 Angular - Used to demonstrate Angular Elements with SPFx:
