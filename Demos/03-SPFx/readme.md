@@ -1,8 +1,12 @@
-# SPFx
+# Sharepoint Framework - SPFx
 
-[PnP Generator SharePoint](https://pnp.github.io/generator-spfx/)
+[Overview of the SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview)
 
-[Microsoft 365 CLI](https://pnp.github.io/cli-microsoft365/)
+[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/enterprise/use-microsoft-365-cdn-with-spo?view=o365-worldwide#CDNAssets)
+
+## Environment Setup
+
+[Setup Environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
 ## Machine Setup for SPFx Dev
 
@@ -19,19 +23,21 @@ Angular - Used to demonstrate Angular Elements with SPFx:
 npm i  -g @angular/cli
 ```
 
-## REST Client
+## Getting Started
 
-Use [Postman](https://www.getpostman.com/)
+Workbench URL
 
-[Setup Postman](https://blogs.msdn.microsoft.com/emeamsgdev/2018/08/03/querying-the-office-365-management-apis-using-postman/) to use with Office 365
+```
+https://SITEURL/_layouts/15/workbench.aspx
+```
 
-as an Alternative you can use [SP REST Client](https://marketplace.visualstudio.com/items?itemName=s-kainet.rest-client)
+Install Dev Certificate
+
+```
+gulp trust-dev-cert
+```
 
 ## Recommende Extensions & AddOns
-
-[Sharepoint Client Browser](https://github.com/bramdejager/spcb)
-
-[SPRemote API Explorer](https://marketplace.visualstudio.com/items?itemName=SteveCurranMVP.SPRemoteAPIExplorer)
 
 [SPFx Snippets](https://marketplace.visualstudio.com/items?itemName=eliostruyf.spfx-snippets)
 
