@@ -4,9 +4,10 @@
 
 - Graph Query Params
 - Graph & MSAL
-- Batching & Notification
+- Batching
 - Throttling
 - Working with files
+- Change Notifications
 
 ## Readings
 
