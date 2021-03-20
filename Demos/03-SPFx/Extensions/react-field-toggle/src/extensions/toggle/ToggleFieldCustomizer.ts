@@ -1,49 +1,43 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-import { Log } from '@microsoft/sp-core-library';
-import { override } from '@microsoft/decorators';
+import { Log } from "@microsoft/sp-core-library";
+import { override } from "@microsoft/decorators";
 import {
   BaseFieldCustomizer,
-  IFieldCustomizerCellEventParameters
-} from '@microsoft/sp-listview-extensibility';
+  IFieldCustomizerCellEventParameters,
+} from "@microsoft/sp-listview-extensibility";
 import { SPPermission } from "@microsoft/sp-page-context";
-import * as strings from 'ToggleFieldCustomizerStrings';
-import Toggle from './components/Toggle';
-import { sp, } from '@pnp/sp/presets/core';
+import * as strings from "ToggleFieldCustomizerStrings";
+import Toggle from "./components/Toggle";
+import { sp } from "@pnp/sp/presets/core";
 
-/**
- * If your field customizer uses the ClientSideComponentProperties JSON input,
- * it will be deserialized into the BaseExtension.properties object.
- * You can define an interface to describe it.
- */
 export interface IToggleProperties {
-  // This is an example; replace with your own property
   sampleText?: string;
 }
 
-const LOG_SOURCE: string = 'ToggleFieldCustomizer';
+const LOG_SOURCE: string = "ToggleFieldCustomizer";
 
-export default class ToggleFieldCustomizer
-  extends BaseFieldCustomizer<IToggleProperties> {
-
+export default class ToggleFieldCustomizer extends BaseFieldCustomizer<IToggleProperties> {
+  
   @override
   public onInit(): Promise<void> {
-    // Add your custom initialization to this method.  The framework will wait
-    // for the returned promise to resolve before firing any BaseFieldCustomizer events.
-    Log.info(LOG_SOURCE, 'Activated ToggleFieldCustomizer with properties:');
+    Log.info(LOG_SOURCE, "Activated ToggleFieldCustomizer with properties:");
     Log.info(LOG_SOURCE, JSON.stringify(this.properties, undefined, 2));
-    Log.info(LOG_SOURCE, `The following string should be equal: "Toggle" and "${strings.Title}"`);
+    Log.info(
+      LOG_SOURCE,
+      `The following string should be equal: "Toggle" and "${strings.Title}"`
+    );
 
     sp.setup({
-      spfxContext: this.context
+      spfxContext: this.context,
     });
 
-    sp.web.get().then(i => {
+    sp.web.get().then((i) => {
       console.log(i.Title);
     });
-    
-    return super.onInit()
+
+    return super.onInit();
   }
 
   @override
@@ -51,14 +45,19 @@ export default class ToggleFieldCustomizer
     // Use this method to perform your custom cell rendering.  The CellFormatter is a utility
     // that you can use to convert the cellValue to a text string.
     const value: string = event.fieldValue;
-    const id: string = event.listItem.getValueByName('ID').toString();
-    const hasPermissions: boolean = this.context.pageContext.list.permissions.hasPermission(SPPermission.editListItems);
+    const id: string = event.listItem.getValueByName("ID").toString();
+    const hasPermissions: boolean = this.context.pageContext.list.permissions.hasPermission(
+      SPPermission.editListItems
+    );
 
-    const toggle: React.ReactElement<{}> =
-      React.createElement(Toggle, { checked: value, id: id, disabled: !hasPermissions, onChanged: this.onToggleValueChanged.bind(this) });
+    const toggle: React.ReactElement<{}> = React.createElement(Toggle, {
+      checked: value,
+      id: id,
+      disabled: !hasPermissions,
+      onChanged: this.onToggleValueChanged.bind(this),
+    });
 
     ReactDOM.render(toggle, event.domElement);
-
   }
 
   @override
@@ -71,8 +70,6 @@ export default class ToggleFieldCustomizer
   }
 
   onToggleValueChanged = (value: boolean, id: string) => {
-
-
     let updateObj: any = {};
     updateObj[this.context.field.internalName] = value;
 
@@ -82,5 +79,5 @@ export default class ToggleFieldCustomizer
     //   }, (error: any): void => {
     //     console.log('Loading latest item failed with error: ' + error);
     //   });
-  }
+  };
 }

@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://leolerchm365.sharepoint.com/sites/Dev/Lists/FieldcustomizerList/AllItems.aspx",
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
       "fieldCustomizers": {
         "SPFxActive": {
           "id": "ce45f2a4-57b0-4f8d-b206-5c3dd05752a6",
@@ -15,7 +15,7 @@
       }
     },
     "toggle": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
       "fieldCustomizers": {
         "SPFxActive": {
           "id": "ce45f2a4-57b0-4f8d-b206-5c3dd05752a6",
