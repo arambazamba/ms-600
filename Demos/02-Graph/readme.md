@@ -3,7 +3,9 @@
 ## Demos
 
 - Graph Query Params
-- Batching
+- Graph & MSAL
+- Batching & Notification
+- Working with files
 
 ## Readings
 
@@ -15,14 +17,8 @@
 
 [MS Graph Query Params](https://docs.microsoft.com/en-us/graph/query-parameters)
 
-[Combine multiple requests in one HTTP call using JSON batching](https://docs.microsoft.com/en-us/graph/json-batching)
-
 [Microsoft Graph throttling guidance](https://docs.microsoft.com/en-us/graph/throttling)
 
 [Using Postman with MS Graph](https://docs.microsoft.com/en-us/graph/use-postman)
 
 [Postman Microsoft Graph Collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections)
-
-# Webhooks
-
-[Overview of SharePoint webhooks](https://docs.microsoft.com/en-us/sharepoint/dev/apis/webhooks/overview-sharepoint-webhooks)
