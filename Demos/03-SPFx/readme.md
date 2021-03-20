@@ -8,7 +8,7 @@
 
 [Setup Environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
-## Machine Setup for SPFx Dev
+Machine Setup for SPFx Dev
 
 ```
 npm install -g yo gulp
