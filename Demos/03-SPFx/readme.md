@@ -27,7 +27,7 @@ npm i  -g @angular/cli
 Workbench URL
 
 ```
-https://SITEURL/_layouts/15/workbench.aspx
+https://SITEURL/_layouts/workbench.aspx
 ```
 
 Install Dev Certificate
