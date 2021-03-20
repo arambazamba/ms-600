@@ -26,5 +26,5 @@
 Installation:
 
 ```
-$ npm install -g yo generator-office
+npm install -g yo generator-office
 ```
