@@ -47,4 +47,4 @@ Start Ngrok
 ngrok http 3000 -host-header=rewrite
 ```
 
-Note: Sample taken from [here](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample). .Netversion is available [here](https://github.com/microsoftgraph/msgraph-training-changenotifications/tree/master/demos/03-track-changes)
+Note: Sample taken from [here](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample). A .Net version is available [here](https://github.com/microsoftgraph/msgraph-training-changenotifications/tree/master/demos/03-track-changes)
