@@ -48,4 +48,6 @@ Choose "Load debug scripts"
 
 ## Field Customizer
 
+Sample fld-customizer:
+
 ![percentage-fld.jpg](./_images/percentage-fld.jpg)
