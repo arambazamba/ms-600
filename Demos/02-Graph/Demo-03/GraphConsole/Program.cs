@@ -21,17 +21,36 @@ namespace GraphConsole
 
             var client = GetAuthenticatedGraphClient(config);
 
-            var graphRequest = client.Users.Request();
+            //Data request
+            var userRequest = client.Users
+                                    .Request()
+                                    .Select(u => new { u.DisplayName, u.Mail });
 
-            var results = graphRequest.GetAsync().Result;
-            foreach(var user in results)
+            var users = userRequest.GetAsync().Result;
+            foreach(var user in users)
             {
                 Console.WriteLine(user.Id + ": " + user.DisplayName + " <" + user.Mail + ">");
             }
 
             Console.WriteLine("\nGraph Request:");
-            Console.WriteLine(graphRequest.GetHttpRequestMessage().RequestUri);
+            Console.WriteLine(userRequest.GetHttpRequestMessage().RequestUri);
+
+            //Expanding
+            var grpRequest = client.Groups.Request().Top(5).Expand("members");
+            var grps = grpRequest.GetAsync().Result;
+            foreach(var group in grps)
+            {
+                Console.WriteLine("Group: " + group.Id + ": " + group.DisplayName);
+                foreach(var member in group.Members)
+                {
+                    Console.WriteLine("Member:  " + member.Id + ": " + ((Microsoft.Graph.User)member).DisplayName);
+                }
+            }
+
+
+
         }
+
 
         private static IConfigurationRoot LoadAppSettings()
         {
