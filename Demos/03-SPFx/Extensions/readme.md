@@ -51,3 +51,7 @@ Choose "Load debug scripts"
 Sample fld-customizer:
 
 ![percentage-fld.jpg](./_images/percentage-fld.jpg)
+
+Sample fld-customizer-react:
+
+![isActive-fld.jpg](./_images/isActive-fld.jpg)
