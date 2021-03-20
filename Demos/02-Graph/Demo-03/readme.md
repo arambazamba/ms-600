@@ -1,6 +1,11 @@
-# Batching & Change Notifications
+# Optimizing Graph
+
+- GraphConsole
+- Batching
 
 ## Batching
+
+Execute in Graph Explorer
 
 ```
 POST https://graph.microsoft.com/v1.0/$batch
@@ -14,30 +19,19 @@ Body:
 {
   "requests": [
     {
-      "id": "1",
+      "url": "/me?$select=displayName,jobTitle,userPrincipalName",
       "method": "GET",
-      "url": "/me/drive/root:/{file}:/content"
+      "id": "1"
     },
     {
-      "id": "2",
+      "url": "/me/messages?$filter=importance eq 'high'&$select=from,subject,receivedDateTime,bodyPreview",
       "method": "GET",
-      "url": "/me/planner/tasks"
+      "id": "2"
     },
     {
-      "id": "3",
+      "url": "/me/events",
       "method": "GET",
-      "url": "/groups/{id}/events"
-    },
-    {
-      "id": "4",
-      "url": "/me",
-      "method": "PATCH",
-      "body": {
-        "city": "Redmond"
-      },
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "id": "3"
     }
   ]
 }
