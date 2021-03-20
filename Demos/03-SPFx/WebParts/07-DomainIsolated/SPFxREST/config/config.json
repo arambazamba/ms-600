@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/spFxRestApi/SpFxRestApiWebPart.manifest.json"
         }
       ]
+    },
+    "domain-isolated-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/domainIsolatedWp/DomainIsolatedWpWebPart.js",
+          "manifest": "./src/webparts/domainIsolatedWp/DomainIsolatedWpWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "SpFxRestApiWebPartStrings": "lib/webparts/spFxRestApi/loc/{locale}.js"
+    "SpFxRestApiWebPartStrings": "lib/webparts/spFxRestApi/loc/{locale}.js",
+    "DomainIsolatedWpWebPartStrings": "lib/webparts/domainIsolatedWp/loc/{locale}.js"
   }
 }
