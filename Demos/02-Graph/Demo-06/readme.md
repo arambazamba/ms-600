@@ -39,6 +39,8 @@ App Registration:
 
 Update Config in `constants.js`:
 
+![config.jpg](_images/config.jpg)
+
 Start Ngrok
 
 ```

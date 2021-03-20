@@ -8,7 +8,7 @@ exports.msalConfiguration = {
 
 exports.subscriptionConfiguration = {
   changeType: "Created",
-  notificationUrl: "https://NGROK_ID.ngrok.io/listen",
+  notificationUrl: "https://561442202ce7.ngrok.io/listen",
   resource: "me/mailFolders('Inbox')/messages",
   clientState: "cLIENTsTATEfORvALIDATION",
   includeResourceData: false,
