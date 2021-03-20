@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Identity.Client;
 using Microsoft.Graph;
 using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace GraphConsole
 {
@@ -21,36 +22,53 @@ namespace GraphConsole
 
             var client = GetAuthenticatedGraphClient(config);
 
-            //Data request
-            var userRequest = client.Users
-                                    .Request()
-                                    .Select(u => new { u.DisplayName, u.Mail });
+            //Upload small file
+            var smallFile = "smallfile.txt";
+            var smallPath = Path.Combine(System.IO.Directory.GetCurrentDirectory(), smallFile);
+            Console.WriteLine("Uploading file: " + smallFile);
 
-            var users = userRequest.GetAsync().Result;
-            foreach(var user in users)
+            FileStream fileStream = new FileStream(smallPath, FileMode.Open);
+            var uploadedFile = client.Me.Drive.Root
+                                        .ItemWithPath("smallfile.txt")
+                                        .Content
+                                        .Request()
+                                        .PutAsync<DriveItem>(fileStream)
+                                        .Result;
+            Console.WriteLine("File uploaded to: " + uploadedFile.WebUrl);
+
+            //Upload large file
+            var largeFile = "largefile.zip";
+            var largePath = Path.Combine(System.IO.Directory.GetCurrentDirectory(), largeFile);
+            Console.WriteLine("Uploading file: " + largeFile);
+
+            using (Stream stream = new FileStream(largePath, FileMode.Open))
             {
-                Console.WriteLine(user.Id + ": " + user.DisplayName + " <" + user.Mail + ">");
-            }
+                var uploadSession = client.Me.Drive.Root
+                                                .ItemWithPath(largeFile)
+                                                .CreateUploadSession()
+                                                .Request()
+                                                .PostAsync()
+                                                .Result;
 
-            Console.WriteLine("\nGraph Request:");
-            Console.WriteLine(userRequest.GetHttpRequestMessage().RequestUri);
+                // create upload task
+                var maxChunkSize = 320 * 1024;
+                var largeUploadTask = new LargeFileUploadTask<DriveItem>(uploadSession, stream, maxChunkSize);
 
-            //Expanding
-            var grpRequest = client.Groups.Request().Top(5).Expand("members");
-            var grps = grpRequest.GetAsync().Result;
-            foreach(var group in grps)
-            {
-                Console.WriteLine("Group: " + group.Id + ": " + group.DisplayName);
-                foreach(var member in group.Members)
+                // create progress implementation
+                IProgress<long> uploadProgress = new Progress<long>(uploadBytes =>
                 {
-                    Console.WriteLine("Member:  " + member.Id + ": " + ((Microsoft.Graph.User)member).DisplayName);
+                    Console.WriteLine($"Uploaded {uploadBytes} bytes of {stream.Length} bytes");
+                });
+
+                // upload file
+                UploadResult<DriveItem> uploadResult = largeUploadTask.UploadAsync(uploadProgress).Result;
+                if (uploadResult.UploadSucceeded)
+                {
+                    Console.WriteLine("File uploaded to user's OneDrive root folder.");
                 }
             }
-
-
-
+            
         }
-
 
         private static IConfigurationRoot LoadAppSettings()
         {
