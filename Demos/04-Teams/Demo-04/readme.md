@@ -2,14 +2,34 @@
 
 [Webhooks & Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
 
-[Adaptive Cards](https://docs.microsoft.com/en-us/adaptive-cards/)
-
-[Adaptive Cards Designer](https://adaptivecards.io/designer/)
-
 ## OutgoingWebhook
 
 - Listens for requests at `/api/webhook` using `requestHandler()` defined in WEBHOOKNAME.ts
 - Uses an adavtive card `planetDisplayCard.json`
+- Processes the request using `processAuthenticatedRequest`
+- Serve in two seperate terminals using:
+
+  ```
+  gulp serve
+  ```
+
+  ```
+  ngrok http 3007
+  ```
+
+- Register Outgoing Webhook in Teams
+
+  ![ow-add-tab](_images/ow-add-tab.jpg)
+
+  ![ow-create-wh](_images/ow-create-wh.jpg)
+
+  ![ow-config-wh](_images/ow-config-wh.jpg)
+
+- Copy token and add it to `.env`
+
+  ![ow-copy-token](_images/ow-copy-token.jpg)
+
+## Incoming Webhook
 
 Create a Webhook & Invoke it:
 
