@@ -2,7 +2,14 @@
 
 [Webhooks & Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
 
-## Instructions
+[Adaptive Cards](https://docs.microsoft.com/en-us/adaptive-cards/)
+
+[Adaptive Cards Designer](https://adaptivecards.io/designer/)
+
+## OutgoingWebhook
+
+- Listens for requests at `/api/webhook` using `requestHandler()` defined in WEBHOOKNAME.ts
+- Uses an adavtive card `planetDisplayCard.json`
 
 Create a Webhook & Invoke it:
 
