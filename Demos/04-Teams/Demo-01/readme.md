@@ -8,7 +8,7 @@ npm i -g generator-teams@2.17.1
 npm i -g generator-teams
 ```
 
-> Note: `generator-teams@2.17.1` creates a class based structure that corresponds to the lab guides
+> Note: `generator-teams@2.17.1` creates a class based structure that corresponds to the lab guides, the current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
 
 Scaffolding:
 
