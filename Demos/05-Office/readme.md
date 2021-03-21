@@ -28,3 +28,7 @@ Installation:
 ```
 npm install -g yo generator-office
 ```
+
+## Recommende Extensions & AddOns
+
+[Microsoft Office Add-in Debugger](https://marketplace.visualstudio.com/items?itemName=msoffice.microsoft-office-add-in-debugger)
