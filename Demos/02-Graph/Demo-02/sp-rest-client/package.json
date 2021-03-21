@@ -8,7 +8,7 @@
   "author": "alexander.pajer@integrations.at",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.0-alpha2",
     "es6-promise": "^4.2.8",
     "msal": "^1.4.1"
