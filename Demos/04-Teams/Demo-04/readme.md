@@ -29,12 +29,18 @@
 
   ![ow-copy-token](_images/ow-copy-token.jpg)
 
-## Incoming Webhook
+## Incoming Webhook - no Teams code needed
 
-Create a Webhook & Invoke it:
+- Register Incoming Webhook
 
-> Note: Copy the Webhook Url. Example: `https://outlook.office.com/webhook/2b200327-6453-433a-8231-751c940efd99@d92b247e-90e0-4469-a129-6a32866c0d0a/IncomingWebhook/f08693ef36eb48419aed5a44d51034f3/25853297-1418-4fc4-96ec-22f8bc83axxx`
+  ![iw-add](_images/iw-add.jpg)
 
-```
-Invoke-RestMethod -Method post -ContentType 'Application/Json' -Body '{"text":"Hello World!"}' -Uri <YOUR WEBHOOK URL>
-```
+  ![iw-config](_images/iw-config.jpg)
+
+- Invoke the incomint Webhook:
+
+  ```
+  Invoke-RestMethod -Method post -ContentType 'Application/Json' -Body '{"text":"Hello World!"}' -Uri <YOUR WEBHOOK URL>
+  ```
+
+  > Note: Copy the Webhook Url. Example: `https://integrationsonline.webhook.office.com/webhookb2/552611f2-3437-4290-98ae-1c8dca98b9cf@d92b247e-90e0-4469-a129-6a32866c0d0a/IncomingWebhook/adba3096e6fe404ca88d9bfcfce2efac/25853297-1418-4fc4-96ec-22f8bc83a64b`
