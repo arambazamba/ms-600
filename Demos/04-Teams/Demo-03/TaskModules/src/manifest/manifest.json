@@ -15,8 +15,8 @@
     "full": "YouTubePlayer"
   },
   "description": {
-    "short": "TODO: add short description here",
-    "full": "TODO: add full description here"
+    "short": "YouTube Player with TaskModule",
+    "full": "YouTube Player with TaskModule"
   },
   "icons": {
     "outline": "icon-outline.png",
@@ -29,21 +29,14 @@
       "entityId": "583e7375-adbd-4217-87bb-0e24bc47f5b8",
       "name": "YouTubePlayer",
       "contentUrl": "https://{{HOSTNAME}}/youTubePlayerTab/?name={loginHint}&tenant={tid}&theme={theme}",
-      "scopes": [
-        "personal"
-      ]
+      "scopes": ["personal"]
     }
   ],
   "bots": [],
   "connectors": [],
   "composeExtensions": [],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [
-    "{{HOSTNAME}}"
-  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["{{HOSTNAME}}"],
   "showLoadingIndicator": false,
   "isFullScreen": false
 }
