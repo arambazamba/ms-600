@@ -11,12 +11,12 @@
     "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "ChannelTab",
-    "full": "ChannelTab"
+    "short": "ConfigurableTab",
+    "full": "ConfigurableTab"
   },
   "description": {
-    "short": "TODO: add short description here",
-    "full": "TODO: add full description here"
+    "short": "A sample for a configurable tab",
+    "full": "A sample for a configurable tab"
   },
   "icons": {
     "outline": "icon-outline.png",
@@ -27,26 +27,17 @@
     {
       "configurationUrl": "https://{{HOSTNAME}}/configMathTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "canUpdateConfiguration": true,
-      "scopes": [
-        "team"
-      ],
+      "scopes": ["team"],
       "sharePointPreviewImage": "https://{{HOSTNAME}}/assets/configMathTab-preview.png",
-      "supportedSharePointHosts": [
-        "sharePointFullPage"
-      ]
+      "supportedSharePointHosts": ["sharePointFullPage"]
     }
   ],
   "staticTabs": [],
   "bots": [],
   "connectors": [],
   "composeExtensions": [],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [
-    "{{HOSTNAME}}"
-  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["{{HOSTNAME}}"],
   "showLoadingIndicator": false,
   "isFullScreen": false
 }
