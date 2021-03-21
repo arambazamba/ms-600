@@ -16,6 +16,32 @@ Scaffolding:
 yo teams
 ```
 
+Interpolates env to manifest & create `./package/*.zip`:
+
+```
+gulp manifest
+```
+
+> Note: Usually .env is inclued in `.gitignore`
+
+Build the project:
+
+```
+gulp build
+```
+
+Serve the project
+
+```
+gulp serve
+```
+
+Establish a secure tunnel to test:
+
+```
+gulp ngrok-serve
+```
+
 ### Ngrok
 
 [ngrok](https://ngrok.com)
