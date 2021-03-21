@@ -2,9 +2,9 @@
 
 ## Demos
 
-- FirstTeamsApp
+- Getting Started
 - Personal- & Configurable Tabs
-- TaskModules
+- TaskModules & Adaptive Cards
 - Webhooks
 - Msg Extensions
 - Bots
