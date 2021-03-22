@@ -29,16 +29,16 @@ async function doAuth() {
     });
 
   //Get AccessToken
+  const scopes = {
+    scopes: ["user.read"],
+  };
+
   const tokenResponse = await client.acquireTokenSilent(scopes);
 
   console.log("Token Response", tokenResponse);
 
   //Read Profile
   //Notice beta endpoint with extended profile info
-  const scopes = {
-    scopes: ["user.read"],
-  };
-
   const qryProfile = "https://graph.microsoft.com/beta/me";
   const profileResp = await fetch(qryProfile, {
     headers: {
