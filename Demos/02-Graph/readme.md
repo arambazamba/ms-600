@@ -4,10 +4,10 @@
 
 - Graph Query Params
 - Graph & MSAL
+- Change Notifications
 - Batching
 - Throttling
 - Working with files
-- Change Notifications
 
 ## Readings
 
