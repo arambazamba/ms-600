@@ -2,24 +2,24 @@ import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
-  BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
+} from '@microsoft/sp-property-pane';
+import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'DeployAssetsWpWebPartStrings';
-import DeployAssetsWp from './components/DeployAssetsWp';
-import { IDeployAssetsWpProps } from './components/IDeployAssetsWpProps';
+import * as strings from 'DeploymentWpWebPartStrings';
+import DeploymentWp from './components/DeploymentWp';
+import { IDeploymentWpProps } from './components/IDeploymentWpProps';
 
-export interface IDeployAssetsWpWebPartProps {
+export interface IDeploymentWpWebPartProps {
   description: string;
 }
 
-export default class DeployAssetsWpWebPart extends BaseClientSideWebPart<IDeployAssetsWpWebPartProps> {
+export default class DeploymentWpWebPart extends BaseClientSideWebPart<IDeploymentWpWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IDeployAssetsWpProps > = React.createElement(
-      DeployAssetsWp,
+    const element: React.ReactElement<IDeploymentWpProps> = React.createElement(
+      DeploymentWp,
       {
         description: this.properties.description
       }

@@ -1,12 +1,12 @@
 import * as React from 'react';
-import styles from './DeployAssetsWp.module.scss';
-import { IDeployAssetsWpProps } from './IDeployAssetsWpProps';
+import styles from './DeploymentWp.module.scss';
+import { IDeploymentWpProps } from './IDeploymentWpProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-export default class DeployAssetsWp extends React.Component<IDeployAssetsWpProps, {}> {
-  public render(): React.ReactElement<IDeployAssetsWpProps> {
+export default class DeploymentWp extends React.Component<IDeploymentWpProps, {}> {
+  public render(): React.ReactElement<IDeploymentWpProps> {
     return (
-      <div className={ styles.deployAssetsWp }>
+      <div className={ styles.deploymentWp }>
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
