@@ -36,3 +36,9 @@ Content-Type	application/json
     "securityEnabled": true
 }
 ```
+
+Delete group:
+
+```
+https://graph.microsoft.com/v1.0/groups/ccafaf92-c2fa-42ea-866f-44e4d9751716
+```
