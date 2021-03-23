@@ -2,11 +2,11 @@
 
 ## Demos
 
-- Getting Started
+- Getting Started & Setup
 - Personal- & Configurable Tabs
 - TaskModules & Adaptive Cards
-- Webhooks
-- Msg Extensions
+- Outgoing- and Incoming-Webhooks
+- Message Extensions Extensions
 - Bots
 
 ## Readings
