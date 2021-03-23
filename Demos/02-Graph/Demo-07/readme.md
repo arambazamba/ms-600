@@ -31,8 +31,8 @@ https://graph.microsoft.com/v1.0/groups
 Content-Type	application/json
 {
     "displayName": "Library Assist",
-    "mailEnabled": false,
     "mailNickname": "library",
+    "mailEnabled": false,
     "securityEnabled": true
 }
 ```
@@ -40,5 +40,5 @@ Content-Type	application/json
 Delete group:
 
 ```
-https://graph.microsoft.com/v1.0/groups/ccafaf92-c2fa-42ea-866f-44e4d9751716
+https://graph.microsoft.com/v1.0/groups/c49b13f0-edf3-47ac-9968-ce25810a7010
 ```
