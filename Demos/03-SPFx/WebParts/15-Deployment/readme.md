@@ -44,7 +44,7 @@ npm outdated
 Update Package
 
 ```
-npm i -s @microsoft/sp-build-web@version
+npm i -S @microsoft/sp-build-web@version
 ....
 ```
 
