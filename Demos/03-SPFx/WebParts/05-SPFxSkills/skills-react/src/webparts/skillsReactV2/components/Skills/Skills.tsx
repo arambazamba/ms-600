@@ -96,9 +96,9 @@ export class Skills extends React.Component<SkillProps, SkillState> {
 
   private removeSkill(skill: Skill): void {
     this.removeSkillFromSP(skill).then(() => {
-      let newskills = this.state.skills.filter((i: Skill) => i !== skill);
+      let arrSkills = this.state.skills.filter((sk: Skill) => sk !== skill);
       this.setState({
-        skills: newskills,
+        skills: arrSkills,
       });
     });
   }

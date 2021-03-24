@@ -4,6 +4,17 @@
 
 - Call Third Party Api
 - Domain Isolated WP
+- Edit `package-solution.json`
+
+  ```
+  "isDomainIsolated": true,
+  "webApiPermissionRequests": [
+  {
+  "resource": "Microsoft Graph",
+  "scope": "User.ReadBasic.All"
+  }
+  ],
+  ```
 
 Approve the API permission request fro Domain Isolated WP:
 
