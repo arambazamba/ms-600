@@ -13,7 +13,7 @@ The Visual Studio Code launch.json has all the debug configurations needed to st
 There is a _Jest All_ configuration that will execute all the tests on demand.
 There is also a _Jest Watch_ (watcher) configuration that **will let live execution or debugging only on the affected by a change unit tests** (if the solution is part of hg/git repo) and will provide immediate feedback if a test passes or fails on component code change. This is good option for Test Driven Development scenarios.
 
-![SharePoint Framework Jest Visual Studio Code - debugging unit test](_images_/jest-debugging.png)
+![SharePoint Framework Jest Visual Studio Code - debugging unit test](_images/jest-debugging.png)
 
 ### Important: The debug configurations should be placed in the .vscode -> launch.json file to make the debugging work
 
@@ -35,7 +35,7 @@ I wrote several unit tests to demonstrate how all testing libraries can be used 
 
 Jest uses [Istanbul](https://github.com/gotwarlost/istanbul) under the hood to produce various code coverage reports including live VS code terminal output. Such reports can be integrated in CI tools like VSTS (Visual Studio Team Services) or Jenkins.
 
-![SharePoint Framework Jest tests code coverage reports](_images_/coverage.png)
+![SharePoint Framework Jest tests code coverage reports](_images/coverage.png)
 
 ### Jest coverage threshold for continuous deployment pipeline setups
 
