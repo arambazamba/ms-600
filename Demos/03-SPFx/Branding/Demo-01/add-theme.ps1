@@ -29,4 +29,6 @@ $themepalette = @{
     "white"                = "#bef1d9";
 }
 
-Add-SPOTheme -Identity "ETC Theme" -Palette $themepalette -IsInverted $false
+Add-SPOTheme -Identity "MS-600-Theme" -Palette $themepalette -IsInverted $false
+
+Write-Host "Theme added"
