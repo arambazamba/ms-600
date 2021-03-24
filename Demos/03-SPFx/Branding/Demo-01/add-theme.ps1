@@ -3,7 +3,6 @@ $tenant = "integrationsonline"
 $userCredential = Get-Credential -UserName $adminUPN -Message "Type the password for $adminUPN"
 Connect-SPOService -Url https://$tenant-admin.sharepoint.com -Credential $userCredential
 
-
 $themepalette = @{
     "themePrimary"         = "#6fb5eb";
     "themeLighterAlt"      = "#f9fcfe";
