@@ -16,6 +16,8 @@
   ],
   ```
 
+- Package and deploy the webpart
+
 Approve the API permission request fro Domain Isolated WP:
 
 In the navigation of SharePoint Admin, select Advanced > API access:
