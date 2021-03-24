@@ -7,6 +7,8 @@
 - Explain Packaging Metadata
 - Explain Updating
 
+## Readings
+
 [SharePoint solution packaging](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/basics/notes-on-solution-packaging)
 
 ## Updating SPFx
