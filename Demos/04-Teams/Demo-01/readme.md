@@ -64,3 +64,13 @@ gulp serve --debug
 ```
 
 ![ngrok](_images/ngrok.jpg)
+
+### Enable Upload of custom apps in tenant
+
+Go to teams admin:
+
+![setup-pol](_images/setup-pol.jpg)
+
+Enable upload of custom apps:
+
+![enable-upload](_images/enable-upload.jpg)
