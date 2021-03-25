@@ -23,6 +23,8 @@
 
 [Single Sign-On for Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
 
+[Microsoft Teams Dev Center](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
+
 ## Tools & Extensions
 
 [Microsoft Teams Toolkit VS Code Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
