@@ -1,0 +1,80 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "version": "1.0.0",
+    "id": "bfa042e2-227e-4261-92f1-220f13d6009b",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://localhost:3000",
+        "privacyUrl": "https://localhost:3000/privacy",
+        "termsOfUseUrl": "https://localhost:3000/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "ConversationalBot",
+        "full": ""
+    },
+    "description": {
+        "short": "Short description for Conversation Bot.",
+        "full": "Full description of Conversation Bot."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "d947ac5d-41f0-4a13-a244-2c48b1dc94e1",
+            "scopes": [
+                "personal",
+                "groupchat",
+                "team"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Hello",
+                            "description": "Sends a hello message and @mention the sender"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "team"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Hello",
+                            "description": "Sends a hello message and @mention the sender"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Hello",
+                            "description": "Sends a hello message and @mention the sender"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "localhost:3000"
+    ]
+}
