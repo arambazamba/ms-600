@@ -50,11 +50,16 @@ gulp ngrok-serve
 
 Replace `gulp ngrok-serve` with:
 
+To start the ngrok tunnel:
+
 ```
 gulp start-ngrok (from within a Teams proj)
 ```
 
+To start the app [after update]:
+
 ```
+gulp manifest
 gulp serve --debug
 ```
 
