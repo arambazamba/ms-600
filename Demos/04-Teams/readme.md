@@ -25,6 +25,8 @@
 
 [Microsoft Teams Dev Center](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
+[fluentui/react-northstar](https://fluentsite.z22.web.core.windows.net/)
+
 ## Tools & Extensions
 
 [Microsoft Teams Toolkit VS Code Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
