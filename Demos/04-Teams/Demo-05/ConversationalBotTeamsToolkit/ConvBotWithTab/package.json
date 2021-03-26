@@ -2,7 +2,7 @@
     "name": "teams-conversation-bot",
     "version": "1.0.0",
     "msteams": {
-        "teamsAppId": "bfa042e2-227e-4261-92f1-220f13d6009b"
+        "teamsAppId": "448654cb-f81e-470e-8b71-38b14612b063"
     },
     "description": "Microsoft Teams conversation bot quickstart",
     "author": "Microsoft",

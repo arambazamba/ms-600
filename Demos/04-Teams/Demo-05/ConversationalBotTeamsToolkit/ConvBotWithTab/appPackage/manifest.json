@@ -2,7 +2,7 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
     "manifestVersion": "1.8",
     "version": "1.0.0",
-    "id": "bfa042e2-227e-4261-92f1-220f13d6009b",
+    "id": "448654cb-f81e-470e-8b71-38b14612b063",
     "packageName": "com.microsoft.teams.extension",
     "developer": {
         "name": "Teams App, Inc.",
@@ -15,7 +15,7 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "ConversationalBot",
+        "short": "ConvBotWithTab",
         "full": ""
     },
     "description": {
@@ -25,7 +25,7 @@
     "accentColor": "#FFFFFF",
     "bots": [
         {
-            "botId": "d947ac5d-41f0-4a13-a244-2c48b1dc94e1",
+            "botId": "c303b380-6407-40b8-be3c-683442feeb2a",
             "scopes": [
                 "personal",
                 "groupchat",
