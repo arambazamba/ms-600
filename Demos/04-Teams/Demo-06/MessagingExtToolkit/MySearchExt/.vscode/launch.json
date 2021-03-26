@@ -5,14 +5,14 @@
             "name": "Debug Teams (Chrome)",
             "type": "chrome",
             "request": "launch",
-            "url": "https://teams.microsoft.com/_#/l/app/672bb6d5-4786-48f8-8c2d-03490dc6cfc8?installAppPackage=true",
+            "url": "https://teams.microsoft.com/_#/l/app/811a087c-a704-40f0-a859-ffbded7c327c?installAppPackage=true",
             "webRoot": "${workspaceFolder}"
         },
         {
             "name": "Debug Teams (Edge)",
             "type": "edge",
             "request": "launch",
-            "url": "https://teams.microsoft.com/_#/l/app/672bb6d5-4786-48f8-8c2d-03490dc6cfc8?installAppPackage=true",
+            "url": "https://teams.microsoft.com/_#/l/app/811a087c-a704-40f0-a859-ffbded7c327c?installAppPackage=true",
             "webRoot": "${workspaceFolder}"
         },
         {

@@ -15,6 +15,8 @@
 
 ## Readings
 
+[Teams Dev Center](https://dev.teams.microsoft.com/)
+
 [Teams Developer Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
 [Teams Client SDK](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/using-teams-client-sdk)
