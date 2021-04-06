@@ -44,6 +44,7 @@ code --install-extension mhutchie.git-graph
 code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension xabikos.JavaScriptSnippets			
 code --install-extension eliostruyf.spfx-snippets
+code --install-extension madewithcardsio.adaptivecardsstudiobeta
 code --install-extension Angular.ng-template
 
 # Base Toolset M365 Related

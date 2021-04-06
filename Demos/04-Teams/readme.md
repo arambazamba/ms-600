@@ -36,3 +36,5 @@
 [Microsoft Teams Toolkit VS Code Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
 
 [Microsoft Teams Manifest Editor Online](https://dev.teams.microsoft.com/appconfiguration.html)
+
+[Adaptive Card Studio](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
