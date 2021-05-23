@@ -66,9 +66,7 @@ gulp ngrok-serve
 
 ### Ngrok Tweaks
 
-To avoid that the ngrok tunnel DNS name changes run gulp start-ngrok in a seperate standalone console window or a terminal split window.
-
-Replace `gulp ngrok-serve` with:
+To avoid that the `ngrok hostname` (Tunnel FQDN) changes with every `gulp ngrok-serve`, run `gulp start-ngrok` in a seperate standalone console window or a terminal split window and uss the guide below.
 
 To start the ngrok tunnel:
 
