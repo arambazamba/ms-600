@@ -66,7 +66,7 @@ gulp ngrok-serve
 
 ### Ngrok Tweaks
 
-To avoid having the ngrok name changed all the time use from within a Teams project in two seperate terminals, or even better run gulp start-ngrok in a seperate standalone console window.
+To avoid that the ngrok tunnel DNS name changes run gulp start-ngrok in a seperate standalone console window or a terminal split window.
 
 Replace `gulp ngrok-serve` with:
 
