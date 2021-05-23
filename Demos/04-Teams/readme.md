@@ -13,7 +13,7 @@
 
 ## Readings
 
-[Teams Developer Portal](https://dev.teams.microsoft.com/)
+[Microsoft 365 Teams Developer Portal](https://dev.teams.microsoft.com/)
 
 [Teams Developer Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
