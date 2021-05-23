@@ -1,4 +1,4 @@
-# spfx-props
+# sphttp-client
 
 ## Summary
 

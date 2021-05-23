@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "spfx-props-client-side-solution",
-    "id": "7c323f26-f023-4ad3-87a3-d02599bc8cd1",
+    "name": "hello-spfx-react-client-side-solution",
+    "id": "92cd5e24-f76b-49dc-a3d3-b6159569db77",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
@@ -15,6 +15,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/spfx-props.sppkg"
+    "zippedPackage": "solution/hello-spfx-react.sppkg"
   }
 }

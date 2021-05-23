@@ -1,8 +1,4 @@
-import {
-  Version,
-  Environment,
-  EnvironmentType,
-} from "@microsoft/sp-core-library";
+import { Version, Environment, EnvironmentType } from "@microsoft/sp-core-library";
 import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField,
@@ -35,9 +31,7 @@ export interface ISpFxPropsWebPartProps {
   listName: string;
 }
 
-export default class SpFxPropsWebPart extends BaseClientSideWebPart<
-  ISpFxPropsWebPartProps
-> {
+export default class SpFxPropsWebPart extends BaseClientSideWebPart<ISpFxPropsWebPartProps> {
   private _options: IPropertyPaneDropdownOption[];
 
   protected onInit(): Promise<void> {
@@ -59,37 +53,21 @@ export default class SpFxPropsWebPart extends BaseClientSideWebPart<
     this.domElement.innerHTML = `
       <div class="${styles.spFxProps}">
         <div class="${styles.container}">
-          <div class="ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${
-            styles.row
-          }">
+          <div class="ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}">
             <div class="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
               <span class="ms-font-xl ms-fontColor-white">Welcome to SharePoint!</span>
               <p class="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
-              <p class="ms-font-l ms-fontColor-white">${escape(
-                this.properties.description
-              )}</p>
+              <p class="ms-font-l ms-fontColor-white">${escape(this.properties.description)}</p>
               <a href="https://aka.ms/spfx" class="${styles.button}">
                 <span class="${styles.label}">Learn more</span>
               </a>
 
-              <p class="ms-font-l ms-fontColor-white">Textbox value: ${
-                this.properties.textboxField
-              }</p>
-              <p class="ms-font-l ms-fontColor-white">Multi-line Textbox value: ${
-                this.properties.multilineTextboxField
-              }</p>
-              <p class="ms-font-l ms-fontColor-white">Checkbox checked: ${
-                this.properties.checkboxField
-              }</p>
-              <p class="ms-font-l ms-fontColor-white">Dropdown selected value: ${
-                this.properties.dropdownField
-              }</p>
-              <p class="ms-font-l ms-fontColor-white">Slider value: ${
-                this.properties.sliderField
-              }</p>
-              <p class="ms-font-l ms-fontColor-white">Toggle on: ${
-                this.properties.toggleField
-              }</p>
+              <p class="ms-font-l ms-fontColor-white">Textbox value: ${this.properties.textboxField}</p>
+              <p class="ms-font-l ms-fontColor-white">Multi-line Textbox value: ${this.properties.multilineTextboxField}</p>
+              <p class="ms-font-l ms-fontColor-white">Checkbox checked: ${this.properties.checkboxField}</p>
+              <p class="ms-font-l ms-fontColor-white">Dropdown selected value: ${this.properties.dropdownField}</p>
+              <p class="ms-font-l ms-fontColor-white">Slider value: ${this.properties.sliderField}</p>
+              <p class="ms-font-l ms-fontColor-white">Toggle on: ${this.properties.toggleField}</p>
             </div>
           </div>
         </div>
@@ -152,8 +130,7 @@ export default class SpFxPropsWebPart extends BaseClientSideWebPart<
                 }),
                 PropertyPaneDropdown("listName", {
                   label: "Select a list",
-                  selectedKey:
-                    this._options.length > 0 ? this._options[0].key : null,
+                  selectedKey: this._options.length > 0 ? this._options[0].key : null,
                   options: this._options,
                 }),
               ],
@@ -177,9 +154,7 @@ export default class SpFxPropsWebPart extends BaseClientSideWebPart<
         );
       });
     } else {
-      const url: string =
-        this.context.pageContext.web.absoluteUrl +
-        `/_api/web/lists?$filter=Hidden eq false`;
+      const url: string = this.context.pageContext.web.absoluteUrl + `/_api/web/lists?$filter=Hidden eq false`;
       return this.context.spHttpClient
         .get(url, SPHttpClient.configurations.v1)
         .then((response: SPHttpClientResponse) => {

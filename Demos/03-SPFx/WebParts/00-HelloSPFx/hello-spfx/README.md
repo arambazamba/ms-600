@@ -1,4 +1,4 @@
-# spfx-props
+# hello-spfx
 
 ## Summary
 

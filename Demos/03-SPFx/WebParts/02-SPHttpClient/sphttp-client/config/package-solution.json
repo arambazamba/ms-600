@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "spfx-props-client-side-solution",
-    "id": "7c323f26-f023-4ad3-87a3-d02599bc8cd1",
+    "name": "sphttp-client-client-side-solution",
+    "id": "bdbc2080-5664-4ebd-b3a2-b77d2d4e15df",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
@@ -15,6 +15,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/spfx-props.sppkg"
+    "zippedPackage": "solution/sphttp-client.sppkg"
   }
 }
