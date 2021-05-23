@@ -7,8 +7,9 @@
 - Personal- & Configurable Tabs
 - TaskModules & Adaptive Cards
 - Outgoing- and Incoming-Webhooks
-- Message Extensions Extensions
 - Bots
+- Message Extensions Extensions
+
 
 ## Readings
 
