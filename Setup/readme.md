@@ -1,8 +1,8 @@
 # Lab VM Setup Guide
 
-## Create VM
+This is a semin-automated guide for a Azure Lab VM Setup. Feel free to automate the missing steps on a seperate branch in your fork and create a pull request. An introduction video into forks and pull requests can be found [here](https://www.youtube.com/watch?v=nT8KGYVurIU)
 
-We are using this image and vm size because it supports nested virtualization used for Hyper-V and WSL2 Support
+In order for Docker to work on a Windows 10 VM you need to install Hyper-V or use Windows Subsystem for Linux 2 (WSL2). Therefore you must use hardware that supports [Nested Virtualization](https://docs.microsoft.com/en-us/azure/lab-services/how-to-enable-nested-virtualization-template-vm). A detailed Setup Guide can be found [here](https://github.com/ARambazamba/ClassSetup).
 
 Script `create-lab-vm.azcli`:
 
@@ -12,26 +12,28 @@ loc=westeurope
 grp=az-lab
 vmname=labvm-$rnd
 user=azlabadmin
-pwd=Lab@dmin1233
+pwd=Lab@dmin1234
 
 az group create -n $grp -l $loc
 
-az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image MicrosoftWindowsDesktop:Windows-10:20h2-pro:19042.746.2101092352 --size Stan
+az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image  MicrosoftWindowsDesktop:Windows-10:20h1-pro-g2:19041.928.2104091205 --size Standard_E2s_v3
+
+az vm auto-shutdown -g $grp -n $vmname --time 1830
 ```
 
-> Note: You could also execute `create-lab-vm.sh` or run the following remote script in Cloud Shell
+Note: The image name of the Windows 10:20h2 image changes frequently. You might have to update the image name. Get a list of all Windows 10 images: `az vm image list -f "Windows-10" --location westeurope --all`. Remember to support WSL2 you must have at least patch level `20h2`
+
+You could also execute `create-lab-vm.sh` or run the following remote script in Cloud Shell
 
 ```bash
-curl https://raw.githubusercontent.com/ARambazamba/az-400-v2/master/Labs/Setup/create-lab-vm.sh | bash
+curl https://raw.githubusercontent.com/ARambazamba/AZ-204/main/Setup/create-lab-vm.sh | bash
 ```
 
 ![create-labvm](_images/create-lab-vm.jpg)
 
-> Note: In order for Docker to work on a Windows 10 host you need to install Hyper-V or use Windows Subsystem for Linux 2 (WSL2). A detailed Setup Guide can be found [here](https://github.com/ARambazamba/ClassSetup)
-
 ## Connect to VM
 
-Go to Ressource Group `ms-600-lab` and connect to VM using RDP and the credentials that you have used in the script:
+Go to Ressource Group `az204-lab` and connect to VM using RDP and the credentials that you have used in the script:
 
 Download RDP File:
 
@@ -60,13 +62,13 @@ Accept Settings:
 
 ## Install Software
 
-To install Software run the script `setup-ms-600.ps1` from an elevated PowerShell prompt:
+To install Software run the script `setup-az-204.ps1` from an elevated PowerShell prompt:
 
 ![run-as](_images/run-as.jpg)
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/ms-600/master/Setup/setup-ms-600.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-204/master/Setup/setup-az-204.ps1'))
 ```
 
 > Note: This script will run for approx 20 min. No need to wait! In the meantime you can continue to fork and clone my repo as described in the next section.
@@ -84,7 +86,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@yourdomain.com"
 ```
 
-Go to `https://github.com/ARambazamba/ms-600` and fork the repo
+Go to `https://github.com/ARambazamba/az-204` and fork the repo
 
 ![forking-wf](_images/fork.jpg)
 
@@ -95,10 +97,10 @@ The forking-workflow allows you to commit your changes to your fork of the repo 
 Clone Class Repo:
 
 ```bash
-git clone https://github.com/Student01/AZ-400-v2
+git clone https://github.com/Student01/az-204
 ```
 
-> Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/ms-600
+> Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/az-204
 
 ---
 
@@ -124,7 +126,7 @@ Execute script `setup-wsl2.ps1` multible times to setup WSL2
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/ms-600/master/Setup/setup-wsl2.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-204/master/Setup/setup-wsl2.ps1'))
 ```
 
 First Run:
@@ -197,7 +199,3 @@ Redirect Audio:
 Use Secondary Display:
 
 ![all-monitors](_images/all-monitors.jpg)
-
-## TODO: Publish Image to Shared Image Galery
-
-[Publish Image to Shared Image Galery](./Create/readme.md)
