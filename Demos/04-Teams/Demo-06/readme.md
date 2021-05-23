@@ -1,6 +1,6 @@
 # Bots
 
-[Bots](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
+[Bots in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
 
 [Bot Framework Composer](https://docs.microsoft.com/en-us/composer/introduction)
 
