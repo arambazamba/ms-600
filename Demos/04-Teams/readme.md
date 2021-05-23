@@ -12,9 +12,9 @@
 
 ## Readings
 
-[Teams Dev Center](https://dev.teams.microsoft.com/)
+[Teams Developer Portal](https://dev.teams.microsoft.com/)
 
-[Microsoft Teams Dev Center Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
+[Microsoft Teams Developer Portal Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
 [Teams Developer Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
