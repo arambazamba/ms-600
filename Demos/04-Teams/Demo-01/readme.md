@@ -64,7 +64,7 @@ Establish a secure tunnel to test:
 gulp ngrok-serve
 ```
 
-### Ngrok changing hostname tweak
+### ngrok changing hostname tweak
 
 To avoid that the `ngrok hostname` (Tunnel FQDN) changes with every `gulp ngrok-serve`, run `gulp start-ngrok` in a seperate standalone console window or a terminal split window and uss the guide below.
 
