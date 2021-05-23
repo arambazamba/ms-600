@@ -1,7 +1,9 @@
-# Messaging Extensions
+# Bots
 
-[Messaging Extensions](https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)
+[Bots](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
 
-[Link unfurling](https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/link-unfurling?tabs=dotnet)
+[Bot Framework Composer](https://docs.microsoft.com/en-us/composer/introduction)
 
-[Cards Docs](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)
+[Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
+
+[Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents)

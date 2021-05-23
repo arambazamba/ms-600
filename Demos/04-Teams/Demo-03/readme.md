@@ -1,15 +1,10 @@
-# Task Modules
+## Tabs
 
-[What are task modules](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/what-are-task-modules)
+- Personal Tab
+- Configurable Tab
 
-[Adaptive Cards Documentation](https://docs.microsoft.com/en-us/adaptive-cards/)
+[What are Microsoft Teams tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
 
-[Adaptive Card Designer](https://adaptivecards.io/designer/)
+Configurable tab `ConfigMathTabConfig.tsx`:
 
-[Adaptive Card Schema Explorer](https://adaptivecards.io/explorer/)
-
-## Demo
-
-```
-gulp ngrok-serve
-```
+![config-tab](_images/configurable-tab.jpg)

@@ -2,7 +2,8 @@
 
 ## Demos
 
-- Getting Started & Setup
+- Environment Setup
+- Getting Started & First Teams App
 - Personal- & Configurable Tabs
 - TaskModules & Adaptive Cards
 - Outgoing- and Incoming-Webhooks
@@ -34,4 +35,3 @@
 [Microsoft Teams Manifest Editor Online](https://dev.teams.microsoft.com/appconfiguration.html)
 
 [Adaptive Card Studio](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
-
