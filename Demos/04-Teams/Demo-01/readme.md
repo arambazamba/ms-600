@@ -1,8 +1,8 @@
 # Getting Started
 
-## Setup Environment
+[Get started with Microsoft Teams app development](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#get-prerequisites)
 
-[Setup Teams Dev Environment](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#get-prerequisites)
+## Setup Environment
 
 ### Install Requirements
 
