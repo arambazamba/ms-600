@@ -35,10 +35,3 @@
 
 [Adaptive Card Studio](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
 
-## Setup Environment
-
-[Setup Teams Dev Environment](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#get-prerequisites)
-
-For Teams Development a tool called [ngrok](https://ngrok.com/download) is required. Ngrok provides a secure incoming tunnel that is required to allow incoming requests used for bots and messaging extensions
-
-![ngrok](_images/ngrok.png)
