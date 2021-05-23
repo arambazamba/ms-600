@@ -10,7 +10,6 @@
 - Bots
 - Message Extensions Extensions
 
-
 ## Readings
 
 [Microsoft 365 Teams Developer Portal](https://dev.teams.microsoft.com/)
