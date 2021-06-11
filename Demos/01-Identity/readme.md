@@ -1,11 +1,11 @@
 # Microsoft Identity
 
-## Demos
+## Topics
 
-- App Registration
-- MSAL Use Cases
-- Consent Scopes
-- Secure custom APIs with Microsoft Identity
+-   Azure AD & App Registration Basics
+-   MSAL & Auth Flow
+-   Scopes & Consent
+-   Secure custom APIs with Microsoft Identity
 
 ## Readings
 

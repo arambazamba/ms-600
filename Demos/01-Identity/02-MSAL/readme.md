@@ -2,7 +2,8 @@
 
 ## Demos
 
-- Explain Token Flows in several scenarios
+-   Understand Tokens
+-   Explain Token Flows in several scenarios
 
 ## Readings
 
