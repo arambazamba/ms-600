@@ -6,7 +6,11 @@
 
 ## Readings
 
+[App Registrations](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
+
 [Application Roles](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles)
+
+[Identity Protection Policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies)
 
 [Permissions and consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)
 
