@@ -1,5 +1,5 @@
 # Install WSL
-# This script needs to be run as a priviledged user
+# This script needs to be run as a priviledged user - run twice - reboot inbetween
 
 Write-Host("Installing Docker Desktop")
 choco install docker-desktop -y
