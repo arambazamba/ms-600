@@ -8,7 +8,6 @@ az group create -n $grp -l $loc
 
 az storage account create -l $loc -n $acct -g $grp --sku Standard_LRS
 
-id=$(az storage account list -g $grp --query [0].id -o json)
-echo $id
+id=$(az storage account list -g $grp --query [0].id -o tsv)
 
-az ad sp create-for-rbac -n $app --role Contributor --scopes /subscriptions/78033352-805c-4acd-af80-f8f95083268d/resourceGroups/ms600-m01-appreg-17205/providers/Microsoft.Storage/storageAccounts/ms600storage17205
+az ad sp create-for-rbac -n $app --role Contributor --scopes $id
