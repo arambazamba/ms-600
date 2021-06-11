@@ -8,6 +8,7 @@ This exercise demonstrates signing into a web application using two different ac
 ## Task 1: Create application that only allows single organization sign in
 
 In this task, you will register an application in the Azure portal that allows users from the current organization to sign in.
+
 ### Register a single-tenant Azure AD application
 
 1. From the Azure portal [https://portal.azure.com](https://portal.azure.com/), navigate to **Azure Active Directory**.
@@ -49,9 +50,11 @@ In this task, you will register an application in the Azure portal that allows u
 ## Task 2: Create a single organization ASP.NET core web application
 
 In this first application, you'll create an ASP.NET Core web application that allows users from the current organization to sign in and display their information.
+
 1. Open your command prompt, navigate to a directory where you want to save your work, create a new folder, and change directory into that folder. For example:
 
     ```powershell
+    md LabFiles
     Cd c:/LabFiles
     md SingleOrg
     cd SingleOrg
@@ -69,7 +72,7 @@ In this first application, you'll create an ASP.NET Core web application that al
 
 1. Locate and open the **./appsettings.json** file in the ASP.NET Core project.
 
-1. Set the **AzureAd.Domain** property to the domain of your Azure AD tenant where you created the Azure AD application (*for example: contoso.onmicrosoft.com*).
+1. Set the **AzureAd.Domain** property to the domain of your Azure AD tenant where you created the Azure AD application (_for example: contoso.onmicrosoft.com_).
 
 1. Set the **AzureAd.TenantId** property to the **Directory (tenant) ID** you copied when creating the Azure AD application in the previous step.
 
@@ -138,6 +141,7 @@ In this first application, you'll create an ASP.NET Core web application that al
 ## Task 4: Create application that allows any organization's users to sign in
 
 In this task, you will register an application in the Azure portal that allows users from any organization or Microsoft Accounts to sign in.
+
 ### Register a multi-tenant Azure AD application
 
 1. From the Azure portal [https://portal.azure.com](https://portal.azure.com/), navigate to **Azure Active Directory**.
@@ -273,4 +277,3 @@ In this second application, you'll create an ASP.NET Core web application that a
 ## Review
 
 In this exercise, you learned how to create different types of Azure AD applications and use an ASP.NET Core application to support the different sign in options that support different types of accounts.
-

@@ -1,26 +1,31 @@
 async function doAuth() {
+    const spTenant = "integrationsonline";
     const tenant = "d92b247e-90e0-4469-a129-6a32866c0d0a";
 
     const config = {
         auth: {
             clientId: "eeb155cb-d4c6-4864-9184-cf10a6e02715",
             authority: `https://login.microsoftonline.com/${tenant}`,
-            redirectUri: "http://localhost:8080",
+            postLogoutRedirectUri: "http://localhost:8080",
         },
     };
 
+    const scopes = {
+        scopes: ["user.read"],
+    };
+
     //Creadte MSAL App with Scope to read User Profile
-    const client = new Msal.UserAgentApplication(config);
+    const msalClient = new Msal.UserAgentApplication(config);
 
     //Login -> Get ID Token
-    const loginResponse = await client
+    const loginResponse = await msalClient
         .loginPopup(scopes)
         .then((loginResponse) => {
             console.log("id_token acquired at: " + new Date().toString());
             console.log("LoginResponse", loginResponse);
 
-            if (client.getAccount()) {
-                console.log("Account", client.getAccount());
+            if (msalClient.getAccount()) {
+                console.log("Account", msalClient.getAccount());
             }
         })
         .catch((error) => {
@@ -28,11 +33,7 @@ async function doAuth() {
         });
 
     //Get AccessToken
-    const scopes = {
-        scopes: ["user.read"],
-    };
-
-    const resp = await client.acquireTokenSilent(scopes);
+    const resp = await msalClient.acquireTokenSilent(scopes);
     console.log("acquireTokenSilent Response", resp);
 
     //Read Profile
@@ -50,31 +51,32 @@ async function doAuth() {
     const spScope = {
         scopes: ["Sites.ReadWrite.All"],
     };
-    const spGraphResp = await client.acquireTokenSilent(spScope);
-    console.log("Token Response", spGraphResp);
+    // const spGraphResp = await msalClient.acquireTokenSilent(spScope);
+    // console.log("Token Response", spGraphResp);
 
+    //Use SharePoint Rest v2 Endpoint
     const qrySPLists = `https://graph.microsoft.com/v1.0/sites/${spTenant}.sharepoint.com/lists`;
     const listResp = await fetch(qrySPLists, {
         headers: {
-            Authorization: "Bearer " + spGraphResp.accessToken,
+            Authorization: "Bearer " + resp.accessToken,
         },
     });
     const lists = await listResp.json();
-    console.log("Lists", lists.value);
+    console.log("SP Lists V2 Endpoint", lists.value);
 
-    //Use SharePoint Rest v1 Scope
+    //Use SharePoint Rest v1 Endpoint
     const spScopeV1 = {
         scopes: [`https://${spTenant}.sharepoint.com/.default`],
     };
 
-    const spRESTResp = await client.acquireTokenSilent(spScopeV1);
-    const qrySPListsV1 = `https://${spTenant}.sharepoint.com/_api/web/title`;
+    const sprest = await msalClient.acquireTokenSilent(spScopeV1);
+    const qrySPListsV1 = `https://${spTenant}.sharepoint.com/_api/web/lists`;
     const titleResp = await fetch(qrySPListsV1, {
         headers: {
-            Authorization: "Bearer " + spRESTResp.accessToken,
+            Authorization: "Bearer " + sprest.accessToken,
             accept: "application/json;odata=verbose",
         },
     });
     const title = await titleResp.json();
-    console.log("Title", title);
+    console.log("SP Lists V1 Endpoint", title);
 }
