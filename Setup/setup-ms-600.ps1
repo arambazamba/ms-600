@@ -36,16 +36,14 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-azuretools.vscode-azurefunctions
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension redhat.vscode-yaml
-code --install-extension bencoleman.armview
-code --install-extension msazurermtools.azurerm-vscode-tools
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mhutchie.git-graph 
 code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension xabikos.JavaScriptSnippets			
 code --install-extension eliostruyf.spfx-snippets
+code --install-extension TeamsDevApp.ms-teams-vscode-extension
 code --install-extension madewithcardsio.adaptivecardsstudiobeta
-code --install-extension Angular.ng-template
 
 # Base Toolset M365 Related
 npm i -g webpack webpack-cli
@@ -56,8 +54,6 @@ npm i -g -g yo generator-office
 
 # SPA Frameworks
 npm i -g create-react-app
-npx @angular/cli@latest analytics off
-npm i -g @angular/cli
 
 # Finished Msg
 Write-Host "Finished Software installation" -ForegroundColor yellow
