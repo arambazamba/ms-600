@@ -9,6 +9,7 @@
 - Outgoing- and Incoming-Webhooks
 - Bots
 - Message Extensions Extensions
+- Link unfurling
 
 ## Readings
 
