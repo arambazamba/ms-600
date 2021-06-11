@@ -5,4 +5,6 @@
 
 ## Readings
 
-[MSAL Angular](https://www.npmjs.com/package/@azure/msal-angular)
+[@azure/msal-browser](https://www.npmjs.com/package/@azure/msal-browser)
+
+[@azure/msal-angular](https://www.npmjs.com/package/@azure/msal-angular)
