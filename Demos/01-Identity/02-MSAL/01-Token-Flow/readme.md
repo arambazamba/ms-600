@@ -1,8 +1,16 @@
 # Token Flows MSAL.js 1.x and 2.x
 
+[SharePoint REST API v1 - Classic](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service?tabs=csom)
+
+[SharePoint REST API v2 - Graph](https://docs.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph)
+
+[Permissions - the /.default scope](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)
+
+## Demo
+
 Demos require [http-server](https://www.npmjs.com/package/http-server)
 
-- Use `MSAL.js-V1-Token-Flow` app registration
+-   Use `MSAL.js-V1-Token-Flow` app registration
 
 ## App Registration
 
