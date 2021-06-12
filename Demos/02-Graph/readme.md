@@ -2,12 +2,12 @@
 
 ## Demos
 
-- Graph Query Params
-- Graph & MSAL
-- Change Notifications
-- Batching
-- Throttling
-- Working with files
+-   Graph Query Params
+-   Change Notifications
+-   Batching
+-   Throttling
+-   Working with files
+-   Manage Groups
 
 ## Readings
 
