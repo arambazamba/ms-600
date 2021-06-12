@@ -2,6 +2,8 @@
 
 ## Task 1: Setup Environment for Teams development
 
+Make sure you are using Node 10.x and Version 1.2.3 of the Teams Toolkit Extension
+
 ### Install your development tools
 
 These lessons show how you can get started quickly with the Microsoft Teams Toolkit for Visual Studio Code.
@@ -50,26 +52,27 @@ Once the toolkit configures your project, you will have the components to build 
 ![Microsoft Visual Studio Code showing expanded left navigation pane.](../../Linked_Image_Files/m04_e01_t02_image_3.png)
 
 > **NOTE**: The toolkit automatically creates scaffolding for you in the src directory based on the capabilities you added during setup.
-> 
+>
 > For example, if you create a tab during setup the **App.js** file in the **src/components** directory is important because it handles the initialization and routing of your app. It calls the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/using-teams-client-sdk) to establish communication between your app and Teams.
 
 #### App ID
 
-Your Teams app ID is needed to configure your app with App Studio. 
+Your Teams app ID is needed to configure your app with App Studio.
 
-- You can find the ID in the **teamsAppId** object, which is located in your project's **package.json** file.
+-   You can find the ID in the **teamsAppId** object, which is located in your project's **package.json** file.
 
 ### Build and run your app
 
 Your Tab will be located in the **./src/components/Tab.js** file. This is the TypeScript React based class for your Tab.
-- Locate the **render()** method and observe the code inside the `<div>` tag.
+
+-   Locate the **render()** method and observe the code inside the `<div>` tag.
 
 ```typescript
-        <div>
-            <h3>Hello World!</h3>
-            <h1>Congratulations {userName}!</h1>
-            <h3>This is the tab you made :-)</h3>
-        </div>
+<div>
+    <h3>Hello World!</h3>
+    <h1>Congratulations {userName}!</h1>
+    <h3>This is the tab you made :-)</h3>
+</div>
 ```
 
 1. Open Terminal in Visual Studio Code. From the Visual Studio Code ribbon select **Terminal > New Terminal**.
@@ -77,13 +80,14 @@ Your Tab will be located in the **./src/components/Tab.js** file. This is the Ty
 1. Go to the root directory of your app project and run: `npm install`.
 
 1. To build your solution run the `npm run build` command.
+
     - This will transpile your solution into the **./build** folder.
 
         ![dist directory expanded in VS Code.](../../Linked_Image_Files/m04_e01_t02_image_4.png)
 
 ### Run your app
 
-To run your app you use the `npm start` command. 
+To run your app you use the `npm start` command.
 
 > This will build and start a local web server for you to test your app. The command will also rebuild the application whenever you save a file in your project.
 
@@ -97,9 +101,9 @@ Now that you’ve tested your tab, it’s time to run your app inside Microsoft 
 
 1. To display your app content in Teams, specify that where your app is running (localhost) is trustworthy:
 
-   1. Open a new tab in the same browser window (Google Chrome by default) which opened after pressing **F5**.
+    1. Open a new tab in the same browser window (Google Chrome by default) which opened after pressing **F5**.
 
-   1. Go to [https://localhost:3000/tab](https://localhost:3000/tab) and proceed to the page.
+    1. Go to [https://localhost:3000/tab](https://localhost:3000/tab) and proceed to the page.
 
 1. Go back to Teams. In the dialog, select **Add for me** to install your app.
 
@@ -109,6 +113,6 @@ Now that you’ve tested your tab, it’s time to run your app inside Microsoft 
 
 In this exercise, you:
 
-- Utilized Microsoft Teams Toolkit to creates scaffolding and reviewed the result.
+-   Utilized Microsoft Teams Toolkit to creates scaffolding and reviewed the result.
 
-- Built and run Teams Tab app in Teams.
+-   Built and run Teams Tab app in Teams.

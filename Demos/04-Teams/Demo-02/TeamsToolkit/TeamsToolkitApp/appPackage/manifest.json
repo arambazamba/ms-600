@@ -2,7 +2,7 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
     "manifestVersion": "1.8",
     "version": "1.0.0",
-    "id": "243d43d9-ae93-4127-a0f2-09d10f29d0ad",
+    "id": "724010ad-7464-4709-83db-f198eeac98b4",
     "packageName": "com.microsoft.teams.extension",
     "developer": {
         "name": "Teams App, Inc.",
@@ -15,7 +15,7 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "HelloTeams",
+        "short": "TeamsToolkitApp",
         "full": ""
     },
     "description": {
