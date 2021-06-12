@@ -3,8 +3,7 @@
 ## Topics
 
 -   Azure AD & App Registration Basics
--   MSAL & Auth Flow
--   Scopes & Consent
+-   MSAL, Scopes & Consent, Auth Flow-
 -   Secure custom APIs with Microsoft Identity
 
 ## Readings

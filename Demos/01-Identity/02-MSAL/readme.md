@@ -3,6 +3,7 @@
 ## Demos
 
 -   Understand Tokens
+-   Consent & Scopes
 -   Explain Token Flows in several scenarios
 
 ## Readings
