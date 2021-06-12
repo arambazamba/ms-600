@@ -1,19 +1,21 @@
 # Introduction to Microsoft Teams Development
 
-## Demos
-
-- Environment Setup
-- Getting Started & First Teams App
-- Personal- & Configurable Tabs
-- TaskModules & Adaptive Cards
-- Outgoing- and Incoming-Webhooks
-- Bots
-- Message Extensions Extensions
-- Link unfurling
-
-## Readings
+[Teams Admin Center - https://admin.teams.microsoft.com/](https://admin.teams.microsoft.com/)
 
 [Microsoft 365 Teams Developer Portal](https://dev.teams.microsoft.com/)
+
+## Demos
+
+-   Environment Setup
+-   Explore Structure of Teams App & First Teams App
+-   Personal- & Configurable Tabs
+-   TaskModules & Adaptive Cards
+-   Outgoing- and Incoming-Webhooks
+-   Bots
+-   Message Extensions Extensions
+-   Link unfurling
+
+## Readings
 
 [Teams Developer Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 

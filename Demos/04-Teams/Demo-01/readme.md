@@ -21,7 +21,7 @@ npm i -g generator-teams
 
 ### Enable Upload of custom apps in tenant
 
-Go to Teams [Admin Center - https://admin.teams.microsoft.com/](https://admin.teams.microsoft.com/):
+Go to [Teams Admin Center](https://admin.teams.microsoft.com/):
 
 Go to policies:
 
