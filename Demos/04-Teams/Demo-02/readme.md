@@ -2,6 +2,8 @@
 
 [Get started with Microsoft Teams app development](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#get-prerequisites)
 
+[Build apps with the Teams Toolkit and Visual Studio Code](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-overview)
+
 [@fluentui/react-northstar](https://fluentsite.z22.web.core.windows.net/)
 
 Three scaffolding options:
