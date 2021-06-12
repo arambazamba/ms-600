@@ -6,9 +6,9 @@
   "packageName": "{{PACKAGE_NAME}}",
   "developer": {
     "name": "Integrations",
-    "websiteUrl": "https://{{HOSTNAME}}",
-    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
-    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+    "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
     "short": "FunctionalTeamsApp",
@@ -26,9 +26,9 @@
   "configurableTabs": [],
   "staticTabs": [
     {
-      "entityId": "5d80f4a9-dfff-4415-a69d-09c1ce2f5462",
+      "entityId": "f202dc9c-9e72-4fd5-8e75-8365bbc0dfb8",
       "name": "FunctionalTab",
-      "contentUrl": "https://{{HOSTNAME}}/functionalTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/functionalTab/?name={loginHint}&tenant={tid}&theme={theme}",
       "scopes": [
         "personal"
       ]
@@ -42,7 +42,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "{{HOSTNAME}}"
+    "{{PUBLIC_HOSTNAME}}"
   ],
   "showLoadingIndicator": false,
   "isFullScreen": false

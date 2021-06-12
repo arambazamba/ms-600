@@ -2,6 +2,14 @@
 
 [Get started with Microsoft Teams app development](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#get-prerequisites)
 
+[@fluentui/react-northstar](https://fluentsite.z22.web.core.windows.net/)
+
+Three scaffolding options:
+
+-   `generator-teams@2.17.1` creates a class based structure that corresponds to the lab guides.
+-   The current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
+-   Teams toolkit also creates a different structure
+
 ## Create first Teams project
 
 Scaffolding:

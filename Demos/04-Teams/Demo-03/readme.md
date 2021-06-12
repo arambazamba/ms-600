@@ -8,3 +8,7 @@
 Configurable tab `ConfigMathTabConfig.tsx`:
 
 ![config-tab](_images/configurable-tab.jpg)
+
+## Labs
+
+Exercise 5: Creating custom tabs in Microsoft Teams
