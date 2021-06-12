@@ -23,6 +23,8 @@ npm i -g generator-teams
 
 Go to Teams [Admin Center - https://admin.teams.microsoft.com/](https://admin.teams.microsoft.com/):
 
+Go to policies:
+
 ![setup-pol](_images/setup-pol.jpg)
 
 Enable upload of custom apps:
