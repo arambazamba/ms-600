@@ -24,13 +24,16 @@ Replace tanant id und client id in `index.js`:
 
 ```javascript
 async function doAuth() {
-  const tenant = "d92b247e-90e0-4469-a129-6a32866c0d0a";
-  const config = {
-    auth: {
-      clientId: "eeb155cb-d4c6-4864-9184-cf10a6e02715",
-      authority: `https://login.microsoftonline.com/${tenant}`,
-      redirectUri: "http://localhost:8080",
-    },
+    const spTenant = "integrationsonline";
+    const tenant = "d92b247e-90e0-4469-a129-6a32866c0d0a";
+
+    const config = {
+        auth: {
+            clientId: "eeb155cb-d4c6-4864-9184-cf10a6e02715",
+            authority: `https://login.microsoftonline.com/${tenant}`,
+            postLogoutRedirectUri: "http://localhost:8080",
+        },
+    };
   };
 ```
 
