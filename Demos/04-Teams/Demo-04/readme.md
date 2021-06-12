@@ -10,6 +10,11 @@
 
 ## Demo
 
+Execute:
+
 ```
+npm i
 gulp ngrok-serve
 ```
+
+Sideload App
