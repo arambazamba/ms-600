@@ -13,6 +13,7 @@ Install Generators:
 ```
 npm i -g yo gulp-cli typescript
 npm i -g generator-teams@2.17.1
+or
 npm i -g generator-teams
 ```
 
@@ -20,7 +21,7 @@ npm i -g generator-teams
 
 ### Enable Upload of custom apps in tenant
 
-Go to teams admin:
+Go to Teams [Admin Center - https://admin.teams.microsoft.com/](https://admin.teams.microsoft.com/):
 
 ![setup-pol](_images/setup-pol.jpg)
 
