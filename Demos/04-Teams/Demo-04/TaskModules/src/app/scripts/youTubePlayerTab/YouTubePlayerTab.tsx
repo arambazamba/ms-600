@@ -7,95 +7,95 @@ import TeamsBaseComponent, { ITeamsBaseComponentState } from "msteams-react-base
 import * as microsoftTeams from "@microsoft/teams-js";
 
 export interface IYouTubePlayerTabState extends ITeamsBaseComponentState {
-  entityId?: string;
-  teamsTheme: ThemePrepared;
-  youTubeVideoId?: string;
+    entityId?: string;
+    teamsTheme: ThemePrepared;
+    youTubeVideoId?: string;
 }
 
 export interface IYouTubePlayerTabProps {}
 
 export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps, IYouTubePlayerTabState> {
-  public async componentWillMount() {
-    this.updateComponentTheme(this.getQueryVariable("theme"));
-    this.setState(
-      Object.assign({}, this.state, {
-        youTubeVideoId: "VlEH4vtaxp4",
-      })
-    );
+    public async componentWillMount() {
+        this.updateComponentTheme(this.getQueryVariable("theme"));
+        this.setState(
+            Object.assign({}, this.state, {
+                youTubeVideoId: "VlEH4vtaxp4",
+            })
+        );
 
-    if (await this.inTeams()) {
-      microsoftTeams.initialize();
-      microsoftTeams.registerOnThemeChangeHandler(this.updateComponentTheme);
-      microsoftTeams.getContext((context) => {
-        microsoftTeams.appInitialization.notifySuccess();
-        this.setState({
-          entityId: context.entityId,
-        });
-        this.updateTheme(context.theme);
-      });
-    } else {
-      this.setState({
-        entityId: "This is not hosted in Microsoft Teams",
-      });
+        if (await this.inTeams()) {
+            microsoftTeams.initialize();
+            microsoftTeams.registerOnThemeChangeHandler(this.updateComponentTheme);
+            microsoftTeams.getContext((context) => {
+                microsoftTeams.appInitialization.notifySuccess();
+                this.setState({
+                    entityId: context.entityId,
+                });
+                this.updateTheme(context.theme);
+            });
+        } else {
+            this.setState({
+                entityId: "This is not hosted in Microsoft Teams",
+            });
+        }
     }
-  }
 
-  public render() {
-    return (
-      <Provider theme={this.state.teamsTheme}>
-        <Flex column gap="gap.smaller">
-          <Header>Task Module Demo</Header>
-          <Text>YouTube Video ID:</Text>
-          <Input value={this.state.youTubeVideoId} disabled></Input>
-          <Button content="Change Video ID" onClick={this.onChangeVideo}></Button>
-          <Button content="Show Video" primary onClick={this.onShowVideo}></Button>
-          <Text content="(C) Copyright Contoso" size="smallest"></Text>
-        </Flex>
-      </Provider>
-    );
-  }
-
-  private appRoot(): string {
-    if (typeof window === "undefined") {
-      return "https://{{HOSTNAME}}";
-    } else {
-      return window.location.protocol + "//" + window.location.host;
+    public render() {
+        return (
+            <Provider theme={this.state.teamsTheme}>
+                <Flex column gap="gap.smaller">
+                    <Header>Task Module Demo</Header>
+                    <Text>YouTube Video ID:</Text>
+                    <Input value={this.state.youTubeVideoId} disabled></Input>
+                    <Button content="Change Video ID" onClick={this.onChangeVideo}></Button>
+                    <Button content="Show Video" primary onClick={this.onShowVideo}></Button>
+                    <Text content="(C) Copyright Contoso" size="smallest"></Text>
+                </Flex>
+            </Provider>
+        );
     }
-  }
 
-  private onShowVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {
-    const ytp = {
-      title: "YouTube Player",
-      url: this.appRoot() + `/youTubePlayerTab/player.html?vid=${this.state.youTubeVideoId}`,
-      width: 1000,
-      height: 700,
+    private appRoot(): string {
+        if (typeof window === "undefined") {
+            return "https://{{HOSTNAME}}";
+        } else {
+            return window.location.protocol + "//" + window.location.host;
+        }
+    }
+
+    private onShowVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {
+        const taskInfoYoutube = {
+            title: "YouTube Player",
+            url: this.appRoot() + `/youTubePlayerTab/player.html?vid=${this.state.youTubeVideoId}`,
+            width: 1000,
+            height: 700,
+        };
+        microsoftTeams.tasks.startTask(taskInfoYoutube);
     };
-    microsoftTeams.tasks.startTask(ytp);
-  };
 
-  private onChangeVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {};
+    private onChangeVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {};
 
-  private updateComponentTheme = (theme: string = "default"): void => {
-    let componentTheme: ThemePrepared;
-    switch (theme) {
-      case "default":
-        componentTheme = teamsTheme;
-        break;
-      case "dark":
-        componentTheme = teamsDarkTheme;
-        break;
-      case "contrast":
-        componentTheme = teamsHighContrastTheme;
-        break;
-      default:
-        componentTheme = teamsTheme;
-        break;
-    }
-    // update the state
-    this.setState(
-      Object.assign({}, this.state, {
-        teamsTheme: componentTheme,
-      })
-    );
-  };
+    private updateComponentTheme = (theme: string = "default"): void => {
+        let componentTheme: ThemePrepared;
+        switch (theme) {
+            case "default":
+                componentTheme = teamsTheme;
+                break;
+            case "dark":
+                componentTheme = teamsDarkTheme;
+                break;
+            case "contrast":
+                componentTheme = teamsHighContrastTheme;
+                break;
+            default:
+                componentTheme = teamsTheme;
+                break;
+        }
+        // update the state
+        this.setState(
+            Object.assign({}, this.state, {
+                teamsTheme: componentTheme,
+            })
+        );
+    };
 }

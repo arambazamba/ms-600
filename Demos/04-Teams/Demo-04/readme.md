@@ -8,6 +8,8 @@
 
 [Adaptive Card Schema Explorer](https://adaptivecards.io/explorer/)
 
+[Adaptive Card Studio](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
+
 ## Demo
 
 Execute:
@@ -18,3 +20,7 @@ gulp ngrok-serve
 ```
 
 Sideload App
+
+## Labs
+
+[Exercise 3: Creating and using task modules in Microsoft Teams](../../../Labs/)
