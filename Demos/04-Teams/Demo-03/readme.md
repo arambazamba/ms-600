@@ -11,4 +11,4 @@ Configurable tab `ConfigMathTabConfig.tsx`:
 
 ## Labs
 
-Exercise 5: Creating custom tabs in Microsoft Teams
+[Exercise 5: Creating custom tabs in Microsoft Teams](<(../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/06-Exercise-5-Creating-custom-tabs-in-Microsoft-Teams.md)>)
