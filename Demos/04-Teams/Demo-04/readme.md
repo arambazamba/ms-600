@@ -23,4 +23,4 @@ Sideload App
 
 ## Labs
 
-[Exercise 3: Creating and using task modules in Microsoft Teams](../../../Labs/)
+[Exercise 3: Creating and using task modules in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/04-Exercise-3-Creating-and-using-task-modules-in-Microsoft-Teams.md)
