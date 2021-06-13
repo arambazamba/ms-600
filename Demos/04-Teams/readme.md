@@ -45,7 +45,7 @@ Scaffolding:
 yo teams
 ```
 
-Interpolates env to manifest & create `./package/*.zip`:
+Interpolates env to manifest (updates ngrok hostname) & create `./package/*.zip`:
 
 ```
 gulp manifest
