@@ -51,7 +51,7 @@ Interpolates env to manifest (updates ngrok hostname) & create `./package/*.zip`
 gulp manifest
 ```
 
-> Note: Usually .env is inclued in `.gitignore`
+> Note: By default .env is inclued in `.gitignore` so be careful when cloning projects from git repos
 
 Build the project:
 

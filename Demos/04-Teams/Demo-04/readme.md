@@ -10,6 +10,10 @@
 
 [Adaptive Card Studio](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
 
+## Labs
+
+[Exercise 3: Creating and using task modules in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/04-Exercise-3-Creating-and-using-task-modules-in-Microsoft-Teams.md)
+
 ## Demo
 
 Execute:
@@ -20,7 +24,3 @@ gulp ngrok-serve
 ```
 
 Sideload App
-
-## Labs
-
-[Exercise 3: Creating and using task modules in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/04-Exercise-3-Creating-and-using-task-modules-in-Microsoft-Teams.md)
