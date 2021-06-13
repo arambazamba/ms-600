@@ -26,9 +26,6 @@ Install Generators:
 
 ```
 npm i -g yo gulp-cli typescript
-npm i -g generator-teams@2.17.1
-or
-npm i -g generator-teams
+npm i -g generator-teams@2.17.1 (Class Based)
+npm i -g generator-teams (3.x -> Hook Based)
 ```
-
-> Note: `generator-teams@2.17.1` creates a class based structure that corresponds to the lab guides, the current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
