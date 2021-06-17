@@ -26,3 +26,7 @@
 [Postman Microsoft Graph Collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections)
 
 [Microsoft Graph Toolkit](https://docs.microsoft.com/en-us/graph/toolkit/overview)
+
+## Extensions
+
+[MS Graph Completion](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-autocomplete)
