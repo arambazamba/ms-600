@@ -23,7 +23,6 @@ namespace MSALDaemon
                 AddReciepient(recipients, r);
             }
 
-
             var body = new ItemBody
             {
                 ContentType = BodyType.Html,
@@ -62,7 +61,7 @@ namespace MSALDaemon
             var graphResult = graphClient.Users.Request(options).GetAsync().Result;
 
         }
-               
+
         private static void AddReciepient(List<Recipient> toRecipientsList, string r)
         {
             var emailAddress = new Microsoft.Graph.EmailAddress
