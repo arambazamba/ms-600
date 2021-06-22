@@ -1,5 +1,10 @@
 # Using Graph and Query Params
 
+-   Use Graph in .NET use App Reg graph-console
+-   Ad-hoc Demos
+
+# Ad-hoc Demos
+
 $select:
 
 ```

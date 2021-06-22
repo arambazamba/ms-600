@@ -46,11 +46,7 @@ namespace GraphConsole
                     Console.WriteLine("Member:  " + member.Id + ": " + ((Microsoft.Graph.User)member).DisplayName);
                 }
             }
-
-
-
         }
-
 
         private static IConfigurationRoot LoadAppSettings()
         {
