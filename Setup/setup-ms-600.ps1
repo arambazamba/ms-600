@@ -44,6 +44,7 @@ code --install-extension xabikos.JavaScriptSnippets
 code --install-extension eliostruyf.spfx-snippets
 code --install-extension TeamsDevApp.ms-teams-vscode-extension
 code --install-extension madewithcardsio.adaptivecardsstudiobeta
+code --install-extension eliostruyf.vscode-msgraph-autocomplete
 
 # Base Toolset M365 Related
 npm i -g webpack webpack-cli
