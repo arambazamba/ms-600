@@ -10,8 +10,8 @@
     "isDomainIsolated": true,
     "webApiPermissionRequests": [
       {
-      "resource": "Microsoft Graph",
-      "scope": "User.ReadBasic.All"
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadBasic.All"
       }
     ],
     ```
