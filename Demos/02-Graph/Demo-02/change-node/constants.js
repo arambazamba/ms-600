@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 exports.msalConfiguration = {
   authority: "https://login.microsoftonline.com/common",
   clientID: "7adb8d94-4233-4f7c-9563-87bdeb7ad27a",
@@ -8,7 +9,7 @@ exports.msalConfiguration = {
 
 exports.subscriptionConfiguration = {
   changeType: "Created",
-  notificationUrl: "https://561442202ce7.ngrok.io/listen",
+  notificationUrl: "https://9c336ce4351f.ngrok.io/listen",
   resource: "me/mailFolders('Inbox')/messages",
   clientState: "cLIENTsTATEfORvALIDATION",
   includeResourceData: false,
@@ -19,4 +20,4 @@ exports.certificateConfiguration = {
   relativeCertPath: "./certificate.pem",
   relativeKeyPath: "./key.pem",
   password: "Password123",
-}; // the certificate will be generated during the first subscription creation, production solutions should rely on a certificate store
+};
