@@ -2,6 +2,8 @@
 
 [Set up notifications for changes in user data](https://docs.microsoft.com/en-us/graph/webhooks)
 
+[Using Azure Event Hubs to receive change notifications](https://docs.microsoft.com/en-us/graph/change-notifications-delivery)
+
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
 -   Cloud printing printer
@@ -20,6 +22,8 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 -   Teams presence (preview)
 -   TodoTask (preview)
 -   User
+
+## Demo
 
 ```json
 POST https://graph.microsoft.com/v1.0/subscriptions
