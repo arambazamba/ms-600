@@ -1,8 +1,5 @@
 # Optimizing Graph
 
-- GraphConsole
-- Batching
-
 ## Batching
 
 [Combine multiple requests in one HTTP call using JSON batching](https://docs.microsoft.com/en-us/graph/json-batching)
@@ -19,22 +16,22 @@ Body:
 
 ```json
 {
-  "requests": [
-    {
-      "url": "/me?$select=displayName,jobTitle,userPrincipalName",
-      "method": "GET",
-      "id": "1"
-    },
-    {
-      "url": "/me/messages?$filter=importance eq 'high'&$select=from,subject,receivedDateTime,bodyPreview",
-      "method": "GET",
-      "id": "2"
-    },
-    {
-      "url": "/me/events",
-      "method": "GET",
-      "id": "3"
-    }
-  ]
+    "requests": [
+        {
+            "url": "/me?$select=displayName,jobTitle,userPrincipalName",
+            "method": "GET",
+            "id": "1"
+        },
+        {
+            "url": "/me/messages?$filter=importance eq 'high'&$select=from,subject,receivedDateTime,bodyPreview",
+            "method": "GET",
+            "id": "2"
+        },
+        {
+            "url": "/me/events",
+            "method": "GET",
+            "id": "3"
+        }
+    ]
 }
 ```
