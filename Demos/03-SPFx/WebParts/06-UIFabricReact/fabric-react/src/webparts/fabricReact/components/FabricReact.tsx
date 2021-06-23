@@ -90,14 +90,14 @@ export default class FabricReact extends React.Component<
           >
             Open Panel
           </DefaultButton>
-          <DefaultButton
+          <Panel
             isOpen={this.state.showPanel}
             type={PanelType.smallFixedFar}
             onDismiss={this._closePanel.bind(this)}
             headerText="Panel - Small, right-aligned, fixed"
           >
             <span className="ms-font-m">Content goes here.</span>
-          </DefaultButton>
+          </Panel>
         </div>
       </div>
     );
