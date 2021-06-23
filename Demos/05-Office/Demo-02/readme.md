@@ -1,12 +1,5 @@
-# Excel Add-in
+# Script Lab
 
-[Excel add-ins Documentation](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/)
-
-[Excel JavaScript API](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview)
-
-Run Demo:
-
-```
-npm start
-npm run start:web
-```
+-   Go to [Script Lab in AppSource](https://appsource.microsoft.com/en-US/product/office/wa104380862)
+-   Install Script Lab
+-   Show Script Lab Hello World

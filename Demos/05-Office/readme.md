@@ -2,9 +2,10 @@
 
 ## Demos
 
--   Anatomy of an Add-in
+-   Anatomy of an Add-in - Word Add-in
+-   Script Lab
 -   Excel Add-in
--   Outlook Add-ins
+-   Outlook Add-in
 -   Actionable Messages
 
 ## Readings
