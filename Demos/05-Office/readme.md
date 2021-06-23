@@ -2,16 +2,18 @@
 
 ## Demos
 
-- Anatomy of an Add-in
-- Excel Add-in
-- Outlook Add-ins
-- Actionable Messages
+-   Anatomy of an Add-in
+-   Excel Add-in
+-   Outlook Add-ins
+-   Actionable Messages
 
 ## Readings
 
 [Office Add-ins Documentation](https://docs.microsoft.com/en-us/office/dev/add-ins/)
 
 [Office JavaScript API Documentation](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/javascript-api-for-office)
+
+[Sideload an Office Add-in in Office on the web](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/sideload-office-add-ins-for-testing)
 
 [Script Lab](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/explore-with-script-lab)
 

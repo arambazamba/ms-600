@@ -16,3 +16,7 @@ Run Demo:
 npm start
 npm run start:web
 ```
+
+Sideload Addin: On the Office Add-ins dialog, select the MY ADD-INS tab, choose Manage My Add-ins, and then Upload My Add-in.
+
+Click the Button -> explain click handler
