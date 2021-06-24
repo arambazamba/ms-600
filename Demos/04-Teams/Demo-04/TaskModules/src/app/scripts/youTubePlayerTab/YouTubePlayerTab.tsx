@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Provider, Flex, Text, Button, Header, ThemePrepared, Input } from "@fluentui/react-northstar";
-import { teamsTheme, teamsDarkTheme, teamsHighContrastTheme } from "@fluentui/react-northstar";
+import * as React from 'react';
+import { Provider, Flex, Text, Button, Header, ThemePrepared, Input } from '@fluentui/react-northstar';
+import { teamsTheme, teamsDarkTheme, teamsHighContrastTheme } from '@fluentui/react-northstar';
 
-import TeamsBaseComponent, { ITeamsBaseComponentState } from "msteams-react-base-component";
+import TeamsBaseComponent, { ITeamsBaseComponentState } from 'msteams-react-base-component';
 
-import * as microsoftTeams from "@microsoft/teams-js";
+import * as microsoftTeams from '@microsoft/teams-js';
 
 export interface IYouTubePlayerTabState extends ITeamsBaseComponentState {
     entityId?: string;
@@ -16,10 +16,11 @@ export interface IYouTubePlayerTabProps {}
 
 export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps, IYouTubePlayerTabState> {
     public async componentWillMount() {
-        this.updateComponentTheme(this.getQueryVariable("theme"));
+        this.updateComponentTheme(this.getQueryVariable('theme'));
+
         this.setState(
             Object.assign({}, this.state, {
-                youTubeVideoId: "VlEH4vtaxp4",
+                youTubeVideoId: 'vO570HeAreI',
             })
         );
 
@@ -35,7 +36,7 @@ export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps,
             });
         } else {
             this.setState({
-                entityId: "This is not hosted in Microsoft Teams",
+                entityId: 'This is not hosted in Microsoft Teams',
             });
         }
     }
@@ -43,29 +44,29 @@ export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps,
     public render() {
         return (
             <Provider theme={this.state.teamsTheme}>
-                <Flex column gap="gap.smaller">
+                <Flex column gap='gap.smaller'>
                     <Header>Task Module Demo</Header>
                     <Text>YouTube Video ID:</Text>
                     <Input value={this.state.youTubeVideoId} disabled></Input>
-                    <Button content="Change Video ID" onClick={this.onChangeVideo}></Button>
-                    <Button content="Show Video" primary onClick={this.onShowVideo}></Button>
-                    <Text content="(C) Copyright Contoso" size="smallest"></Text>
+                    <Button content='Change Video ID' onClick={this.onChangeVideo}></Button>
+                    <Button content='Show Video' primary onClick={this.onShowVideo}></Button>
+                    <Text content='(C) Copyright Contoso' size='smallest'></Text>
                 </Flex>
             </Provider>
         );
     }
 
     private appRoot(): string {
-        if (typeof window === "undefined") {
-            return "https://{{HOSTNAME}}";
+        if (typeof window === 'undefined') {
+            return 'https://{{HOSTNAME}}';
         } else {
-            return window.location.protocol + "//" + window.location.host;
+            return window.location.protocol + '//' + window.location.host;
         }
     }
 
     private onShowVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {
         const taskInfoYoutube = {
-            title: "YouTube Player",
+            title: 'YouTube Player',
             url: this.appRoot() + `/youTubePlayerTab/player.html?vid=${this.state.youTubeVideoId}`,
             width: 1000,
             height: 700,
@@ -75,16 +76,16 @@ export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps,
 
     private onChangeVideo = (event: React.MouseEvent<HTMLButtonElement>): void => {};
 
-    private updateComponentTheme = (theme: string = "default"): void => {
+    private updateComponentTheme = (theme: string = 'default'): void => {
         let componentTheme: ThemePrepared;
         switch (theme) {
-            case "default":
+            case 'default':
                 componentTheme = teamsTheme;
                 break;
-            case "dark":
+            case 'dark':
                 componentTheme = teamsDarkTheme;
                 break;
-            case "contrast":
+            case 'contrast':
                 componentTheme = teamsHighContrastTheme;
                 break;
             default:

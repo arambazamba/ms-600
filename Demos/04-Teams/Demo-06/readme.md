@@ -11,3 +11,20 @@
 ## Labs
 
 [Exercise 7: Creating a Bot in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/07-Exercise-6-Creating-messaging-extensions-in-Microsoft-Teams.md)
+
+## Conversational Bot Demo
+
+-   Scaffold using Teams Toolkit
+-   Start: `ngrok http -host-header=rewrite 3978`
+-   Register Url in Teams Toolkit as Messaging endpoint, ie: https://384b6183b176.ngrok.io/api/messages
+
+    ![ngrok](_images/ngrok.png)
+
+-   Run App
+
+    ```
+    npm install
+    npm start
+    ```
+
+-   Sideload Extension using `F5` and `Add`
