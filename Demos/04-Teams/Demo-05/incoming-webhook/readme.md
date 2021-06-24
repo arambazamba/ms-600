@@ -1,6 +1,6 @@
 # Incoming Webhook - no Teams code needed
 
--   Register Incoming Webhook
+-   Register Incoming Webhook using `Add Tab`:
 
     ![iw-add](_images/iw-add.jpg)
 
