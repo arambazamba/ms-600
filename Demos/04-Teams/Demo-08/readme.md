@@ -1,6 +1,6 @@
 # Link unfurling
 
-[Link unfurling docs](https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/link-unfurling?tabs=javascript)
+[Link unfurling](https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/link-unfurling?tabs=javascript)
 
 Demo uses v3 of teams yeoman generator
 
