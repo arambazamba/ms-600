@@ -10,7 +10,7 @@
 
 ## Labs
 
-[Exercise 7: Creating a Bot in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/07-Exercise-6-Creating-messaging-extensions-in-Microsoft-Teams.md)
+[Exercise 7: Creating a Bot in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/08-Exercise-7-Creating-a-bot-in-Microsoft-Teams.md)
 
 ## Conversational Bot Demo
 
