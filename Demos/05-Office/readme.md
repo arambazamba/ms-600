@@ -5,6 +5,7 @@
 -   Anatomy of an Add-in - Word Add-in
 -   Script Lab
 -   Excel Add-in
+-   Powerpoint Add-in
 -   Outlook Add-in
 -   Actionable Messages
 

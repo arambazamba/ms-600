@@ -1,7 +1,15 @@
-# Actionable Messages
+## Outlook Add-ins
 
-[Actionable messages in Outlook](https://docs.microsoft.com/en-us/outlook/actionable-messages/)
+[Outlook Add-Ins](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/outlook-add-ins-overview)
 
-[Actionable Message Designer](https://amdesigner.azurewebsites.net)
+[Outlook JavaScript Api](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/apis)
 
-[Actionable Messages Debugger for Outlook](https://appsource.microsoft.com/de-at/product/office/wa104381686)
+[Sideload Outlook add-ins for testing](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing#:~:text=Sideload%20an%20add%2Din%20in%20classic%20Outlook%20on%20the%20web,-Go%20to%20Outlook&text=On%20the%20Manage%20add%2Dins,add%2Din%20and%20install%20it.)
+
+Run Demo:
+
+```
+npm start
+npm run start:web
+```
+
