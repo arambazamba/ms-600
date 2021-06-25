@@ -13,3 +13,6 @@ npm start
 npm run start:web
 ```
 
+Sideload Addin:
+
+![sideload-addin](_images/sideload-addin.png)
