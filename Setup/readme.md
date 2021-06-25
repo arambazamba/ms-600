@@ -5,21 +5,6 @@ This is a semin-automated guide for a Azure Lab VM Setup. Feel free to automate 
 Execute Azure CLI script `create-lab-vm.sh` in [Cloud Shell](../Tooling/04-CLI/):
 
 ```bash
-rnd=$RANDOM
-loc=westeurope
-grp=ms600-lab
-vmname=labvm-$rnd
-user=ms600labadmin
-pwd=Lab@dmin1234
-
-az group create -n $grp -l $loc
-
-az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image MicrosoftWindowsDesktop:Windows-10:21h1-pro-g2:19043.985.2105141120 --size Standard_E2s_v3
-
-az vm auto-shutdown -g $grp -n $vmname --time 1830
-```
-
-```bash
 curl https://raw.githubusercontent.com/arambazamba/ms-600/master/Setup/create-lab-vm.sh | bash
 ```
 
