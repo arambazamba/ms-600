@@ -2,7 +2,7 @@
 
 This is a semin-automated guide for a Azure Lab VM Setup. Feel free to automate the missing steps on a seperate branch in your fork and create a pull request. An introduction video into forks and pull requests can be found [here](https://www.youtube.com/watch?v=nT8KGYVurIU)
 
-Execute script `create-lab-vm.sh` in [Cloud Shell](../Tooling/04-CLI/):
+Execute Azure CLI script `create-lab-vm.sh` in [Cloud Shell](../Tooling/04-CLI/):
 
 ```bash
 rnd=$RANDOM
