@@ -68,7 +68,7 @@ To install Software run the script `setup-az-204.ps1` from an elevated PowerShel
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-204/master/Setup/setup-az-204.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/ms-600/master/Setup/setup-ms-600.ps1'))
 ```
 
 > Note: This script will run for approx 20 min. No need to wait! In the meantime you can continue to fork and clone my repo as described in the next section.
@@ -86,7 +86,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@yourdomain.com"
 ```
 
-Go to `https://github.com/ARambazamba/az-204` and fork the repo
+Go to `https://github.com/ARambazamba/ms-600` and fork the repo
 
 ![forking-wf](_images/fork.jpg)
 
@@ -100,7 +100,7 @@ Clone Class Repo:
 git clone https://github.com/Student01/az-204
 ```
 
-> Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/az-204
+> Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/ms-600
 
 ---
 
@@ -126,7 +126,7 @@ Execute script `setup-wsl2.ps1` multible times to setup WSL2
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-204/master/Setup/setup-wsl2.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/ms-600/master/Setup/setup-wsl2.ps1'))
 ```
 
 First Run:
