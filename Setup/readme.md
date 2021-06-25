@@ -9,14 +9,14 @@ Script `create-lab-vm.azcli`:
 ```bash
 rnd=$RANDOM
 loc=westeurope
-grp=az-lab
+grp=ms600-lab
 vmname=labvm-$rnd
-user=azlabadmin
+user=ms600labadmin
 pwd=Lab@dmin1234
 
 az group create -n $grp -l $loc
 
-az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image  MicrosoftWindowsDesktop:Windows-10:20h1-pro-g2:19041.928.2104091205 --size Standard_E2s_v3
+az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image MicrosoftWindowsDesktop:Windows-10:21h1-pro-g2:19043.985.2105141120 --size Standard_E2s_v3
 
 az vm auto-shutdown -g $grp -n $vmname --time 1830
 ```
@@ -33,7 +33,7 @@ curl https://raw.githubusercontent.com/arambazamba/ms-600/master/Setup/create-la
 
 ## Connect to VM
 
-Go to Ressource Group `az204-lab` and connect to VM using RDP and the credentials that you have used in the script:
+Go to Ressource Group `ms600-lab` and connect to VM using RDP and the credentials that you have used in the script:
 
 Download RDP File:
 
