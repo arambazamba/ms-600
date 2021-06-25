@@ -97,7 +97,7 @@ The forking-workflow allows you to commit your changes to your fork of the repo 
 Clone Class Repo:
 
 ```bash
-git clone https://github.com/Student01/az-204
+git clone https://github.com/Student01/ms-600
 ```
 
 > Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/ms-600
