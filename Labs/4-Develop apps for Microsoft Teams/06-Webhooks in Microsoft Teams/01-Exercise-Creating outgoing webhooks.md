@@ -34,7 +34,7 @@ Run the Yeoman Generator for Microsoft Teams by running the following command:
 yo teams
 ```
 
-![Screenshot of the Yeoman Generator for Microsoft Teams](../../Linked_Image_Files/04-06-03-yo-teams-01.png)
+![Screenshot of the Yeoman Generator for Microsoft Teams](../../../Linked_Image_Files/04-06-03-yo-teams-01.png)
 
 Yeoman will launch and ask you a series of questions. Answer the questions with the following values:
 
@@ -373,7 +373,7 @@ ngrok http 3007
 
 This command will create dynamic HTTP and HTTPS URLs with unique subdomains that will redirect to your local web server. Make a note of the dynamic HTTPS URL because you'll need it later.
 
-![Screenshot of the console with ngrok URL](../../Linked_Image_Files/04-06-03-ngrok-01.png)
+![Screenshot of the console with ngrok URL](../../../Linked_Image_Files/04-06-03-ngrok-01.png)
 
 > [!IMPORTANT]
 > Be careful to not stop and restart ngrok. Each time you start ngrok, it will create a new unique URL. This will require you to reconfigure your webhooks each time you restart it.
@@ -384,15 +384,15 @@ Now let's add the outgoing webhook to a team in Microsoft Teams. In the browser,
 
 Once you're signed in, select a channel in a team you want to add the webhook to. From the channel's page, select the **+** in the top navigation:
 
-![Screencast of the channel home page](../../Linked_Image_Files/04-06-03-test-02.png)
+![Screencast of the channel home page](../../../Linked_Image_Files/04-06-03-test-02.png)
 
 On the **Add a tab** dialog, select **Manage apps** in the lower right corner:
 
-![Screenshot of the Add a tab dialog](../../Linked_Image_Files/04-06-03-test-03.png)
+![Screenshot of the Add a tab dialog](../../../Linked_Image_Files/04-06-03-test-03.png)
 
 This will take you to the **Manage Channel** page. Select the **Create an outgoing webhook** in the lower right corner:
 
-![Screenshot of the Manage channel page](../../Linked_Image_Files/04-06-03-test-04.png)
+![Screenshot of the Manage channel page](../../../Linked_Image_Files/04-06-03-test-04.png)
 
 In the **Create an outgoing webhook** dialog, enter the following values, and select **Create**:
 
@@ -406,7 +406,7 @@ In the **Create an outgoing webhook** dialog, enter the following values, and se
 
 After creating the outgoing webhook, Microsoft Teams will display a security token.
 
-![Screenshot of the security token](../../Linked_Image_Files/04-06-03-test-05.png)
+![Screenshot of the security token](../../../Linked_Image_Files/04-06-03-test-05.png)
 
 Copy this value and set the `SECURITY_TOKEN` property in the **./.env** file in the project.
 
@@ -421,11 +421,11 @@ gulp serve
 
 Now you can test the webhook. Go to a channel's **Conversation** tab within the team and enter the message **@Planet Details Venus**. Notice that as you're typing the message, Microsoft Teams detects the name of the webhook:
 
-![Screenshot of the Planet Details message](../../Linked_Image_Files/04-06-03-test-06.png)
+![Screenshot of the Planet Details message](../../../Linked_Image_Files/04-06-03-test-06.png)
 
 A few seconds after submitting the message, you'll see a reply to your message appear that contains the customized adaptive card with details about the planet:
 
-![Screenshot of the Planet Details response](../../Linked_Image_Files/04-06-03-test-07.png)
+![Screenshot of the Planet Details response](../../../Linked_Image_Files/04-06-03-test-07.png)
 
 You've successfully tested your outgoing webhook! Stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 

@@ -40,27 +40,27 @@ Open a browser and navigate to the [Azure portal](https://portal.azure.com). Sig
 
 Select **Create a resource** in the left-hand navigation:
 
-![Screenshot of the primary Azure navigation](../../Linked_Image_Files/04-04-03-azure-portal-01.png)
+![Screenshot of the primary Azure navigation](../../../Linked_Image_Files/04-04-03-azure-portal-01.png)
 
 Enter **resource group** in the **Search the marketplace** input box, and select **Resource group**.
 
-![Screenshot of creating a resource group - create a resource menu item](../../Linked_Image_Files/04-04-03-azure-portal-02.png)
+![Screenshot of creating a resource group - create a resource menu item](../../../Linked_Image_Files/04-04-03-azure-portal-02.png)
 
 On the **Resource Group** page, select the **Create** button to create a new resource group.
 
 Select a valid subscription, enter a name for the resource group, and select the wanted region. _None of these choices will impact the bot registration and are up to you._
 
-![Screenshot of creating a resource group - search for the resource group option](../../Linked_Image_Files/04-04-03-azure-portal-03.png)
+![Screenshot of creating a resource group - search for the resource group option](../../../Linked_Image_Files/04-04-03-azure-portal-03.png)
 
 Complete the wizard to create the resource group. Once Azure has completed the resource group creation process, navigate to the resource group.
 
 From the resource group, select the **Add** or **Create resources** button.
 
-![Screenshot of creating a new resource](../../Linked_Image_Files/04-04-03-azure-bot-registration-01.png)
+![Screenshot of creating a new resource](../../../Linked_Image_Files/04-04-03-azure-bot-registration-01.png)
 
 Enter **bot** in the **Search the marketplace** input box, and select **Azure Bot** from the list of resources returned. Then select **Create** on the next page to start the process of registering a new bot resource:
 
-![Screenshot of searching for the bot registration resource](../../Linked_Image_Files/04-04-03-azure-bot-registration-02.png)
+![Screenshot of searching for the bot registration resource](../../../Linked_Image_Files/04-04-03-azure-bot-registration-02.png)
 
 In the **Create an Azure Bot** blade, enter the following values and then select **Review + create**:
 
@@ -73,7 +73,7 @@ Select **Create**.
 
 Azure will start to provision the new resource. This will take a moment or two. Once it's finished, navigate to the bot resource in the resource group.
 
-![Screenshot of the created bot channels registration resource](../../Linked_Image_Files/04-04-03-azure-bot-registration-03.png)
+![Screenshot of the created bot channels registration resource](../../../Linked_Image_Files/04-04-03-azure-bot-registration-03.png)
 
 ### Enable the Microsoft Teams channel for the bot
 
@@ -83,11 +83,11 @@ From the bot resource in Azure, select **Channels** in the left-hand navigation.
 
 On the **Connect to channels** pane, select the Microsoft Teams channel, then select **Save** to confirm the action.
 
-![Screenshot enabling the Microsoft Teams channel](../../Linked_Image_Files/04-04-03-azure-bot-registration-04.png)
+![Screenshot enabling the Microsoft Teams channel](../../../Linked_Image_Files/04-04-03-azure-bot-registration-04.png)
 
 Once this process is complete, you should see both the **Web Chat** and **Microsoft Teams** listed in your enabled channels:
 
-![Screenshot of the enabled bot channels](../../Linked_Image_Files/04-04-03-azure-bot-registration-05.png)
+![Screenshot of the enabled bot channels](../../../Linked_Image_Files/04-04-03-azure-bot-registration-05.png)
 
 ### Set Messaging Endpoint and retrieve the bot app ID and password
 
@@ -103,7 +103,7 @@ Select **Configuration** from the left-hand navigation. Copy the **Microsoft App
 
 Select **Manage** to navigate to the Azure AD app blade:
 
-![Screenshot of the bot's settings page](../../Linked_Image_Files/04-04-03-azure-bot-registration-06.png)
+![Screenshot of the bot's settings page](../../../Linked_Image_Files/04-04-03-azure-bot-registration-06.png)
 
 ### Create a client secret for the app
 
@@ -113,13 +113,13 @@ Select **Certificates & secrets** from the left-hand navigation panel.
 
 Select the **New client secret** button:
 
-![Screenshot of the Certificates & Secrets page in the Azure AD admin center](../../Linked_Image_Files/04-04-03-azure-bot-registration-07.png)
+![Screenshot of the Certificates & Secrets page in the Azure AD admin center](../../../Linked_Image_Files/04-04-03-azure-bot-registration-07.png)
 
 When prompted, give the secret a description and select one of the expiration duration options provided and select **Add**. _What you enter and select doesn't matter for the exercise._
 
 The **Certificate & Secrets** page will display the new secret. It's important you copy this value as it's only shown this one time; if you leave the page and come back, it will only show as a masked value.
 
-![Screenshot showing the new secret](../../Linked_Image_Files/04-04-03-azure-bot-registration-08.png)
+![Screenshot showing the new secret](../../../Linked_Image_Files/04-04-03-azure-bot-registration-08.png)
 
 Copy the value of the secret as you'll need it later.
 
@@ -242,11 +242,11 @@ In the browser, navigate to **https://teams.microsoft.com** and sign in with the
 
 Using the app bar navigation menu, select the **More added apps** button. Then select **App Studio**:
 
-![Screenshot of the More added apps dialog with App Studio](../../Linked_Image_Files/04-04-03-app-studio-02.png)
+![Screenshot of the More added apps dialog with App Studio](../../../Linked_Image_Files/04-04-03-app-studio-02.png)
 
 Select the **Manifest editor** tab and then the **Create a new app** button:
 
-![Screenshot of App studio manifest editor screen - create new app](../../Linked_Image_Files/04-04-03-app-studio-03.png)
+![Screenshot of App studio manifest editor screen - create new app](../../../Linked_Image_Files/04-04-03-app-studio-03.png)
 
 Provide a short name.
 
@@ -256,7 +256,7 @@ Provide a Package Name and Version.
 
 Provide a Short Description and Full Description.
 
-![Screenshot of App studio - app details screen](../../Linked_Image_Files/04-04-03-app-studio-04.png)
+![Screenshot of App studio - app details screen](../../../Linked_Image_Files/04-04-03-app-studio-04.png)
 
 From the **(2) Capabilities** > **Bots** page, select **Set up** to add a bot to the manifest.
 
@@ -268,7 +268,7 @@ Because you previously created a bot using the Microsoft Azure's Bot Framework, 
 
 Select **Save**.
 
-![Screenshot of setting up a bot](../../Linked_Image_Files/04-04-03-app-studio-05.png)
+![Screenshot of setting up a bot](../../../Linked_Image_Files/04-04-03-app-studio-05.png)
 
 Within the **Commands** section, select **Add** to add a new command to the bot.
 
@@ -278,7 +278,7 @@ On the **New command** dialog, enter the following values and select **Save**:
 - **Help text**: Sends message with @mention of the sender
 - **Scope**: Personal
 
-![Screenshot of the new bot](../../Linked_Image_Files/04-04-03-app-studio-06.png)
+![Screenshot of the new bot](../../../Linked_Image_Files/04-04-03-app-studio-06.png)
 
 With the bot added to the Teams app, you need to update the manifest in your project. From the **(3) Finish** > **Test and distribute** section, select the **Download** button from the **Download** section.
 
@@ -332,7 +332,7 @@ This gulp task will run many other tasks all displayed within the command-line c
 > [!NOTE]
 > Microsoft Teams requires all content displayed within a tab be loaded from an HTTPS request. In development, can be done using the tool [ngrok](https://www.ngrok.com) that creates a secure rotatable URL to your local HTTP webserver. Ngrok is included as a dependency within the project so there is nothing to setup or configure.
 
-![Screenshot of gulp ngrok-serve](../../Linked_Image_Files/04-04-03-test-01.png)
+![Screenshot of gulp ngrok-serve](../../../Linked_Image_Files/04-04-03-test-01.png)
 
 Note the URL of the Ngrok URL displayed in the console. In the previous screenshot, NGrok has created the temporary URL **5f1f02998d18.ngrok.io** that will map to our locally running web server. In order for the Bot Framework to route messages from Microsoft Teams to our locally running bot, you need to update the bot's messaging endpoint in the Azure portal.
 
@@ -344,7 +344,7 @@ Using the left-hand navigation, select **Bot management** > **Settings**.
 
 Locate the property **Configuration** > **Messaging endpoint** and set the domain to the NGrok domain, pointing to the `/api/messages` endpoint. Using the example above, the endpoint will be `https://5f1f02998d18.ngrok.io/api/messages`
 
-![The messaging endpoint set to https://5f1f02998d18.ngrok.io/api/messages](../../Linked_Image_Files/04-04-03-test-07.png)
+![The messaging endpoint set to https://5f1f02998d18.ngrok.io/api/messages](../../../Linked_Image_Files/04-04-03-test-07.png)
 
 Finally, save your changes to the bot configuration using the **Save** button at the top of the page.
 
@@ -360,7 +360,7 @@ Now let's install the app in Microsoft Teams. In the browser, navigate to **http
 
 Using the app bar navigation menu, select the **More added apps** button. Then select **Browse all apps** followed by **Upload for me or my teams**.
 
-![Screenshot of More added apps dialog in Microsoft Teams](../../Linked_Image_Files/04-04-03-test-02.png)
+![Screenshot of More added apps dialog in Microsoft Teams](../../../Linked_Image_Files/04-04-03-test-02.png)
 
 In the file dialog that appears, select the Microsoft Teams package in your project. This app package is a ZIP file that can be found in the project's **./package** folder.
 
@@ -372,15 +372,15 @@ In the file dialog that appears, select the Microsoft Teams package in your proj
 
 Once the package is uploaded, Microsoft Teams will display a summary of the app. Here you can see some "todo" items to address. _None of these "todo" items are important to this exercise, so you'll leave them as is._
 
-![Screenshot of Microsoft Teams app](../../Linked_Image_Files/04-04-03-test-03.png)
+![Screenshot of Microsoft Teams app](../../../Linked_Image_Files/04-04-03-test-03.png)
 
 Select the **Add** button to install the app, adding a new personal tab to your **More added apps** dialog:
 
-![Screenshot of the installed Microsoft Teams app in the More added apps dialog](../../Linked_Image_Files/04-04-03-test-04.png)
+![Screenshot of the installed Microsoft Teams app in the More added apps dialog](../../../Linked_Image_Files/04-04-03-test-04.png)
 
 Select the app to navigate to chat with the bot:
 
-![Screenshot of the installed Microsoft Teams app](../../Linked_Image_Files/04-04-03-test-05.png)
+![Screenshot of the installed Microsoft Teams app](../../../Linked_Image_Files/04-04-03-test-05.png)
 
 Notice the commands that the bot supports are shown in the compose box when the app loads. Let's test the bot!
 
@@ -388,7 +388,7 @@ Select the **MentionMe** command, or manually type **mentionme** in the compose 
 
 After a few seconds, you should see the bot respond mentioning the user you are signed in with:
 
-![Screenshot of the working Microsoft Teams app](../../Linked_Image_Files/04-04-03-test-06.png)
+![Screenshot of the working Microsoft Teams app](../../../Linked_Image_Files/04-04-03-test-06.png)
 
 At this point, we have a working bot that is responding when it's mentioned.
 

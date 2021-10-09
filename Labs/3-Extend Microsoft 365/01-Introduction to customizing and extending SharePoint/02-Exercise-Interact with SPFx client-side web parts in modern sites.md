@@ -6,33 +6,33 @@ Open a browser and navigate to the developer site you created in the first exerc
 
 Select the **Pages** link in the left-hand Quick Launch navigation menu.
 
-![Screenshot of the SharePoint site's Quick Launch navigation with the Pages library highlighted](../../Linked_Image_Files/07-pages-library.png)
+![Screenshot of the SharePoint site's Quick Launch navigation with the Pages library highlighted](../../../Linked_Image_Files/07-pages-library.png)
 
 In the **Pages** library, select the **New** button from the toolbar and select **Site Page** to create a new page.
 
-![Screenshot of creating a new modern site page in the Pages library](../../Linked_Image_Files/07-new-site-page.png)
+![Screenshot of creating a new modern site page in the Pages library](../../../Linked_Image_Files/07-new-site-page.png)
 
 Set the name of the page to **Getting Started**.
 
-![Screenshot of the page name](../../Linked_Image_Files/07-add-web-part-01.png)
+![Screenshot of the page name](../../../Linked_Image_Files/07-add-web-part-01.png)
 
 Select the web part icon button to open the list of available web parts.
 
-![Screenshot of the web part icon on the page](../../Linked_Image_Files/07-add-web-part-02.png)
+![Screenshot of the web part icon on the page](../../../Linked_Image_Files/07-add-web-part-02.png)
 
 Select the web part **Text**.
 
-![Screenshot of the web part toolbox](../../Linked_Image_Files/07-add-web-part-03.png)
+![Screenshot of the web part toolbox](../../../Linked_Image_Files/07-add-web-part-03.png)
 
 When the web part is added to the page, add some text and use the rich-text formatting tools provided in the toolbar.
 
-![Screenshot of the web part on the page](../../Linked_Image_Files/07-add-web-part-04.png)
+![Screenshot of the web part on the page](../../../Linked_Image_Files/07-add-web-part-04.png)
 
 Select **Save as draft** to see the page as your users will see it.
 
-![Screenshot of saving the page](../../Linked_Image_Files/07-add-web-part-05.png)
+![Screenshot of saving the page](../../../Linked_Image_Files/07-add-web-part-05.png)
 
-![Screenshot of the draft page](../../Linked_Image_Files/07-add-web-part-06.png)
+![Screenshot of the draft page](../../../Linked_Image_Files/07-add-web-part-06.png)
 
 ## Task 1: Verify your developer environment is properly configured
 
@@ -77,23 +77,23 @@ gulp serve
 
 The SharePoint Framework's gulp **serve** task will build the project, start a local web server, and launch a browser open to the SharePoint Workbench.
 
-![Screenshot of the SharePoint Workbench](../../Linked_Image_Files/07-testing-01.png)
+![Screenshot of the SharePoint Workbench](../../../Linked_Image_Files/07-testing-01.png)
 
 Select the web part icon button to open the list of available web parts.
 
-![Screenshot of adding the HelloWorld web part](../../Linked_Image_Files/07-testing-02.png)
+![Screenshot of adding the HelloWorld web part](../../../Linked_Image_Files/07-testing-02.png)
 
 Select the **HelloWorld** web part.
 
-![Screenshot of the HelloWorld web part](../../Linked_Image_Files/07-testing-03.png)
+![Screenshot of the HelloWorld web part](../../../Linked_Image_Files/07-testing-03.png)
 
 Edit the web part's properties by selecting the pencil (edit) icon in the toolbar to the left of the web part.
 
-![Screenshot of the web part edit toolbar](../../Linked_Image_Files/07-testing-04.png)
+![Screenshot of the web part edit toolbar](../../../Linked_Image_Files/07-testing-04.png)
 
 In the property pane that opens, change the value of the **Description Field**. Notice how the web part updates as you make changes to the text.
 
-![Screenshot of editing the web part property pane](../../Linked_Image_Files/07-testing-05.png)
+![Screenshot of editing the web part property pane](../../../Linked_Image_Files/07-testing-05.png)
 
 Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 

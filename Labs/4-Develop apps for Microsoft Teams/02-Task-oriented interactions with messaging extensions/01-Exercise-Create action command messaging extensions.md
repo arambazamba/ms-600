@@ -40,27 +40,27 @@ Open a browser and navigate to the [Azure portal](https://portal.azure.com). Sig
 
 Select **Create a resource** in the left-hand navigation:
 
-![Screenshot of the primary Azure navigation](../../Linked_Image_Files/04-02-03-azure-portal-01.png)
+![Screenshot of the primary Azure navigation](../../../Linked_Image_Files/04-02-03-azure-portal-01.png)
 
 Enter **resource group** in the **Search the marketplace** input box, and select **Resource group**.
 
-![Screenshot of creating a resource group - create a resource menu item](../../Linked_Image_Files/04-02-03-azure-portal-02.png)
+![Screenshot of creating a resource group - create a resource menu item](../../../Linked_Image_Files/04-02-03-azure-portal-02.png)
 
 On the **Resource Group** page, select the **Create** button to create a new resource group.
 
 Select a valid subscription, enter a name for the resource group, and select the wanted region. *None of these choices will impact the bot registration and are up to you.*
 
-![Screenshot of creating a resource group - search for resource group](../../Linked_Image_Files/04-02-03-azure-portal-03.png)
+![Screenshot of creating a resource group - search for resource group](../../../Linked_Image_Files/04-02-03-azure-portal-03.png)
 
 Complete the wizard to create the resource group. Once Azure has completed the resource group creation process, navigate to the resource group.
 
 From the resource group, select the **Add** or **Create resources** button.
 
-![Screenshot of creating a new resource - create resource group](../../Linked_Image_Files/04-02-03-azure-bot-registration-01.png)
+![Screenshot of creating a new resource - create resource group](../../../Linked_Image_Files/04-02-03-azure-bot-registration-01.png)
 
 Enter **bot** in the **Search the marketplace** input box, and select **Azure Bot** from the list of resources returned. Then select **Create** on the next page to start the process of registering a new bot resource:
 
-![Screenshot of searching for the Azure Bot resource](../../Linked_Image_Files/04-02-03-azure-bot-registration-02.png)
+![Screenshot of searching for the Azure Bot resource](../../../Linked_Image_Files/04-02-03-azure-bot-registration-02.png)
 
 In the **Create an Azure Bot** blade, enter the following values and then select **Review + create**:
 
@@ -74,7 +74,7 @@ Select **Create**.
 
 Azure will start to provision the new resource. This will take a moment or two. Once it's finished, navigate to the bot resource in the resource group.
 
-![Screenshot of the created bot channel registration resource](../../Linked_Image_Files/04-02-03-azure-bot-registration-03.png)
+![Screenshot of the created bot channel registration resource](../../../Linked_Image_Files/04-02-03-azure-bot-registration-03.png)
 
 ### Enable the Microsoft Teams channel for the bot
 
@@ -84,11 +84,11 @@ From the bot resource in Azure, select **Channels** in the left-hand navigation.
 
 On the **Connect to channels** pane, select the Microsoft Teams channel, then select **Save** to confirm the action.
 
-![Screenshot enabling the Microsoft Teams channel](../../Linked_Image_Files/04-02-03-azure-bot-registration-04.png)
+![Screenshot enabling the Microsoft Teams channel](../../../Linked_Image_Files/04-02-03-azure-bot-registration-04.png)
 
 Once this process is complete, you should see both the **Web Chat** and **Microsoft Teams** listed in your enabled channels:
 
-![Screenshot of the enabled bot channels](../../Linked_Image_Files/04-02-03-azure-bot-registration-05.png)
+![Screenshot of the enabled bot channels](../../../Linked_Image_Files/04-02-03-azure-bot-registration-05.png)
 
 ### Set Messaging Endpoint and retrieve the bot app ID and password
 
@@ -104,7 +104,7 @@ Copy the ID of the bot as you'll need it later.
 
 Select **Manage** to navigate to the Azure AD app blade:
 
-![Screenshot of the bot's settings page](../../Linked_Image_Files/04-02-03-azure-bot-registration-06.png)
+![Screenshot of the bot's settings page](../../../Linked_Image_Files/04-02-03-azure-bot-registration-06.png)
 
 ### Create a client secret for the app
 
@@ -114,13 +114,13 @@ Select **Certificates & secrets** from the left-hand navigation panel.
 
 Select the **New client secret** button:
 
-![Screenshot of the Certificates & Secrets page in the Azure AD admin center](../../Linked_Image_Files/04-02-03-azure-bot-registration-07.png)
+![Screenshot of the Certificates & Secrets page in the Azure AD admin center](../../../Linked_Image_Files/04-02-03-azure-bot-registration-07.png)
 
 When prompted, give the secret a description and select one of the expiration duration options provided and select **Add**. *What you enter and select doesn't matter for the exercise.*
 
 The **Certificate & Secrets** page will display the new secret. It's important you copy this value as it's only shown this one time; if you leave the page and come back, it will only show as a masked value.
 
-![Screenshot showing the new secret](../../Linked_Image_Files/04-02-03-azure-bot-registration-08.png)
+![Screenshot showing the new secret](../../../Linked_Image_Files/04-02-03-azure-bot-registration-08.png)
 
 Copy the value of the secret as you'll need it later.
 
@@ -662,7 +662,7 @@ This gulp task will run many other tasks all displayed within the command-line c
 > [!NOTE]
 > Microsoft Teams requires all content displayed within a tab be loaded from an HTTPS request. In development, can be done using the tool [ngrok](https://www.ngrok.com) that creates a secure rotatable URL to your local HTTP webserver. Ngrok is included as a dependency within the project so there is nothing to setup or configure.
 
-![Screenshot of gulp ngrok-serve](../../Linked_Image_Files/04-02-03-test-01.png)
+![Screenshot of gulp ngrok-serve](../../../Linked_Image_Files/04-02-03-test-01.png)
 
 Note the URL of the ngrok URL displayed in the console. In the previous screenshot, ngrok has created the temporary URL **ec7d937d.ngrok.io** that will map to our locally running web server. In order for the Bot Framework to route messages from Microsoft Teams to our locally running bot, you need to update the bot's messaging endpoint in the Azure portal.
 
@@ -688,7 +688,7 @@ Now let's install the app in Microsoft Teams. In the browser, navigate to **http
 
 Using the app bar navigation menu, select the **More added apps** button. Then select **Browse all apps** followed by **Upload for me or my teams**.
 
-![Screenshot of More added apps dialog in Microsoft Teams](../../Linked_Image_Files/04-02-03-test-02.png)
+![Screenshot of More added apps dialog in Microsoft Teams](../../../Linked_Image_Files/04-02-03-test-02.png)
 
 In the file dialog that appears, select the Microsoft Teams package in your project. This app package is a ZIP file that can be found in the project's **./package** folder.
 
@@ -700,21 +700,21 @@ In the file dialog that appears, select the Microsoft Teams package in your proj
 
 Once the package is uploaded, Microsoft Teams will display a summary of the app. Here you can see some "todo" items to address. *None of these "todo" items are important to this exercise, so you'll leave them as is.*
 
-![Screenshot of Microsoft Teams app](../../Linked_Image_Files/04-02-03-test-03.png)
+![Screenshot of Microsoft Teams app](../../../Linked_Image_Files/04-02-03-test-03.png)
 
 Select the **Add** button to install the app.
 
 After installing the app, navigate to a 1:1 chat. In the compose box in the chat, select either the **Planet Messaging** icon or the **...** icon below the chat box. If you select the **...** icon, enter **planet** in the search box and select the **Planet Messaging** extension:
 
-![Screenshot of the installed Microsoft Teams messaging extension](../../Linked_Image_Files/04-02-03-test-05.png)
+![Screenshot of the installed Microsoft Teams messaging extension](../../../Linked_Image_Files/04-02-03-test-05.png)
 
 When the messaging extension's task module is displayed, select a planet and then select the **Insert selected planet** button. The messaging extension's submit action handler is called which will add the updated Adaptive Card to the compose box:
 
-![Screenshot of messaging extension in the compose message box - step 1](../../Linked_Image_Files/04-02-03-test-06.png)
+![Screenshot of messaging extension in the compose message box - step 1](../../../Linked_Image_Files/04-02-03-test-06.png)
 
 You can also trigger the messaging extension from an existing message in the chat using the **...** menu in the upper-right corner of the message. Select **Mode actions** and then select the **Planet Expander** option.
 
-![Screenshot of messaging extension in the compose message box - step 2](../../Linked_Image_Files/04-02-03-test-07.png)
+![Screenshot of messaging extension in the compose message box - step 2](../../../Linked_Image_Files/04-02-03-test-07.png)
 
 ## Summary
 

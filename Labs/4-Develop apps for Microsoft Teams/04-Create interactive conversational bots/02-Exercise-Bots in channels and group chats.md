@@ -96,31 +96,31 @@ In the browser, navigate to **https://teams.microsoft.com** and sign in with the
 
 Using the app bar navigation menu, select the **More added apps** button. Then right-click on the **Conversational Bot** application. Select **Uninstall**. Select **Uninstall** again to confirm.
 
-![Screenshot of updating an installed Microsoft Teams app](../../Linked_Image_Files/04-04-05-test-01.png)
+![Screenshot of updating an installed Microsoft Teams app](../../../Linked_Image_Files/04-04-05-test-01.png)
 
 Using the app bar navigation menu, select the **More added apps** button. Then select **Browse all apps** followed by **Upload for me or my teams**.
 
-![Screenshot of More added apps dialog in Microsoft Teams](../../Linked_Image_Files/04-04-03-test-02.png)
+![Screenshot of More added apps dialog in Microsoft Teams](../../../Linked_Image_Files/04-04-03-test-02.png)
 
 In the file dialog that appears, select the Microsoft Teams package in your project. This app package is a ZIP file that can be found in the project's **./package** folder.
 
 After the package is uploaded, Microsoft Teams displays a summary of the app. Select the arrow next to the **Add** button, and select **Add to a team** to install the app:
 
-![Screenshot adding a channel tab](../../Linked_Image_Files/04-04-05-channel-tab-01.png)
+![Screenshot adding a channel tab](../../../Linked_Image_Files/04-04-05-channel-tab-01.png)
 
 In the **Select a channel to start using** dialog box, select an existing team. Then select **Set up a tab**:
 
-![Screenshot selecting a team to add the channel tab to](../../Linked_Image_Files/04-04-05-channel-tab-02.png)
+![Screenshot selecting a team to add the channel tab to](../../../Linked_Image_Files/04-04-05-channel-tab-02.png)
 
 Navigate to an existing channel in a team.
 
 From the channel's **Conversations** tab, @mention the bot. The first time you @mention the bot, you'll be prompted to install it into the team.
 
-![Screenshot installing bot into a channel](../../Linked_Image_Files/04-04-05-test-02.png)
+![Screenshot installing bot into a channel](../../../Linked_Image_Files/04-04-05-test-02.png)
 
 After installing the bot, when you @mention it and include the message `mentionme`, the bot will reply to your message:
 
-![Screenshot of the bot replying to a channel conversation](../../Linked_Image_Files/04-04-05-test-03.png)
+![Screenshot of the bot replying to a channel conversation](../../../Linked_Image_Files/04-04-05-test-03.png)
 
 ## Task 2: Reply to messages with Adaptive cards
 
@@ -373,11 +373,11 @@ In the Microsoft Teams client, go to the channel you installed the bot in the pr
 
 The bot will reply to the message with a card:
 
-![Screenshot of a message from the bot using cards](../../Linked_Image_Files/04-04-05-test-04.png)
+![Screenshot of a message from the bot using cards](../../../Linked_Image_Files/04-04-05-test-04.png)
 
 Select the button **Update card**. After a few seconds, the card should be updated with a new card containing an incremented counter value and a new button:
 
-![Screenshot of an updated message from the bot using cards](../../Linked_Image_Files/04-04-05-test-05.png)
+![Screenshot of an updated message from the bot using cards](../../../Linked_Image_Files/04-04-05-test-05.png)
 
 Select the **Update card** button a few more times to see the counter get updated.
 
@@ -416,11 +416,11 @@ gulp ngrok-serve
 
 In the Microsoft Teams client, go to the channel you installed the bot in the previous section. From the **Conversations** tab, find a message from the bot and apply a *like* reaction to it:
 
-![Screenshot of a user reacting to a bot's message](../../Linked_Image_Files/04-04-05-test-06.png)
+![Screenshot of a user reacting to a bot's message](../../../Linked_Image_Files/04-04-05-test-06.png)
 
 After a few seconds, the bot will reply with a message, thanking them for liking the reaction:
 
-![Screenshot of a bot replying to a reaction](../../Linked_Image_Files/04-04-05-test-07.png)
+![Screenshot of a bot replying to a reaction](../../../Linked_Image_Files/04-04-05-test-07.png)
 
 ## Summary
 

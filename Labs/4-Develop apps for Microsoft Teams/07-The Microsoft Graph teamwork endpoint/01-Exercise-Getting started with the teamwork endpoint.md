@@ -29,7 +29,7 @@ Open a browser and navigate to the [Azure Active Directory admin center (https:/
 
 Select **Manage > App registrations** in the left-hand navigation and then select **New registration**.
 
-![Screenshot of the App registrations](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-01.png)
+![Screenshot of the App registrations](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-01.png)
 
 On the **Register an application** page, set the values as follows, and then select **Register**:
 
@@ -37,7 +37,7 @@ On the **Register an application** page, set the values as follows, and then sel
 - **Supported account types**: Accounts in any organizational directory (Any Azure AD directory - Multitenant)
 - **Redirect URI**: Web & `https://REPLACE.ngrok.io`
 
-![Screenshot of the Register an application page](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-02.png)
+![Screenshot of the Register an application page](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-02.png)
 
 > [!NOTE]
 > The **Redirect URL** will need to be updated once you know the dynamic subdomain of the proxy URL created by ngrok, a tool you'll use to simplify testing and debugging your Microsoft Teams app.
@@ -48,7 +48,7 @@ On the **Register an application** page, set the values as follows, and then sel
 
 On the **My Teams SSO App** page, copy the value of the **Application (client) ID**; you'll need this later when you create the Microsoft Teams app in a future exercise.
 
-![Screenshot of the application ID of the new app registration](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-03.png)
+![Screenshot of the application ID of the new app registration](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-03.png)
 
 ### Configure authentication
 
@@ -56,7 +56,7 @@ Next, configure the app's authentication settings. Select **Manage > Authenticat
 
 In the **Implicit grant and hybrid flows** section, select both of the following options, and then select **Save** at the top of the screen:
 
-![Screenshot of the app's authentication settings](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-04.png)
+![Screenshot of the app's authentication settings](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-04.png)
 
 ### Create a client secret
 
@@ -81,11 +81,11 @@ By default, the app has the **User.Read** permission. When Microsoft Teams reque
   - openid
   - profile
 
-![Screenshot adding permissions to the app](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-05.png)
+![Screenshot adding permissions to the app](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-05.png)
 
 Once you've added the permissions, select the **Grant admin consent for ...** to consent these permissions for all users in the tenant.
 
-![Screenshot of consented permissions](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-06.png)
+![Screenshot of consented permissions](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-06.png)
 
 ### Expose an API for the app
 
@@ -93,7 +93,7 @@ The next step is to configure the app's API for Microsoft Teams. Select **Manage
 
 On the **Expose an API** page, select the **Set** link next to the **Application ID URI**. This will default the app's ID to `api://<app-id>`. This needs to include the domain where the Microsoft Teams app will be hosted. Add `REPLACE.ngrok.io/` to the start of the address after the protocol and select **Save**
 
-![Screencast of the app ID URI](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-07.png)
+![Screencast of the app ID URI](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-07.png)
 
 Next, select **Add a scope** to add a new permission for the app. Create a new scope using the following settings and then select **Add scope**:
 
@@ -105,7 +105,7 @@ Next, select **Add a scope** to add a new permission for the app. Create a new s
 - **User consent description:** Teams can call this app’s APIs with the same rights as the user.
 - **State**: Enabled
 
-![Screenshot of the add scope page](../../Linked_Image_Files/04-07-03-azure-ad-app-registration-08.png)
+![Screenshot of the add scope page](../../../Linked_Image_Files/04-07-03-azure-ad-app-registration-08.png)
 
 The last step is to preauthorize the Microsoft Teams clients that the app's API will trust. This means users won't be asked to consent to specific permissions, or scopes, exposed by the API.
 
@@ -170,7 +170,7 @@ This gulp task will run many other tasks all displayed within the command-line c
 > [!IMPORTANT]
 > Each time ngrok starts, it generates a new dynamic subdomain for the URL. If you have to restart ngrok, you will need to repackage and and update the app in Microsoft Teams to make the installed app aware of the new URL. The optional licensed version of ngrok allows you to define and reuse the same subdomain.
 
-![Screenshot of gulp ngrok-serve](../../Linked_Image_Files/04-07-03-ngrok-dynamic-url.png)
+![Screenshot of gulp ngrok-serve](../../../Linked_Image_Files/04-07-03-ngrok-dynamic-url.png)
 
 Before testing the Microsoft Teams app, you need to update all locations where you entered the URL `REPLACE.ngrok.io` in both your project and the Azure AD app you registered. For example:
 
@@ -186,7 +186,7 @@ Select a team that you want to install and test your custom teams app in and the
 
 Next, select the plus icon to the right of the existing tabs to add a new tab:
 
-![Screenshot selecting a team and channel](../../Linked_Image_Files/04-07-03-add-tab-01.png)
+![Screenshot selecting a team and channel](../../../Linked_Image_Files/04-07-03-add-tab-01.png)
 
 The app containing our new tab isn't installed yet, so in the **Add a tab** dialog, select **Manage apps** in the lower-right corner.
 
@@ -202,17 +202,17 @@ Locate and select the Microsoft Teams app package, found in the **./package** fo
 
 Microsoft Teams will display the details of the app in a dialog. Select the **Add** button to install the app into the current team:
 
-![Screenshot installing a new tab, step 2](../../Linked_Image_Files/04-07-03-add-tab-03.png)
+![Screenshot installing a new tab, step 2](../../../Linked_Image_Files/04-07-03-add-tab-03.png)
 
 After installing the app, select the team's **General** channel, and then the plus icon to the right of the existing tabs in the channel. When prompted to select the tab, select the **MSGraph Playground**:
 
-![Screenshot installing a new tab, step 3](../../Linked_Image_Files/04-07-03-add-tab-04.png)
+![Screenshot installing a new tab, step 3](../../../Linked_Image_Files/04-07-03-add-tab-04.png)
 
 When you select the tab to add to the channel, Microsoft Teams will present the tab's configuration screen. Enter anything into the provided input box and select **Save** to add the tab.
 
 When the tab loads, it will initiate the SSO process with Azure AD and obtain an ID token. This token contains the basic identification information about the current user. The current user's display name is included in this token and is displayed in the tab:
 
-![Screenshot installing a new tab, step 5](../../Linked_Image_Files/04-07-03-add-tab-05.png)
+![Screenshot installing a new tab, step 5](../../../Linked_Image_Files/04-07-03-add-tab-05.png)
 
 ### Explore the code
 
@@ -496,7 +496,7 @@ Immediately following the closing `</div>` element, add the following code that 
 
 Go back to the browser and navigate back to the tab you added earlier in this exercise. Notice it's now displaying the current user's profile photo:
 
-![Screenshot of the tab displaying the user's profile photo from Microsoft Graph](../../Linked_Image_Files/04-07-03-test-user-profile-photo.png)
+![Screenshot of the tab displaying the user's profile photo from Microsoft Graph](../../../Linked_Image_Files/04-07-03-test-user-profile-photo.png)
 
 > [!IMPORTANT]
 > If the **ngrok-serve** stopped for any reason, remember when you start/restart the **gulp ngrok-serve** task, the dynamic ngrok URL will change.
@@ -531,7 +531,7 @@ Select **Add a permission**, then select **Microsoft Graph > Delegated permissio
 
 Search for, and select the permission **Team.ReadBasic.All**, then select the **Add permissions** button:
 
-![Screenshot adding a new permission to the app](../../Linked_Image_Files/04-07-03-azure-ad-add-api-permissions.png)
+![Screenshot adding a new permission to the app](../../../Linked_Image_Files/04-07-03-azure-ad-add-api-permissions.png)
 
 To simplify the testing process, select **Grant admin consent for Contoso** to consent this new permission for all users in your tenant.
 
@@ -619,6 +619,6 @@ The last step is to update the rendering in the component's `return` statement t
 
 Go back to the browser and navigate back to the tab you added earlier in this exercise. Notice it's now displaying the current user's profile photo:
 
-![Screenshot of the tab displaying the user's joined teams](../../Linked_Image_Files/04-07-03-test-user-joined-teams.png)
+![Screenshot of the tab displaying the user's joined teams](../../../Linked_Image_Files/04-07-03-test-user-joined-teams.png)
 
 You can now stop the web project and web API projects in their respective consoles by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in each one. However, you can leave the ngrok process running so the dynamic subdomain won't change for future exercises in this module.

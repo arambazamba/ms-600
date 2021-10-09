@@ -95,7 +95,7 @@ Using the app bar navigation menu, select the **More added apps** button. Then s
 
 After updating the app, go back to the 1:1 chat where you tested the messaging extension in the previous exercise. Copy and paste the URL of one of the planets from the **planets.json** file into the compose box. Notice the message has been updated to include the card, which is also included when you send the message:
 
-![Screenshot of a working link unfurling messaging extension](../../Linked_Image_Files/04-02-07-test-01.png)
+![Screenshot of a working link unfurling messaging extension](../../../Linked_Image_Files/04-02-07-test-01.png)
 
 ## Summary
 

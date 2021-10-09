@@ -132,7 +132,7 @@ In the browser, navigate to **https://teams.microsoft.com** and sign in with the
 
 Using the app bar navigation menu, select the **More added apps** button. Then select **Browse all apps**, select the menu in the top-right corner of the **Planet Messaging** and select **Update**.
 
-![Screenshot of updating an installed Microsoft Teams app](../../Linked_Image_Files/04-02-05-test-01.png)
+![Screenshot of updating an installed Microsoft Teams app](../../../Linked_Image_Files/04-02-05-test-01.png)
 
 When prompted, select the updated package of the Microsoft Teams app. Microsoft Teams will update the app to the new version.
 
@@ -140,7 +140,7 @@ After updating the app, go back to the 1:1 chat where you tested the messaging e
 
 Enter the string **outer** in the search box and wait a few seconds. Microsoft Teams will execute the search and return the results:
 
-![Screenshot of a search messaging extension](../../Linked_Image_Files/04-02-05-test-02.png)
+![Screenshot of a search messaging extension](../../../Linked_Image_Files/04-02-05-test-02.png)
 
 ## Summary
 
