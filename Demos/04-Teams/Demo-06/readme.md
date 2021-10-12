@@ -8,11 +8,9 @@
 
 [Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents)
 
-## Labs
+## Demos
 
-[Exercise 7: Creating a Bot in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/08-Exercise-7-Creating-a-bot-in-Microsoft-Teams.md)
-
-## Conversational Bot Demo
+### Conversational Bot Demo
 
 -   Scaffold using Teams Toolkit
 -   Start: `ngrok http -host-header=rewrite 3978`
@@ -28,3 +26,7 @@
     ```
 
 -   Sideload Extension using `F5` and `Add`
+
+
+
+[04-Bots, 01-Exercise-Creating conversational bots](../../../Labs/4-Teams/04-Bots/01-Exercise-Creating%20conversational%20bots.md)

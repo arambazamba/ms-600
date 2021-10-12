@@ -6,4 +6,4 @@
 
 ## Labs
 
-[Exercise 6: Creating messaging extensions in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/07-Exercise-6-Creating-messaging-extensions-in-Microsoft-Teams.md)
+[05-MsgExt, 01-Exercise-Create action command messaging extensions](../../../Labs/4-Teams/05-MsgExt/01-Exercise-Create%20action%20command%20messaging%20extensions.md)
