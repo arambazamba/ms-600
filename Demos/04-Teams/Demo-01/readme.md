@@ -22,6 +22,12 @@ For Teams Development a tool called [ngrok](https://ngrok.com/download) is requi
 
 ![ngrok](_images/ngrok.png)
 
+Before installing anything you can check your environment:
+
+```
+npm list -g --depth 0
+```
+
 Install Generators:
 
 ```
