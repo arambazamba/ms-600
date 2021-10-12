@@ -24,4 +24,4 @@ performance: {
 
 ## Labs
 
-[Exercise 1: Deploying a Microsoft Teams app](<(../../../Labs/4-Develop apps for Microsoft Teams/01-Tabs in Microsoft Teams/)>)
+[01-Tabs, Exercise 1: 01-Exercise-Create a custom Microsoft Teams personal tab](../../../Labs/4-Teams/01-Tabs/01-Exercise-Create%20a%20custom%20Microsoft%20Teams%20personal%20tab.md)
