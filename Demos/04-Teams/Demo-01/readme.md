@@ -22,7 +22,7 @@ For Teams Development a tool called [ngrok](https://ngrok.com/download) is requi
 
 ![ngrok](_images/ngrok.png)
 
-Before installing anything you can check your environment:
+Before installing anything you can check your environment for global node packages and their version:
 
 ```
 npm list -g --depth 0
