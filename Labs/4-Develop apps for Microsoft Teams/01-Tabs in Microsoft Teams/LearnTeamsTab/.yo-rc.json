@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Integrations"
+    },
+    "libraryName": "learnTeamsTab",
+    "generator-version": "3.3.1"
+  }
+}

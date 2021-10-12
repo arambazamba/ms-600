@@ -10,6 +10,18 @@ Three scaffolding options:
 -   The current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
 -   Teams toolkit also creates a different structure
 
+## Tips
+
+Do avoid webpack size warning during you getting started process you can disable performance hints in `webpack.config.js` of your project by adding:
+
+```json
+performance: {
+    hints: false
+}
+```
+
+![webpack-performance.png](_images/webpack-performance.png)
+
 ## Labs
 
-[Exercise 2: Deploying a Microsoft Teams app](<(../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/03-Exercise-2-Deploying-a-Microsoft-Teams-app.md)>)
+[Exercise 1: Deploying a Microsoft Teams app](<(../../../Labs/4-Develop apps for Microsoft Teams/01-Tabs in Microsoft Teams/)>)
