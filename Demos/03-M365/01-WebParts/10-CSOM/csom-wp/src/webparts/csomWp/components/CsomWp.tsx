@@ -1,12 +1,16 @@
-import * as React from "react";
-import styles from "./CsomWp.module.scss";
-import { ICsomWpProps, ICsomWpState } from "./ICsomWpProps";
-import { escape } from "@microsoft/sp-lodash-subset";
+import * as React from 'react';
+import styles from './CsomWp.module.scss';
+import { ICsomWpProps } from './ICsomWpProps';
+import { escape } from '@microsoft/sp-lodash-subset';
 
-export default class CsomWp extends React.Component<
-  ICsomWpProps,
-  ICsomWpState
-> {
+export interface ICsomWpState {
+  listTitles: string[];
+  loadingLists: boolean;
+  error: string;
+}
+
+export default class CsomWp extends React.Component<ICsomWpProps, ICsomWpState> {
+
   constructor(props?: ICsomWpProps, context?: any) {
     super(props);
 
@@ -65,9 +69,9 @@ export default class CsomWp extends React.Component<
     );
 
     return (
-      <div className={styles.csomWp}>
-        <div className={styles.container}>
-          <div
+      <div className={ styles.csomWp }>
+        <div className={ styles.container }>
+        <div
             className={`ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}`}
           >
             <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">

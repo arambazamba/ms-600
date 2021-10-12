@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "a0ba3abd-ab03-43eb-877e-8fe12a8e86e9",
+  "id": "acd784dc-7003-40e6-98b1-6f7ee416d1f0",
   "alias": "CsomWpWebPart",
   "componentType": "WebPart",
 
@@ -17,11 +17,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "CsomWP" },
-    "description": { "default": "CsomWP description" },
+    "title": { "default": "CSOM-WP" },
+    "description": { "default": "CSOM-WP description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "CsomWP"
+      "description": "CSOM-WP"
     }
   }]
 }

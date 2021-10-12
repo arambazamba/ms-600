@@ -1,10 +1,8 @@
-# Domain Isolated WebParts
+# Domain Isoltated WebParts
 
-2 Webparts included:
+## Graph using AadHttpClient
 
--   Call Third Party Api
--   Domain Isolated WP
--   Edit `package-solution.json`
+- Edit `package-solution.json`
 
     ```
     "isDomainIsolated": true,
@@ -18,13 +16,48 @@
 
 -   Package the webpart using `gulp bundle --ship` and `gulp package-solution --ship`
 -   Make sure you are authenticated using M365 CLI: `m365 login`
--   Deploy the webpart using `m365 spo app add -p sharepoint/solution/sp-fx-rest.sppkg --overwrite`
--   Take the resulting id and deploy: `m365 spo app deploy -i 6636a58e-8139-4fab-adf3-458906f3189b`
+-   Deploy the webpart using `($id=m365 spo app add -p sharepoint/solution/call-rest-apis.sppkg --overwrite)`
+-   Take the resulting id and deploy: `m365 spo app deploy -i $id`
 
-Approve the API permission request fro Domain Isolated WP:
+- Approve the API permission request fro Domain Isolated WP:
 
-In the navigation of SharePoint Admin, select Advanced > API access:
+- In the navigation of SharePoint Admin, select Advanced > API access:
 
-Select the Pending approval for the Microsoft Graph permission User.ReadBasic.All
+- Select the Pending approval for the Microsoft Graph permission User.ReadBasic.All
 
 ![sharepoint-admin-portal-02](_images/sharepoint-admin-portal-02.png)
+
+For your own understanding check the App Registration that has been created by approving the request.
+
+![azure-app-reg](_images/azure-app-reg.png)
+
+## Secured Enterprise Api
+
+- Execute `create-func-app.azcli` and deploy `az-funct-skills`
+- Enable auth
+- Configure Azure AD auth
+
+  ![azure-ad-auth](_images/azure-ad-auth.png)
+
+- Enable CORS on the function app for your SharePoint tenant.Example: `https://integrationsonline.sharepoint.com`
+
+- Add permissions to `package-solution.json`
+
+  ```
+  "webApiPermissionRequests": [
+    {
+      "resource": "spfxapi-26951",
+      "scope": "user_impersonation"
+    }
+  ],
+  ```
+
+-   Package the webpart using `gulp bundle --ship` and `gulp package-solution --ship`
+-   Make sure you are authenticated using M365 CLI: `m365 login`
+-   Deploy the webpart using `($id=m365 spo app add -p sharepoint/solution/enterprise-api.sppkg --overwrite)`
+-   Take the resulting id and deploy: `m365 spo app deploy -i $id`  
+-   In the navigation of SharePoint Admin, select Advanced > API access:
+
+-   Select the Pending approval for the app concerning `user_impersonation`
+
+    ![sharepoint-admin-portal-enterprise-app](_images/sharepoint-admin-portal-enterprise-app.png)
