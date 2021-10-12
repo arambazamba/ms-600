@@ -12,8 +12,6 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
 - [Guided Scripts to setup an Azure hosted Development & Lab VM](./Setup)
   - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./Setup/#basics)
   - [Setup Windows Subsystem for Linux 2 - WSL2](./Setup/#wsl)
-  - [Setup Docker & Kubernetes](./Setup/#docker-wsl)
-  - [Use Teams in VM](./Setup/#teams)
 - [Labs](./Labs)
 
 > Note: Labs are taken from the official repo [MS-600: Building Applications and Solutions with Microsoft 365 Core Services](https://github.com/MicrosoftLearning/MS-600-Building-Applications-and-Solutions-with-Microsoft-365-Core-Services)
