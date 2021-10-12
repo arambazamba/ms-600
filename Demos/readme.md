@@ -13,6 +13,7 @@
 - Optimize Network Traffic
 - Access User Data with Microsoft Graph
 - Access Files with Microsoft Graph
+- Use change notifications and track changes with Microsoft Graph
 
 ## Module 3 Extend Microsoft 365
 
