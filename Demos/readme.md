@@ -4,6 +4,7 @@
 - Overview of authentication and authorization with Microsoft identity
 - Implement authentication and authorization to consume an API
 - Secure custom APIs
+- Work with users, groups, and roles in custom apps and APIs
 
 ## Module 2 Work with Microsoft Graph
 
@@ -12,27 +13,27 @@
 - Optimize Network Traffic
 - Access User Data with Microsoft Graph
 - Access Files with Microsoft Graph
-- Manage a Group Lifecycle on Microsoft Graph
+- Use change notifications and track changes with Microsoft Graph
 
-## Module 3 Extend and Customize SharePoint SharePoint Framework Web Parts
+## Module 3 Extend Microsoft 365
 
-- SharePoint Framework Extension
-- Package and Deploy an SPFx Solution
-- Consumption of Microsoft Graph and Third Party APIs
-- Web Parts as Teams Tabs
-- Branding and Theming in SharePoint
+- Introduction to customizing and extending SharePoint
+  - Package and deploy a SharePoint Framework solution
+  - SharePoint Framework Extension
+  - Package and Deploy an SPFx Solution
+  - Consumption of Microsoft Graph and Third Party APIs
+  - Web Parts as Teams Tabs
+- Introduction to Office client customization with add-ins
+  - Understand Office JavaScript APIs
+  - Understand testing, debugging, and deployment options for Office Add-ins
 
 ## Module 4 Extend Teams
 
 - Overview of Building Apps for Microsoft Teams
-- Webhooks in Microsoft Teams
+- Task-oriented interactions with messaging extensions
 - Tabs in Microsoft Teams
-- Messaging Extensions in Microsoft Teams
-- Conversational Bots in Microsoft Teams
-
-## Module 5 Extend Office
-
-- Office Add-ins
-- Office JS APIs
-- Customize Office Add-ins
-- Testing Debugging and Deployment Options for Office Add-ins
+- Create interactive conversational bots
+- Collect input with task modules
+- Webhooks in Microsoft Teams
+- The Microsoft Graph teamwork endpoint
+- Authentication and single sign-on in Microsoft Teams
