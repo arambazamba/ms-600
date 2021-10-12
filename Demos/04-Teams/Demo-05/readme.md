@@ -4,4 +4,6 @@
 
 ## Labs
 
-[Exercise 4: Creating webhooks in Microsoft Teams](../../../Labs/Lab04/Lab04-Extending-Teams-lab-instructions/05-Exercise-4-Creating-webhooks-in-Microsoft-Teams.md)
+[03-Webhooks, Exercise 1: 01-Exercise-Creating outgoing webhooks](../../../Labs/4-Teams/02-TaskModules/01-Exercise-Creating%20outgoing%20webhooks.md)
+
+[03-Webhooks, Exercise 2: 02-Exercise-Creating incoming webhooks](../../../Labs/4-Teams/02-TaskModules/02-Exercise-Creating%20incoming%20webhooks.md)
