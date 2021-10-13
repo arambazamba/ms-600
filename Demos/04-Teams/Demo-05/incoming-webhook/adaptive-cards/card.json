@@ -1,0 +1,101 @@
+{
+    "type":"message",
+    "attachments":[
+       {
+          "contentType":"application/vnd.microsoft.card.adaptive",
+          "contentUrl":null,
+          "content":{
+             "$schema":"http://adaptivecards.io/schemas/adaptive-card.json",
+             "type":"AdaptiveCard",
+             "version":"1.2",
+             "body": [
+                {
+                    "type": "ColumnSet",
+                    "style": "emphasis",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "padding": "None",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "style": "Person",
+                                    "url": "https://github.com/arambazamba.png",
+                                    "size": "Small",
+                                    "width": "40px",
+                                    "height": "40px"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "padding": "None",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Alexander Pajer",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Falaffel",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ],
+                    "padding": "Default",
+                    "spacing": "Medium"
+                },
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "*\"Please take your time and enjoy todays menu\"*",
+                            "wrap": true,
+                            "spacing": "Medium"
+                        },
+                        {
+                            "type": "ImageSet",
+                            "images": [
+                                {
+                                    "type": "Image",
+                                    "size": "Large",
+                                    "url": "https://integrationsonline.blob.core.windows.net/pics/falaffel.JPG"
+                                }
+                            ],
+                            "imageSize": "Large"
+                        }
+                    ],
+                    "padding": {
+                        "top": "None",
+                        "bottom": "Default",
+                        "left": "Default",
+                        "right": "Default"
+                    },
+                    "spacing": "Medium"
+                },
+                {
+                    "type": "Container",
+                    "id": "353b659f-b668-fac0-5b7f-5d2f1bdb46ac",
+                    "padding": "Default",
+                    "spacing": "Medium",
+                    "separator": true,
+                    "items": [
+                      
+                    ]
+                }
+            ]
+          }
+       }
+    ]
+ }

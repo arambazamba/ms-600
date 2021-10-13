@@ -1,6 +1,16 @@
-# Webhooks
+# Webhooks & Cards
+
+## Webhooks
 
 [Webhooks & Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
+
+## Adaptive Cards
+
+[Adaptive Cards Docs](https://docs.microsoft.com/en-us/adaptive-cards/)
+
+[Adaptive Cards Actions](https://docs.microsoft.com/en-us/adaptive-cards/rendering-cards/actions)
+
+[Adaptive Card Designer](https://adaptivecards.io/designer/)
 
 ## Labs
 
