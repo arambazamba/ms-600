@@ -4,14 +4,13 @@
 
 [Build apps with the Teams Toolkit and Visual Studio Code](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-overview)
 
+## Basic Teams Workflow
+
 Three scaffolding options:
 
 -   `generator-teams@2.17.1` creates a class based structure that corresponds to the lab guides.
 -   The current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
 -   Teams toolkit also creates a different structure
-
----
-## Basic Teams Workflow
 
 Scaffolding:
 
