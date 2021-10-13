@@ -2,6 +2,8 @@
 
 [Overview of the SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview)
 
+[SharePoint Framework Node Compatibility](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/compatibility)
+
 [PnP SPFx Yeoman generator](https://pnp.github.io/generator-spfx/)
 
 [Reusable React controls for your SharePoint Framework](https://pnp.github.io/sp-dev-fx-controls-react/)

@@ -1,4 +1,4 @@
-## Updating SPFx
+# Updating SPFx
 
 Find outdated Packages:
 

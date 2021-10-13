@@ -1,1 +1,3 @@
-Use code from another Repo located at [https://github.com/arambazamba/spfx-devops](https://github.com/arambazamba/spfx-devops)
+# SPFx DevOps
+
+Sample located at [https://github.com/arambazamba/spfx-devops](https://github.com/arambazamba/spfx-devops)

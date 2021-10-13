@@ -1,37 +1,4 @@
-# Deploy App using PnP PowerShell
-
-Bundle & Build SPFx:
-
-```javascript
-gulp bundle
-gulp package-solution
-```
-
-Upload & Deploy Package from Terminal:
-
-```Powershell
-$tenant = "integrationsonline"
-Connect-PnPOnline -url https://$tenant.sharepoint.com
-$objAppId = Add-PnPApp -Path ./spfx-cli/sharepoint/solution/spfx-cli.sppkg -Overwrite 
-[GUID]$appid = $objAppId.Id
-Write-Host "App added to catalog"
-Publish-PnPApp -Identity $appid -Scope Tenant
-Write-Host "App with ID: $appid published"
-```
-
-Install it:
-
-```Powershell
-Install-PnPApp -Identity $appid
-```
-
-Uninstall it:
-
-```Powershell
-Uninstall-PnPApp -Identity $appid -Scope Tenant
-Remove-PnPApp -Identity $appid -Scope Tenant
-```
-# Deploy App using Office CLI
+# Using CLI for Microsoft 365
 
 [CLI for Microsoft 365](https://pnp.github.io/office365-cli/cmd/spo/login/)
 
