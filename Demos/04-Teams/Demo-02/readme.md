@@ -10,7 +10,60 @@ Three scaffolding options:
 -   The current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
 -   Teams toolkit also creates a different structure
 
-## Tips
+---
+## Basic Teams Workflow
+
+Scaffolding:
+
+```
+yo teams
+```
+
+Interpolates env to manifest & create `./package/*.zip`:
+
+```
+gulp manifest
+```
+
+> Note: Usually .env is inclued in `.gitignore`
+
+Build the project:
+
+```
+gulp build
+```
+
+Serve the project
+
+```
+gulp serve
+```
+
+Establish a secure tunnel to test:
+
+```
+gulp ngrok-serve
+```
+
+## Ngrok
+
+[ngrok](https://ngrok.com)
+
+> Note: To avoid having the ngrok name changed all the time use from within a Teams project in two seperate terminals, or even better run gulp start-ngrok in a seperate standalone console window.
+
+Replace `gulp ngrok-serve` with:
+
+```
+gulp start-ngrok (from within a Teams proj)
+```
+
+```
+gulp serve --debug
+```
+
+![ngrok](_images/ngrok.jpg)
+
+## Webpack
 
 Do avoid webpack size warning during you getting started process you can disable performance hints in `webpack.config.js` of your project by adding:
 
