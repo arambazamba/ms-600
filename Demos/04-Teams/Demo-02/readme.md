@@ -72,6 +72,14 @@ performance: {
 
 ![webpack-performance.png](_images/webpack-performance.png)
 
+## ESlint
+
+To disable ESlint add the following line to your settings of VS Code:
+
+```
+"eslint.enable": false
+```
+
 ## Labs
 
 [01-Tabs, Exercise 1: 01-Exercise-Create a custom Microsoft Teams personal tab](../../../Labs/4-Teams/01-Tabs/01-Exercise-Create%20a%20custom%20Microsoft%20Teams%20personal%20tab.md)
