@@ -4,6 +4,10 @@
 
 ## Demos
 
+### Use Teamwork REST Endpoint
+
+Operations are provided in `use-teamwork.http`.
+
 Create Microsoft 365 group:
 
 Scopes: [Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All]
@@ -50,4 +54,10 @@ List all teams the current user has joined:
 GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
 
-Add this Demo https://docs.microsoft.com/en-us/learn/modules/msteams-teamwork-endpoint/3-exercise-teamwork-endpoint-introduction
+### Teamwork Tab
+
+- Show app registration `teamworks-tab`
+- Update ngrok Url in:
+    - Visual Studio Code project /.env file
+    - Azure AD Application > Authentication > Redirect URIs
+    - Azure AD Application > Expose an API > Application ID URI
