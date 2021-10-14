@@ -1,30 +1,28 @@
 # Graph Teamwork
 
-
+[Graph Teamwork REST Reference](https://docs.microsoft.com/en-us/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
 
 ## Demos
 
 Create Microsoft 365 group:
 
+Scopes: [Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All]
+
 ```json
 POST https://graph.microsoft.com/v1.0/groups
 {
-  "displayName":"Flight 157",
-  "mailNickname":"flight157",
-  "description":"Everything about flight 157",
+  "displayName":"teams development",
+  "mailNickname":"teams-dev",
+  "description":"a group for teams development",
   "visibility":"Private",
   "groupTypes":["Unified"],
   "mailEnabled":true,
   "securityEnabled":false,
   "members@odata.bind":[
-    "https://graph.microsoft.com/v1.0/users/bec05f3d-a818-4b58-8c2e-2b4e74b0246d",
-    "https://graph.microsoft.com/v1.0/users/ae67a4f4-2308-4522-9021-9f402ff0fba8",
-    "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783",
-    "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133"
+    "https://graph.microsoft.com/v1.0/users/25853297-1418-4fc4-96ec-22f8bc83a64b",
   ],
   "owners@odata.bind":[
-    "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133",
-    "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783"
+    "https://graph.microsoft.com/v1.0/users/25853297-1418-4fc4-96ec-22f8bc83a64b"
   ]
 }
 ```

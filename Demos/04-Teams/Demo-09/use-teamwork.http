@@ -1,0 +1,63 @@
+# @name auth
+POST https://login.microsoftonline.com/{{tenantId}}/oauth2/v2.0/token HTTP/1.1
+Content-type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id={{clientId}}
+&client_secret={{clientSecret}}
+&scope={{scope}}
+
+### get a specific user
+# @name user
+GET https://graph.microsoft.com/v1.0/users/alexander.pajer@integrations.at
+Authorization: Bearer {{auth.response.body.access_token}}
+
+
+### Create group
+# @name teamsdev
+POST https://graph.microsoft.com/v1.0/groups
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.access_token}}
+
+{
+  "displayName":"teams development",
+  "mailNickname":"teams-development",
+  "description":"a group for teams development",
+  "visibility":"Private",
+  "groupTypes":["Unified"],
+  "mailEnabled":true,
+  "securityEnabled":false,
+  "members@odata.bind":[
+    "https://graph.microsoft.com/v1.0/users/{{user.response.body.id }}",
+  ],
+  "owners@odata.bind":[
+    "https://graph.microsoft.com/v1.0/users/{{user.response.body.id }}"
+  ]
+}
+
+### List groups
+GET https://graph.microsoft.com/v1.0/groups
+Accept: application/json
+Authorization: Bearer {{auth.response.body.access_token}}
+
+### Convert it to a Microsoft Teams
+POST https://graph.microsoft.com/v1.0/teams
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.access_token}}
+
+{
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('{{teamsedv.response.body.id}}')"
+}
+
+### List Teams
+GET https://graph.microsoft.com/v1.0/groups?$select=id,resourceProvisioningOptions
+Accept: application/json
+Authorization: Bearer {{auth.response.body.access_token}}
+
+### List all teams the current user has joined:
+GET https://graph.microsoft.com/v1.0/users/{{user.response.body.id }}/joinedTeams
+Accept: application/json
+Authorization: Bearer {{auth.response.body.access_token}}

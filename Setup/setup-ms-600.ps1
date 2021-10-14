@@ -43,7 +43,8 @@ code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension xabikos.JavaScriptSnippets			
 code --install-extension eliostruyf.spfx-snippets
 code --install-extension TeamsDevApp.ms-teams-vscode-extension
-code --install-extension madewithcardsio.adaptivecardsstudiobeta
+code --install-extension madewithcards/adaptivecardsstudio
+code --install-extension humao.rest-client
 code --install-extension eliostruyf.vscode-msgraph-autocomplete
 
 # Base Toolset M365 Related
