@@ -1,4 +1,4 @@
-# Graph-Playground - Microsoft Teams App
+# SSO-Tab - Microsoft Teams App
 
 Generate a Microsoft Teams application.
 

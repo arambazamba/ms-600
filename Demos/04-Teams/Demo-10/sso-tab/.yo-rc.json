@@ -3,6 +3,7 @@
     "promptValues": {
       "developer": "Integrations"
     },
-    "libraryName": "teamworkTab"
+    "libraryName": "ssoTab",
+    "generator-version": "3.3.1"
   }
 }

@@ -5,9 +5,9 @@ import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
 
 /**
- * Implementation of Graph-Tab configuration page
+ * Implementation of SSO-Mails configuration page
  */
-export const GraphTabConfig = () => {
+export const SsoMailsTabConfig = () => {
 
     const [{ inTeams, theme, context }] = useTeams({});
     const [text, setText] = useState<string>();
@@ -16,10 +16,10 @@ export const GraphTabConfig = () => {
     const onSaveHandler = (saveEvent: microsoftTeams.settings.SaveEvent) => {
         const host = "https://" + window.location.host;
         microsoftTeams.settings.setSettings({
-            contentUrl: host + "/graphTab/?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
-            websiteUrl: host + "/graphTab/?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
-            suggestedDisplayName: "Graph-Tab",
-            removeUrl: host + "/graphTab/remove.html?theme={theme}",
+            contentUrl: host + "/ssoMailsTab/?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+            websiteUrl: host + "/ssoMailsTab/?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+            suggestedDisplayName: "SSO-Mails",
+            removeUrl: host + "/ssoMailsTab/remove.html?theme={theme}",
             entityId: entityId.current
         });
         saveEvent.notifySuccess();

@@ -2,6 +2,8 @@
 
 [Bots in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
 
+[Teams Activity Handler](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/bot-basics?tabs=csharp)
+
 [Bot Framework Composer](https://docs.microsoft.com/en-us/composer/introduction)
 
 [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)

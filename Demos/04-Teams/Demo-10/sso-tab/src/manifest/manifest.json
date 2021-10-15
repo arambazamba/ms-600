@@ -11,8 +11,8 @@
     "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "Graph-Playground",
-    "full": "Graph-Playground"
+    "short": "SSO-Tab",
+    "full": "SSO-Tab"
   },
   "description": {
     "short": "TODO: add short description here",
@@ -25,7 +25,7 @@
   "accentColor": "#D85028",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/graphTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/ssoMailsTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
