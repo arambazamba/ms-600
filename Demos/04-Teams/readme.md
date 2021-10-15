@@ -6,14 +6,16 @@
 
 ## Demos
 
--   Environment Setup
--   Explore Structure of Teams App & First Teams App
--   Personal- & Configurable Tabs
--   TaskModules & Adaptive Cards
--   Outgoing- and Incoming-Webhooks
--   Bots
--   Message Extensions Extensions
--   Link unfurling
+- Environment Setup
+- Explore Structure of Teams App & First Teams App
+- Personal- & Configurable Tabs
+- TaskModules & Adaptive Cards
+- Outgoing- and Incoming-Webhooks
+- Bots
+- Message Extensions Extensions
+- Link unfurling
+- Use Graph Teamswork 
+- Single Signed-In Tab
 
 ## Readings
 

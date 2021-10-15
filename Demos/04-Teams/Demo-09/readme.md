@@ -1,10 +1,8 @@
-# Graph Teamwork
+# Use Graph Teamwork REST Endpoint
 
 [Graph Teamwork REST Reference](https://docs.microsoft.com/en-us/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
 
 ## Demos
-
-### Use Teamwork REST Endpoint
 
 Operations are provided in `use-teamwork.http`.
 
@@ -53,11 +51,3 @@ List all teams the current user has joined:
 ```json
 GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
-
-### Teamwork Tab
-
-- Show app registration `teamworks-tab`
-- Update ngrok Url in:
-    - Visual Studio Code project /.env file
-    - Azure AD Application > Authentication > Redirect URIs
-    - Azure AD Application > Expose an API > Application ID URI
