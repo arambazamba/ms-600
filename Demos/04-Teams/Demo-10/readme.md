@@ -12,11 +12,8 @@
   - Expose an API for the app
   - Add access_as_user scope
   - Add wellknown apps
-  
-    ```
-    Microsoft Teams mobile & desktop clients -> 1fec8e78-bce4-4aaf-ab1b-5451cc387264
-    Microsoft Teams web client -> 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
-    ```
+    - Microsoft Teams mobile & desktop clients -> 1fec8e78-bce4-4aaf-ab1b-5451cc387264
+    - Microsoft Teams web client -> 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
 - Create Teams app
 - Associate the Azure AD app with the Microsoft Teams app
 - Obtain the ID token from Microsoft Teams
