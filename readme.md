@@ -3,6 +3,7 @@
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
 - [Requirements / Tooling](./Tooling)
+  - [Set up a Microsoft 365 developer sandbox subscription](https://docs.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started)
   - [Register Azure Pass](./Tooling/05-AzurePass)
   - [Git & GitHub Basics](./Tooling/01-Github)
   - [Visual Studio Code Intro](./Tooling/02-VSCode)
