@@ -29,7 +29,7 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
   - Azure Paid / Sponsored Subscription
   - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
 
-> Note: Please do not use a production tenant or subscription for training. You might not have all the required permissions and do not want to interupt production ressources when applying configuration changes.
+> Note: Please do not use a production tenant or subscriptions for training. You might not have all the required permissions and do not want to interupt production ressources when applying configuration changes.
 
 ## Exam
 
