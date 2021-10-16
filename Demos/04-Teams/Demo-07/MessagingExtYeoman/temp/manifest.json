@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.10",
+  "id": "290e69e0-2e4e-11ec-ba01-dd867996842e",
+  "version": "0.0.1",
+  "packageName": "messagingextyeoman",
+  "developer": {
+    "name": "Integrations",
+    "websiteUrl": "https://84af57a7a97c.ngrok.io",
+    "privacyUrl": "https://84af57a7a97c.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://84af57a7a97c.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "MessagingExtYeoman",
+    "full": "MessagingExtYeoman"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "34fca798-4fb0-41f3-ae97-8c74efccd101",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "planetExpanderAction",
+          "type": "action",
+          "title": "Planet Expander",
+          "description": "Lookup the details of a planet.",
+          "context": [
+            "compose",
+            "message"
+          ],
+          "fetchTask": true
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "84af57a7a97c.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}

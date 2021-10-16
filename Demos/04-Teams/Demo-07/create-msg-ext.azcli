@@ -1,0 +1,26 @@
+rnd=30986
+loc=westeurope
+grp=ms600-m04-msg-ext-$rnd
+bot=msg-ext-bot-$rnd
+
+az group create -n $grp -l $loc
+
+appregid=$(az ad app create --display-name $bot --available-to-other-tenants false --oauth2-allow-implicit-flow true --query appId -o tsv)
+
+secret=$(az ad app credential reset --id $appregid --append --query password)
+
+echo "*** appid: " $appregid
+echo "*** secret: " $secret
+
+botid=$(az bot create --appid $appregid --kind registration -n $bot -g $grp --sku F0 --query id --endpoint https://replace.ngrok.io)
+
+echo "*** botid: " $botid   
+
+az bot msteams create -n $bot -g $grp
+
+## Complete lab and continue later after you have executed gulp ngrok-serve
+## Replace ngrok url
+
+ngrok=https://84af57a7a97c.ngrok.io
+
+az bot update -n $bot -g $grp --endpoint $ngrok/api/messages
