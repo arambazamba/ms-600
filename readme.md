@@ -23,13 +23,12 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
 
 - [Github User Account](https://github.com/)
 - [Microsoft 365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
-- [Azure DevOps Account](https://dev.azure.com/)
 - Azure Subscription:
   - Using [Azure Passes](https://www.microsoftazurepass.com/)
   - Azure Paid / Sponsored Subscription
   - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
 
-> Note: Please do not use a Production Account for Training
+> Note: Please do not use a production tenant or subscriptions for training. You might not have all the required permissions and do not want to interupt production ressources when applying configuration changes.
 
 ## Exam
 
