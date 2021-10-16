@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Integrations"
+    },
+    "libraryName": "convBotTab",
+    "generator-version": "3.3.1"
+  }
+}

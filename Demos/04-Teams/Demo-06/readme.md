@@ -12,7 +12,23 @@
 
 ## Demos
 
-### Conversational Bot Demo
+### Conversational Bot using Yeoman
+
+When completing all Bot related samples, you will be asked to update the messaging endpoint with your ngrok url + `api/messages`. As Microsoft was not able or willing to fix this issue for at least 2 years now please update the messaging endpoint using the script `update-endpoint.azcli` and your own values. 
+
+```bash
+loc=westeurope
+grp=ms600-m04-convbot
+bot=convbot-tab
+
+ngrok=https://f3af-80-108-224-121.ngrok.io
+
+az bot update -n $bot -g $grp --endpoint $ngrok/api/messages
+```
+
+![ai-bug.png](_images/ai-bug.png)
+
+### Conversational Bot using Toolkit
 
 -   Scaffold using Teams Toolkit
 -   Start: `ngrok http -host-header=rewrite 3978`
@@ -29,6 +45,6 @@
 
 -   Sideload Extension using `F5` and `Add`
 
-
+## Labs
 
 [04-Bots, 01-Exercise-Creating conversational bots](../../../Labs/4-Teams/04-Bots/01-Exercise-Creating%20conversational%20bots.md)
