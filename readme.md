@@ -2,7 +2,9 @@
 
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
-- [Requirements / Tooling](./Tooling)
+## Contents
+
+- [Tooling Quickstarts](./Tooling)
   - [Set up a Microsoft 365 developer sandbox subscription](https://docs.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started)
   - [Register Azure Pass](./Tooling/05-AzurePass)
   - [Git & GitHub Basics](./Tooling/01-Github)
@@ -17,10 +19,6 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
 
 > Note: Labs are taken from the official repo [MS-600: Building Applications and Solutions with Microsoft 365 Core Services](https://github.com/MicrosoftLearning/MS-600-Building-Applications-and-Solutions-with-Microsoft-365-Core-Services)
 
-## Exam
-
-[Exam MS-600: Building Applications and Solutions with Microsoft 365 Core Services](https://docs.microsoft.com/en-us/learn/certifications/exams/ms-600)
-
 ## Required Cloud Ressources
 
 - [Github User Account](https://github.com/)
@@ -32,6 +30,10 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
   - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
 
 > Note: Please do not use a Production Account for Training
+
+## Exam
+
+[Exam MS-600: Building Applications and Solutions with Microsoft 365 Core Services](https://docs.microsoft.com/en-us/learn/certifications/exams/ms-600)
 
 ## Contributing
 
