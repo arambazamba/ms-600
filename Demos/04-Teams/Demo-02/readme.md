@@ -60,6 +60,21 @@ gulp serve --debug
 
 ![ngrok](_images/ngrok.jpg)
 
+If you want to reserve a subdomain which requires a paid account you configure ngrok to use that domain with a `ngrok.yml` file:
+
+```
+authtoken: 3XjdFZdf4PgB2898gcdbu_4Rukvv4BYxxxxxxxx
+tunnels:
+  http-tunnel:
+    proto: http
+    addr: 80
+    subdomain: integrationsonline
+  node-tunnel:
+    proto: http
+    addr: 3007
+    subdomain: integrationsonline
+```
+
 ## Webpack
 
 Do avoid webpack size warning during you getting started process you can disable performance hints in `webpack.config.js` of your project by adding:
