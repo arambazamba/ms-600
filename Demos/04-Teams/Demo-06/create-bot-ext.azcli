@@ -7,7 +7,7 @@ az group create -n $grp -l $loc
 
 appregid=$(az ad app create --display-name $bot --available-to-other-tenants false --oauth2-allow-implicit-flow true --query appId -o tsv)
 
-secret=$(az ad app credential reset --id $appregid --append --query password)
+secret=$(az ad app credential reset --id $appregid --append --query password -o tsv)
 
 echo "*** appid: " $appregid
 echo "*** secret: " $secret

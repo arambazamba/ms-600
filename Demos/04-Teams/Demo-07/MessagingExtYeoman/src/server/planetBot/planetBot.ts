@@ -42,8 +42,7 @@ import {
               width: 500
             }
           }
-        } as MessagingExtensionActionResponse;
-      
+        } as MessagingExtensionActionResponse;      
         return Promise.resolve(response);
       }
 

@@ -6,9 +6,9 @@
   "packageName": "messagingextyeoman",
   "developer": {
     "name": "Integrations",
-    "websiteUrl": "https://84af57a7a97c.ngrok.io",
-    "privacyUrl": "https://84af57a7a97c.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://84af57a7a97c.ngrok.io/tou.html"
+    "websiteUrl": "https://6cd0-80-108-224-121.ngrok.io",
+    "privacyUrl": "https://6cd0-80-108-224-121.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://6cd0-80-108-224-121.ngrok.io/tou.html"
   },
   "name": {
     "short": "MessagingExtYeoman",
@@ -29,7 +29,7 @@
   "connectors": [],
   "composeExtensions": [
     {
-      "botId": "34fca798-4fb0-41f3-ae97-8c74efccd101",
+      "botId": "1e50d548-226e-492f-aba2-aaf434363fdb",
       "canUpdateConfiguration": false,
       "commands": [
         {
@@ -51,7 +51,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "84af57a7a97c.ngrok.io"
+    "6cd0-80-108-224-121.ngrok.io"
   ],
   "showLoadingIndicator": false
 }
