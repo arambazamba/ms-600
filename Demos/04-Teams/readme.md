@@ -14,8 +14,8 @@
 - Bots
 - Message Extensions Extensions
 - Link unfurling
+- Single Sign-on
 - Use Graph Teamswork 
-- Single Signed-In Tab
 
 ## Readings
 
