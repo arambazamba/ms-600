@@ -4,8 +4,6 @@
 
 [Microsoft 365 Teams Developer Portal - https://dev.teams.microsoft.com/](https://dev.teams.microsoft.com/)
 
-![dev](_images/dev.png)
-
 ## Demos
 
 - Environment Setup
