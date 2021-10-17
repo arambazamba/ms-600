@@ -2,13 +2,13 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
   "manifestVersion": "1.10",
   "id": "f07b0c80-2e9a-11ec-9dbd-ed3fae87696c",
-  "version": "0.0.1",
+  "version": "1.2.0",
   "packageName": "messagingextyeoman",
   "developer": {
     "name": "Integrations",
-    "websiteUrl": "https://6dfd-80-108-224-121.ngrok.io",
-    "privacyUrl": "https://6dfd-80-108-224-121.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://6dfd-80-108-224-121.ngrok.io/tou.html"
+    "websiteUrl": "https://575a-80-108-224-121.ngrok.io",
+    "privacyUrl": "https://575a-80-108-224-121.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://575a-80-108-224-121.ngrok.io/tou.html"
   },
   "name": {
     "short": "Msg-Ext-Yeoman",
@@ -41,6 +41,28 @@
           "message"
         ],
         "fetchTask": true
+      },
+      {
+        "id": "planetExpanderSearch",
+        "type": "query",
+        "title": "Planet Lookup",
+        "description": "Search for a planet.",
+        "context": ["compose"],
+        "parameters": [{
+          "name": "searchKeyword",
+          "description": "Enter 'inner','outer' or the name of a specific planet",
+          "title": "Planet"
+        }]
+      }
+    ],
+    "messageHandlers": [
+      {
+        "type": "link",
+        "value": {
+          "domains": [
+            "*.wikipedia.org"
+          ]
+        }
       }
     ]
   }],
@@ -49,7 +71,8 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "6dfd-80-108-224-121.ngrok.io"
+    "575a-80-108-224-121.ngrok.io",
+    "*.wikipedia.org"
   ],
   "showLoadingIndicator": false
 }

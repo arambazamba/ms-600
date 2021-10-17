@@ -2,7 +2,13 @@ import {
     TeamsActivityHandler,
     TurnContext,
     MessageFactory,
-    CardFactory, MessagingExtensionAction, MessagingExtensionActionResponse, MessagingExtensionAttachment
+    CardFactory, 
+    MessagingExtensionAction, 
+    MessagingExtensionActionResponse, 
+    MessagingExtensionAttachment,
+    MessagingExtensionQuery, 
+    MessagingExtensionResponse,
+    AppBasedLinkQuery
   } from "botbuilder";
   
   import * as Util from "util";
@@ -45,6 +51,8 @@ import {
       
         return Promise.resolve(response);
       }
+
+      // Planet Expander
 
       protected handleTeamsMessagingExtensionSubmitAction(context: TurnContext, action: MessagingExtensionAction): Promise<MessagingExtensionActionResponse> {
         switch (action.commandId) {
@@ -90,4 +98,69 @@ import {
         return CardFactory.adaptiveCard(adaptiveCardSource);
       }
 
+      // Planet Sarch
+      protected handleTeamsMessagingExtensionQuery(context: TurnContext, query: MessagingExtensionQuery): Promise<MessagingExtensionResponse> {
+        // get the search query
+        let searchQuery = "";
+        if (query && query.parameters && query.parameters[0].name === "searchKeyword" && query.parameters[0].value) {
+          searchQuery = query.parameters[0].value.trim().toLowerCase();
+        }
+      
+        // load planets
+        const planets: any = require("./planets.json");
+        // search results
+        let queryResults: string[] = [];
+      
+        switch (searchQuery) {
+          case "inner":
+            // get all planets inside asteroid belt
+            queryResults = planets.filter((planet) => planet.id <= 4);
+            break;
+          case "outer":
+            // get all planets outside asteroid belt
+            queryResults = planets.filter((planet) => planet.id > 4);
+            break;
+          default:
+            // get the specified planet
+            queryResults.push(planets.filter((planet) => planet.name.toLowerCase() === searchQuery)[0]);
+        }
+      
+        // get the results as cards
+        const searchResultsCards: MessagingExtensionAttachment[] = [];
+        queryResults.forEach((planet) => {
+          searchResultsCards.push(this.getPlanetResultCard(planet));
+        });
+      
+        const response: MessagingExtensionResponse = {
+          composeExtension: {
+            type: "result",
+            attachmentLayout: "list",
+            attachments: searchResultsCards
+          }
+        } as MessagingExtensionResponse;
+      
+        return Promise.resolve(response);
+      }
+
+      private getPlanetResultCard(selectedPlanet: any): MessagingExtensionAttachment {
+        return CardFactory.heroCard(selectedPlanet.name, selectedPlanet.summary, [selectedPlanet.imageLink]);
+      }
+
+      // Link unfurling
+      protected handleTeamsAppBasedLinkQuery(context: TurnContext, query: AppBasedLinkQuery): Promise<MessagingExtensionResponse> {
+        // load planets
+        const planets: any = require("./planets.json");
+        // get the selected planet
+        const selectedPlanet: any = planets.filter((planet) => planet.wikiLink === query.url)[0];
+        const adaptiveCard = this.getPlanetDetailCard(selectedPlanet);
+      
+        // generate the response
+        return Promise.resolve({
+          composeExtension: {
+            type: "result",
+            attachmentLayout: "list",
+            attachments: [adaptiveCard]
+          }
+        } as MessagingExtensionActionResponse);
+      }
   }
