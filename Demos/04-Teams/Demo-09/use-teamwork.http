@@ -14,15 +14,15 @@ Authorization: Bearer {{auth.response.body.access_token}}
 
 
 ### Create group
-# @name teamsdev
+# @name m365grp
 POST https://graph.microsoft.com/v1.0/groups
 Accept: application/json
 Content-Type: application/json
 Authorization: Bearer {{auth.response.body.access_token}}
 
 {
-  "displayName":"teams development",
-  "mailNickname":"teams-development",
+  "displayName":"teams development x",
+  "mailNickname":"teams-developmentx",
   "description":"a group for teams development",
   "visibility":"Private",
   "groupTypes":["Unified"],
@@ -49,11 +49,11 @@ Authorization: Bearer {{auth.response.body.access_token}}
 
 {
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('{{teamsedv.response.body.id}}')"
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('{{m365grp.response.body.id}}')"
 }
 
 ### List Teams
-GET https://graph.microsoft.com/v1.0/groups?$select=id,resourceProvisioningOptions
+GET https://graph.microsoft.com/v1.0/groups?$select=id,displayName,resourceProvisioningOptions
 Accept: application/json
 Authorization: Bearer {{auth.response.body.access_token}}
 
