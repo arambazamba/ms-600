@@ -12,8 +12,11 @@ perm=$(az ad app list --all --query "[?displayName=='msal-token-flow'][requiredR
 echo 'app permissions: ' $perm
 
 # Create a new app reg with name 'cli-app' and api permission specified in file manifest.json
-app=cli-app
-uri=http://localhost:5001
-az ad app create --display-name $app --required-resource-accesses @manifest.json \
-    --available-to-other-tenants false --oauth2-allow-implicit-flow true \
-    --reply-urls $uri
+app=sprestapp
+uri=http://localhost:8080
+
+id=$(az ad app create --display-name $app --required-resource-accesses @manifest.json \
+    --oauth2-allow-implicit-flow true \
+    --reply-urls $uri --query appId -o tsv)
+
+az ad app permission admin-consent --id $id

@@ -21,8 +21,8 @@ choco install ngrok -y
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
-# Install httprepl
-dotnet tool install -g Microsoft.dotnet-httprepl
+# Add the default nuget package source
+dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
 
 # Intall VS Code Extensions
 code --install-extension ms-dotnettools.csharp
