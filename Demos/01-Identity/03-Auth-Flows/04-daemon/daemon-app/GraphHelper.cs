@@ -53,7 +53,10 @@ namespace MSALDaemon
             ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
 
             GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+            
+            //POST /users/{id | userPrincipalName}/messages/{id}/send
             graphClient.Users[SenderAcct].SendMail(msg, false).Request().PostAsync();
+            
             List<QueryOption> options = new List<QueryOption> {
                     new QueryOption ("$top", "1")
                 };
