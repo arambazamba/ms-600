@@ -9,7 +9,6 @@ namespace MSALDaemon
         public Endpoints endpoints { get; set; }
         public string returnUrl { get; set; }
         public string mailSender { get; set; }
-        public string frontendUrl { get; set; }
     }
 
     public class Endpoints

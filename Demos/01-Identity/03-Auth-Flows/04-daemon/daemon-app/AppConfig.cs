@@ -23,23 +23,9 @@ namespace MSALDaemon
 
     public class AppConfig
     {
-
-        /// <summary>
-        /// 
-        /// </summary>
         public Logging Logging { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
         public Azure Azure { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
         public GraphCfg GraphCfg { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
         public string AllowedHosts { get; set; }
     }
-
 }
