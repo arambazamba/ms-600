@@ -19,6 +19,7 @@ namespace ProductCatalog.Controllers
       this.data = data;
     }
 
+    [HttpGet()]
     public List<Category> GetAllCategories()
     {
       HttpContext.VerifyUserHasAnyAcceptedScope(new string[] { "Category.Read" });

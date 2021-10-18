@@ -21,6 +21,7 @@ namespace ProductCatalog.Controllers
       this.data = data;
     }
 
+    [HttpGet()]
     public List<Product> GetAllProducts()
     {
       HttpContext.VerifyUserHasAnyAcceptedScope(new string[] { "Product.Read" });
