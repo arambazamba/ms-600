@@ -3,11 +3,11 @@
 ## Demos
 
 -   Graph Query Params
--   Change Notifications
 -   Batching
 -   Throttling
--   Working with files
 -   Manage Groups
+-   Working with files
+-   Change Notifications
 
 ## Readings
 

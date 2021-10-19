@@ -40,3 +40,7 @@ $search:
 ```
 https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
+
+## Additional Labs & Walkthroughs
+
+[Optimize data usage when using Microsoft Graph with query parameters](https://docs.microsoft.com/en-us/learn/modules/optimize-data-usage/?ns-enrollment-type=LearningPath&ns-enrollment-id=learn-m365.msgraph-associate)

@@ -1,44 +1,64 @@
-# Manage a group lifecycle on Microsoft Graph
+## Change Notifications
 
-Get groups:
+[Set up notifications for changes in user data](https://docs.microsoft.com/en-us/graph/webhooks)
 
-```
-https://graph.microsoft.com/v1.0/groups
-```
+[Using Azure Event Hubs to receive change notifications](https://docs.microsoft.com/en-us/graph/change-notifications-delivery)
 
-Get group owner:
+Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-```
-https://graph.microsoft.com/v1.0/groups/11a924f6-6baf-4500-b056-6488c1284951/owners
-```
+-   Cloud printing printer
+-   Cloud printing printTaskDefinition
+-   Content within the hierarchy of any folder driveItem on a user's personal OneDrive
+-   Content within the hierarchy of the root folder driveItem on OneDrive for Business
+-   Group
+-   Microsoft 365 group conversation
+-   Outlook event
+-   Outlook message
+-   Outlook personal contact
+-   Security alert
+-   SharePoint list
+-   Teams callRecord
+-   Teams chatMessage
+-   Teams presence (preview)
+-   TodoTask (preview)
+-   User
 
-Get the list of groups where a user is an owner:
+## Demo
 
-```
-https://graph.microsoft.com/v1.0/me/ownedObjects
-```
+Change Notifications node.js:
 
-Get the list of groups where a user is a member:
-
-```
-https://graph.microsoft.com/v1.0/me/memberOf
-```
-
-Create a group:
-
-```
-https://graph.microsoft.com/v1.0/groups
-Content-Type	application/json
+```json
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
 {
-    "displayName": "Library Assist",
-    "mailNickname": "library",
-    "mailEnabled": false,
-    "securityEnabled": true
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
+  "resource": "/me/mailfolders('inbox')/messages",
+  "expirationDateTime": "2016-03-20T11:00:00.0000000Z",
+  "clientState": "SecretClientState"
 }
 ```
 
-Delete group:
+App Registration:
+
+![change-app.jpg](_images/change-app.jpg)
+
+Use Ngrok to provide an adressable endpoint. Use Endpoint in constants.js:
 
 ```
-https://graph.microsoft.com/v1.0/groups/c49b13f0-edf3-47ac-9968-ce25810a7010
+ngrok http 3000 -host-header=rewrite
 ```
+
+![ngrok](_images/ngrok.jpg)
+
+Update Config in `constants.js`:
+
+![config.jpg](_images/config.jpg)
+
+Start app in another terminal
+
+```
+npm run start
+```
+
+Note: Sample taken from [here](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample). A .Net version is available [here](https://github.com/microsoftgraph/msgraph-training-changenotifications/tree/master/demos/03-track-changes)
