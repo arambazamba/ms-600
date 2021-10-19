@@ -26,40 +26,40 @@ Open a browser and navigate to the [Azure Active Directory admin center (https:/
 
 Select **Azure Active Directory** in the left-hand navigation.
 
-  ![Screenshot of the App registrations](../../Linked_Image_Files/02-01-azure-ad-portal-home.png)
+  ![Screenshot of the App registrations](../../../Linked_Image_Files/02-01-azure-ad-portal-home.png)
 
 Select **Manage > App registrations** in the left-hand navigation.
 
 On the **App registrations** page, select **New registration**.
 
-  ![Screenshot of App Registrations page](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-00.png)
+  ![Screenshot of App Registrations page](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-00.png)
 
 On the **Register an application** page, set the values as follows:
 
 - **Name**: Graph Console App
 - **Supported account types**: Accounts in this organizational directory only (Contoso only - Single tenant)
 
-    ![Screenshot of the Register an application page](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-01.png)
+    ![Screenshot of the Register an application page](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-01.png)
 
     Select **Register**.
 
 On the **Graph Console App** page, copy the value of the **Application (client) ID** and **Directory (tenant) ID**; you'll need them later in this exercise.
 
-  ![Screenshot of the application ID of the new app registration](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-details.png)
+  ![Screenshot of the application ID of the new app registration](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-details.png)
 
 Select **Manage > Certificates & secrets**.
 
 Select **New client secret**.
 
-![Screenshot of the Add a client secret dialog](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-secret.png)
+![Screenshot of the Add a client secret dialog](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-secret.png)
 
 In the **Add a client secret** panel that appears, enter a value in **Description**, select one of the options for **Expires** and select **Add**.
 
-![Screenshot of the newly added client secret](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-secret-02.png)
+![Screenshot of the newly added client secret](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-secret-02.png)
 
 The **Certificate & secrets** page will display the new secret. It's important you copy this value as it's only shown this one time; if you leave the page and come back, it will only show as a masked value.
 
-![Screenshot showing the new secret](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-secret-03.png)
+![Screenshot showing the new secret](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-secret-03.png)
 
 ### Grant Azure AD application permissions to Microsoft Graph
 
@@ -67,23 +67,23 @@ After creating the application, you need to grant it the necessary permissions t
 
 Select **API Permissions** in the left-hand navigation panel.
 
-![Screenshot of the API Permissions navigation item](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-01.png)
+![Screenshot of the API Permissions navigation item](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-01.png)
 
 Select the **Add a permission** button.
 
 In the **Request API permissions** panel that appears, select **Microsoft Graph** from the **Microsoft APIs** tab.
 
-![Screenshot of Microsoft Graph in the Request API permissions panel](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-02.png)
+![Screenshot of Microsoft Graph in the Request API permissions panel](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-02.png)
 
 When prompted for the type of permission, select **Application permissions**.
 
-![Screenshot of the User.Read.All permission in the Request API permissions panel](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-03.png)
+![Screenshot of the User.Read.All permission in the Request API permissions panel](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-03.png)
 
 Enter **User.R** in the **Select permissions** search box and select the **User.Read.All** permission, followed by the **Add permission** button at the bottom of the panel.
 
 In the **Configured permissions** panel, select the button **Grant admin consent for [tenant]**, and then select **Yes** when in the confirmation dialog.
 
-![Screenshot of the Configured permissions panel](../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-04.png)
+![Screenshot of the Configured permissions panel](../../../Linked_Image_Files/02-01-azure-ad-portal-new-app-permissions-04.png)
 
 ## Task 2: Create .NET Core console application
 
@@ -334,7 +334,7 @@ dotnet run
 
 When the application runs, you'll see a list of users displayed. The query retrieved all information about the users:
 
-![Screenshot of the console application with no query parameters](../../Linked_Image_Files/02-01-app-run-01.png)
+![Screenshot of the console application with no query parameters](../../../Linked_Image_Files/02-01-app-run-01.png)
 
 > [!NOTE]
 > Notice the URL written to the console. This is the entire request, including query parameters, that the Microsoft Graph SDK is generating. Take note for each query you run in this exercise.
@@ -362,7 +362,7 @@ dotnet run
 
 Now you see the `Id` property isn't populated with data as it wasn't included in the `$select` query parameter:
 
-![Screenshot of the console application with the $select query parameters](../../Linked_Image_Files/02-01-app-run-02.png)
+![Screenshot of the console application with the $select query parameters](../../../Linked_Image_Files/02-01-app-run-02.png)
 
 Let us further limit the results to just the first 15 results. Update the line that starts with `var graphRequest = client.Users` in the `Main` method with the following:
 
@@ -380,7 +380,7 @@ dotnet build
 dotnet run
 ```
 
-![Screenshot of the console application with the $top query parameters](../../Linked_Image_Files/02-01-app-run-03.png)
+![Screenshot of the console application with the $top query parameters](../../../Linked_Image_Files/02-01-app-run-03.png)
 
 Notice only 15 items are now returned by the query.
 
@@ -401,7 +401,7 @@ dotnet build
 dotnet run
 ```
 
-![Screenshot of the console application with the $orderby query parameters](../../Linked_Image_Files/02-01-app-run-04.png)
+![Screenshot of the console application with the $orderby query parameters](../../../Linked_Image_Files/02-01-app-run-04.png)
 
 Further refine the results by selecting Users who's surname starts with A, B, or C. You'll need to remove the `$orderby` query parameter added previously as the Users endpoint doesn't support combining the `$filter` and `$orderby` parameters. Update the line that starts with `var graphRequest = client.Users` in the `Main` method with the following:
 
@@ -421,7 +421,7 @@ dotnet build
 dotnet run
 ```
 
-![Screenshot of the console application with the $filter query parameters](../../Linked_Image_Files/02-01-app-run-05.png)
+![Screenshot of the console application with the $filter query parameters](../../../Linked_Image_Files/02-01-app-run-05.png)
 
 ## Summary
 
