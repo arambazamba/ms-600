@@ -7,3 +7,7 @@
 ## Demo
 
 Uses App Reg `graph-console`
+
+## Additional Labs
+
+[Access Files with Microsoft Graph](https://docs.microsoft.com/en-us/learn/modules/msgraph-access-file-data/)

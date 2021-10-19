@@ -42,3 +42,7 @@ Delete group:
 ```
 https://graph.microsoft.com/v1.0/groups/c49b13f0-edf3-47ac-9968-ce25810a7010
 ```
+
+## Additional Labs
+
+[Manage Group Lifecycle with Microsoft Graph](https://docs.microsoft.com/en-us/learn/modules/msgraph-access-group-data/)

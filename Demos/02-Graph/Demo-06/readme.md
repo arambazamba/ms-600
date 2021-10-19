@@ -62,3 +62,8 @@ npm run start
 ```
 
 Note: Sample taken from [here](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample). A .Net version is available [here](https://github.com/microsoftgraph/msgraph-training-changenotifications/tree/master/demos/03-track-changes)
+
+
+## Additional Labs
+
+[Use Change Notifications and Track Changes with Microsoft Graph](https://docs.microsoft.com/en-us/learn/modules/msgraph-changenotifications-trackchanges/)

@@ -35,3 +35,7 @@ Body:
     ]
 }
 ```
+
+## Additional Labs
+
+[Optimize data usage when using Microsoft Graph with query parameters](https://docs.microsoft.com/en-us/learn/modules/optimize-data-usage/)
