@@ -8,6 +8,10 @@
 
 [JMESPath Documentation](http://jmespath.org/)
 
+[Azure Account - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+
+[Azure CLI Tools - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
+
 ## Extensions
 
 [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli) connect to [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview#:~:text=Azure%20Cloud%20Shell%20is%20an,work%2C%20either%20Bash%20or%20PowerShell.&text=Direct%20link%3A%20Open%20a%20browser,%3A%2F%2Fshell.azure.com.)
