@@ -20,7 +20,8 @@ namespace GraphConsole
             return;
             }
 
-            var client = GetAuthenticatedGraphClient(config);
+            var graph = GetAuthenticatedGraphClient(config);
+            var user = "alexander.pajer@integrations.at";
 
             //Upload small file
             var smallFile = "smallfile.txt";
@@ -28,7 +29,7 @@ namespace GraphConsole
             Console.WriteLine("Uploading file: " + smallFile);
 
             FileStream fileStream = new FileStream(smallPath, FileMode.Open);
-            var uploadedFile = client.Me.Drive.Root
+            var uploadedFile = graph.Users[user].Drive.Root
                                         .ItemWithPath("smallfile.txt")
                                         .Content
                                         .Request()
@@ -43,7 +44,7 @@ namespace GraphConsole
 
             using (Stream stream = new FileStream(largePath, FileMode.Open))
             {
-                var uploadSession = client.Me.Drive.Root
+                var uploadSession = graph.Users[user].Drive.Root
                                                 .ItemWithPath(largeFile)
                                                 .CreateUploadSession()
                                                 .Request()
