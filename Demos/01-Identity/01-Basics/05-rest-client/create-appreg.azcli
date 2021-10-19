@@ -1,5 +1,5 @@
 app=vscode-rest-client
-id=$(az ad app create --display-name $app --available-to-other-tenants false --oauth2-allow-implicit-flow true --query appId 
+id=$(az ad app create --display-name $app --available-to-other-tenants false --oauth2-allow-implicit-flow true --query appId -o tsv) 
 
 az ad app credential reset --id $id --append
 

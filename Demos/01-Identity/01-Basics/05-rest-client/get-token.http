@@ -7,6 +7,6 @@ grant_type=client_credentials
 &client_secret={{clientSecret}}
 &scope={{scope}}
 
-###
+### List all users
 GET https://graph.microsoft.com/v1.0/users
 Authorization: Bearer {{auth.response.body.access_token}}
