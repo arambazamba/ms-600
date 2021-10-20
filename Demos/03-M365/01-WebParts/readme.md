@@ -9,3 +9,8 @@
 [Reusable property pane controls for the SharePoint Framework](https://pnp.github.io/sp-dev-fx-property-controls/)
 
 [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/enterprise/use-microsoft-365-cdn-with-spo?view=o365-worldwide#CDNAssets)
+
+
+## Additional Labs
+
+[Microsoft Learn - Extend Microsoft SharePoint – Associate](https://docs.microsoft.com/en-us/learn/paths/m365-sharepoint-associate/)

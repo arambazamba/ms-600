@@ -42,3 +42,7 @@ Choose "Load debug scripts"
 # Further Material
 
 [SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
+
+## Additional Labs
+
+[Extend the SharePoint user interface with SharePoint Framework extensions](https://docs.microsoft.com/en-us/learn/modules/sharepoint-spfx-extensions/)
