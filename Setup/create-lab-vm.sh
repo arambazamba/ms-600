@@ -3,7 +3,7 @@ loc=westeurope
 grp=ms600-lab
 vmname=labvm-$rnd
 user=ms600labadmin
-pwd=Lab@dmin1233
+pwd=Lab@dmin1234
 
 az group create -n $grp -l $loc
 
