@@ -36,3 +36,7 @@ npm install -g yo generator-office
 ## Recommende Extensions & AddOns
 
 [Microsoft Office Add-in Debugger](https://marketplace.visualstudio.com/items?itemName=msoffice.microsoft-office-add-in-debugger)
+
+## Additional Labs
+
+[Extend Office clients with Office add-ins – Associate](https://docs.microsoft.com/en-us/learn/paths/m365-office-add-in-associate/)

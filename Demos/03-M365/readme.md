@@ -46,7 +46,3 @@ gulp trust-dev-cert
 [SPFx TaskRunner](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-spfx-task-runner)
 
 [SharePoint Typed Items](https://marketplace.visualstudio.com/items?itemName=s-kainet.sharepoint-typed-item)
-
-## Additional Labs
-
-[Extend Office clients with Office add-ins – Associate](https://docs.microsoft.com/en-us/learn/paths/m365-office-add-in-associate/)

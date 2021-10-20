@@ -22,7 +22,6 @@
   "externals": {},
   "localizedResources": {
     "ExternalApiWpWebPartStrings": "lib/webparts/externalApiWp/loc/{locale}.js",
-    "GraphAadHttpWpWebPartStrings": "lib/webparts/graphAadHttpWp/loc/{locale}.js",
-    "SecuredEnterpriseApiWpWebPartStrings": "lib/webparts/securedEnterpriseApiWp/loc/{locale}.js"
+    "GraphAadHttpWpWebPartStrings": "lib/webparts/graphAadHttpWp/loc/{locale}.js"
   }
 }
