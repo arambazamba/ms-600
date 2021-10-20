@@ -34,8 +34,7 @@ For your own understanding check the App Registration that has been created by a
 ## Secured Enterprise Api
 
 - Execute `create-func-app.azcli` and deploy `az-funct-skills`
-- Enable auth
-- Configure Azure AD auth
+- Enable & Configure Azure AD auth for function app
 
   ![azure-ad-auth](_images/azure-ad-auth.png)
 
