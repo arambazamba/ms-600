@@ -4,6 +4,8 @@
 
 [SharePoint Framework Node Compatibility](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/compatibility)
 
+[SharePoint Framework version compatibility matrix](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/compatibility)
+
 [PnP SPFx Yeoman generator](https://pnp.github.io/generator-spfx/)
 
 [CLI for Microsoft 365](https://pnp.github.io/cli-microsoft365/)
