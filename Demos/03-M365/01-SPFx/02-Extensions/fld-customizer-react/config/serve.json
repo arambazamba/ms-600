@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/m365-dev/Lists/FldCustomizerToggle/AllItems.aspx",
       "fieldCustomizers": {
           "IsActive": {
           "id": "b3dfd363-276c-4d8e-a3bb-dc32cac2de12",
@@ -14,7 +14,7 @@
       }
     },
     "reactSlideToggle": {
-      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/m365-dev/Lists/FldCustomizerToggle/AllItems.aspx",
       "fieldCustomizers": {
         
           "IsActive": {

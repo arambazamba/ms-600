@@ -39,6 +39,14 @@ Choose "Load debug scripts"
 
 > For Toaster Sample create Powershell to creat the list and insert at least one item to the list
 
+## Command Extension
+
+![cmd-ext.jpg](./_images/cmd-ext.jpg)
+
+## Field Customizer
+
+![fld-customizer.jpg](./_images/fld-customizer.jpg)
+
 # Further Material
 
 [SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
