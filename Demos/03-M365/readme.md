@@ -21,7 +21,7 @@ npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/generator-spfx
 ```
 
->Note: As an alternative you can use [Node Version Manager (nvm) for Windows](https://github.com/coreybutler/nvm-windows)
+>Note: As an alternative you can use [Node Version Manager (nvm) for Windows](https://github.com/coreybutler/nvm-windows). Remove existing Node Installations before installing nvm.
 
 ## Getting Started
 
