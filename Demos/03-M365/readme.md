@@ -15,16 +15,13 @@
 Machine Setup for SPFx Dev:
 
 ```
+choco install nodejs-lts --version=14.18.1 -y
 npm install -g yo gulp
 npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/generator-spfx
 ```
 
-Angular - Used to demonstrate Angular Elements with SPFx:
-
-```
-npm i  -g @angular/cli
-```
+>Note: As an alternative you can use [Node Version Manager (nvm) for Windows](https://github.com/coreybutler/nvm-windows)
 
 ## Getting Started
 
