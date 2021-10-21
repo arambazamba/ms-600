@@ -4,6 +4,8 @@
 
 [Webhooks & Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
 
+[Create Incoming Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook)
+
 ## Adaptive Cards
 
 [Adaptive Cards Docs](https://docs.microsoft.com/en-us/adaptive-cards/)
