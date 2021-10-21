@@ -97,10 +97,7 @@ const config = [{
                 configFile: "./src/client/tsconfig.json"
             }
         })
-    ],
-    performance: {
-        hints: false
-    }
+    ]
 }
 ];
 

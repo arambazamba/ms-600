@@ -1,27 +1,30 @@
 import * as React from "react";
-import { Provider, Flex, Text, Button, Header } from "@fluentui/react-northstar";
-import { useState, useEffect } from "react";
+import { Provider, Flex, Text, Button, Header, List } from "@fluentui/react-northstar";
 import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
 import jwtDecode from "jwt-decode";
+import { useState, useEffect, useCallback } from "react";
 
 /**
- * Implementation of the SSO-Mails content page
+ * Implementation of the SSOTab content page
  */
-export const SsoMailsTab = () => {
+export const SsoTab = () => {
 
     const [{ inTeams, theme, context }] = useTeams();
     const [entityId, setEntityId] = useState<string | undefined>();
     const [name, setName] = useState<string>();
     const [error, setError] = useState<string>();
+    const [ssoToken, setSsoToken] = useState<string>();
+    const [msGraphOboToken, setMsGraphOboToken] = useState<string>();
+    const [recentMail, setRecentMail] = useState<any[]>();
 
-    // TODO: explain getAuthToken
     useEffect(() => {
         if (inTeams === true) {
             microsoftTeams.authentication.getAuthToken({
                 successCallback: (token: string) => {
                     const decoded: { [key: string]: any; } = jwtDecode(token) as { [key: string]: any; };
                     setName(decoded!.name);
+                    setSsoToken(token);
                     microsoftTeams.appInitialization.notifySuccess();
                 },
                 failureCallback: (message: string) => {
@@ -43,6 +46,51 @@ export const SsoMailsTab = () => {
             setEntityId(context.entityId);
         }
     }, [context]);
+
+    const exchangeSsoTokenForOboToken = useCallback(async () => {
+        const response = await fetch(`/exchangeSsoTokenForOboToken/?ssoToken=${ssoToken}`);
+        const responsePayload = await response.json();
+        if (response.ok) {
+          setMsGraphOboToken(responsePayload.access_token);
+        } else {
+          if (responsePayload!.error === "consent_required") {
+            setError("consent_required");
+          } else {
+            setError("unknown SSO error");
+          }
+        }
+      }, [ssoToken]);
+
+      useEffect(() => {
+        // if the SSO token is defined...
+        if (ssoToken && ssoToken.length > 0) {
+          exchangeSsoTokenForOboToken();
+        }
+      }, [exchangeSsoTokenForOboToken, ssoToken]);
+
+      const getRecentEmails = useCallback(async () => {
+        if (!msGraphOboToken) { return; }
+      
+        const endpoint = "https://graph.microsoft.com/v1.0/me/messages?$select=receivedDateTime,subject&$orderby=receivedDateTime&$top=10";
+        const requestObject = {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + msGraphOboToken
+          }
+        };
+      
+        const response = await fetch(endpoint, requestObject);
+        const responsePayload = await response.json();
+      
+        if (response.ok) {
+          const recentMail = responsePayload.value.map((mail: any) => ({
+            key: mail.id,
+            header: mail.subject,
+            headerMedia: mail.receivedDateTime
+          }));
+          setRecentMail(recentMail);
+        }
+      }, [msGraphOboToken]);
 
     /**
      * The render() method to create the UI of the tab

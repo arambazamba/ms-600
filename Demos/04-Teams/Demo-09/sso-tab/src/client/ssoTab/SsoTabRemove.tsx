@@ -5,9 +5,9 @@ import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
 
 /**
- * Implementation of SSO-Mails remove page
+ * Implementation of SSOTab remove page
  */
-export const SsoMailsTabRemove = () => {
+export const SsoTabRemove = () => {
 
     const [{ inTeams, theme }] = useTeams();
 

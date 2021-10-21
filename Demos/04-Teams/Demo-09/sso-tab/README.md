@@ -1,4 +1,4 @@
-# SSO-Tab - Microsoft Teams App
+# SSOTab - Microsoft Teams App
 
 Generate a Microsoft Teams application.
 
