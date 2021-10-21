@@ -1,9 +1,15 @@
 import * as React from "react";
 import styles from "./SpHttpClient.module.scss";
-import { ISpHttpClientProps } from "./ISpHttpClientProps";
 import { escape } from "@microsoft/sp-lodash-subset";
+import { ISPList } from '../ISPList';
 
-export default class SpHttpClient extends React.Component<ISpHttpClientProps, {}> {
+export interface ISpHttpClientProps {
+  description: string;
+  lists: ISPList[];
+}
+
+export default class SpHttpClient extends React.Component<ISpHttpClientProps, {}> {  
+  
   public render(): React.ReactElement<ISpHttpClientProps> {
     return (
       <div className={styles.spHttpClient}>

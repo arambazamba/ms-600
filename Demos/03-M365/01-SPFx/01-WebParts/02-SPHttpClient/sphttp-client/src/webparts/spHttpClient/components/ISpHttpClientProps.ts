@@ -1,5 +1,5 @@
-import { SPList } from "../SPList";
+import { ISPList } from "../ISPList";
 export interface ISpHttpClientProps {
   description: string;
-  lists: SPList[];
+  lists: ISPList[];
 }

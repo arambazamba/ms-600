@@ -6,28 +6,28 @@ import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
 import * as strings from "SpHttpClientWebPartStrings";
 import { SPHttpClient } from "@microsoft/sp-http";
 import MockHttpClient from "./MockHttpClient";
-import { SPList } from "./SPList";
+import { ISPList } from "./ISPList";
 import SpHttpClient from "./components/SpHttpClient";
 
 export interface ISpHttpClientWebPartProps {
   description: string;
-  lists: SPList[];
+  lists: ISPList[];
 }
 
 export default class SpHttpClientWebPart extends BaseClientSideWebPart<ISpHttpClientWebPartProps> {
-  public render(): void {
-    const element: React.ReactElement<ISpHttpClientWebPartProps> = React.createElement(SpHttpClient, {
-      description: this.properties.description,
-      lists: this.properties.lists,
+  
+  public render(): void {  
+    this.getListData().then((data) => {
+      const element: React.ReactElement<ISpHttpClientWebPartProps> = React.createElement(SpHttpClient, {
+        description: this.properties.description,
+        lists: data,
+      });
+      ReactDom.render(element, this.domElement);
     });
-    ReactDom.render(element, this.domElement);
   }
 
-  public async onInit() {
-    this.getListData().then((data) => (this.properties.lists = data));
-  }
 
-  private getListData(): Promise<SPList[]> {
+  private getListData(): Promise<ISPList[]> {
     if (Environment.type === EnvironmentType.Local) {
       return this.getMockListData();
     } else {
@@ -35,13 +35,13 @@ export default class SpHttpClientWebPart extends BaseClientSideWebPart<ISpHttpCl
     }
   }
 
-  private getMockListData(): Promise<SPList[]> {
-    return MockHttpClient.get(this.context.pageContext.web.absoluteUrl).then((data: SPList[]) => {
+  private getMockListData(): Promise<ISPList[]> {
+    return MockHttpClient.get(this.context.pageContext.web.absoluteUrl).then((data: ISPList[]) => {
       return data;
     });
   }
 
-  private getSPOListData(): Promise<SPList[]> {
+  private getSPOListData(): Promise<ISPList[]> {
     const url: string = this.context.pageContext.web.absoluteUrl + `/_api/web/lists?$filter=Hidden eq false`;
     return this.context.spHttpClient
       .get(url, SPHttpClient.configurations.v1)
@@ -50,7 +50,7 @@ export default class SpHttpClientWebPart extends BaseClientSideWebPart<ISpHttpCl
       })
       .then((json) => {
         return json.value;
-      }) as Promise<SPList[]>;
+      }) as Promise<ISPList[]>;
   }
 
   protected onDispose(): void {
