@@ -29,8 +29,6 @@
 
 [fluentui/react-northstar](https://fluentsite.z22.web.core.windows.net/)
 
-[Single Sign-On for Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
-
 ## Tools & Extensions
 
 [Microsoft Teams Toolkit VS Code Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
