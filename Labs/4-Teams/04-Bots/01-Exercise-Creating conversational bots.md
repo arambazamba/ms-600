@@ -105,6 +105,17 @@ Select **Manage** to navigate to the Azure AD app blade:
 
 ![Screenshot of the bot's settings page](../../../Linked_Image_Files/04-04-03-azure-bot-registration-06.png)
 
+You can also use this script to update the endpoint:
+
+```bash
+loc=westeurope
+grp=ms600-m04-convbot
+bot=convbot-tab
+
+ngrok=https://5c34-80-108-224-121.ngrok.io
+
+az bot update -n $bot -g $grp --endpoint $ngrok/api/messages
+```
 ### Create a client secret for the app
 
 In order for the daemon app to run without user involvement, it will sign in to Azure AD with an application ID and either a certificate or secret. In this exercise, you'll use a secret.

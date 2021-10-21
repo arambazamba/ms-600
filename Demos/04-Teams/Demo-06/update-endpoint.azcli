@@ -2,6 +2,6 @@ loc=westeurope
 grp=ms600-m04-convbot
 bot=convbot-tab
 
-ngrok=https://f3af-80-108-224-121.ngrok.io
+ngrok=https://5c34-80-108-224-121.ngrok.io
 
 az bot update -n $bot -g $grp --endpoint $ngrok/api/messages

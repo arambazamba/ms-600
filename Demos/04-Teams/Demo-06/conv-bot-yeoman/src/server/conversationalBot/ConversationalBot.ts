@@ -40,6 +40,7 @@ export class ConversationalBot extends TeamsActivityHandler {
         this.dialogState = conversationState.createProperty("dialogState");
         this.dialogs = new DialogSet(this.dialogState);
         this.dialogs.add(new HelpDialog("help"));
+        
         // Set up the Activity processing
         this.onMessage(async (context: TurnContext): Promise<void> => {
             // TODO: add your own bot logic in here
