@@ -9,14 +9,18 @@ choco install googlechrome -y
 choco install vscode -y
 choco install dotnetcore-sdk -y
 choco install dotnet-5.0-sdk -y
+choco install dotnet-6.0-sdk -y
 choco install git -y
 choco install gitextensions -y
-choco install nodejs-lts --version=12.18.4 -y
+choco install gh -y
+
+choco install nodejs-lts --version=14.18.0 -y
 choco install azure-cli -y
-choco install azure-functions-core-tools-3 --params="'/x64:true'" -y
+choco install azure-functions-core-tools --params="'/x64:true'" -y
 choco install azurepowershell -y
 choco install postman -y
 choco install ngrok -y
+choco install curl -y
 
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
