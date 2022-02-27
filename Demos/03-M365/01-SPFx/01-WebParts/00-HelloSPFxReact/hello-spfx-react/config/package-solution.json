@@ -2,17 +2,37 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "hello-spfx-react-client-side-solution",
-    "id": "92cd5e24-f76b-49dc-a3d3-b6159569db77",
+    "id": "e14c7837-8698-4d68-a92d-0b259e3bb0c6",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": ""
-    }
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "hello-spfx-react description"
+      },
+      "longDescription": {
+        "default": "hello-spfx-react description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "hello-spfx-react Feature",
+        "description": "The feature that activates elements of the hello-spfx-react solution.",
+        "id": "c3d7fc24-518a-4eee-898e-b73f9c8b3a3a",
+        "version": "1.0.0.0"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/hello-spfx-react.sppkg"

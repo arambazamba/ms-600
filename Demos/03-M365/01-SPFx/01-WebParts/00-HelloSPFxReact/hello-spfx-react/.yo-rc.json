@@ -1,11 +1,15 @@
 {
   "@microsoft/generator-sharepoint": {
-    "version": "1.12.1",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
     "libraryName": "hello-spfx-react",
-    "libraryId": "92cd5e24-f76b-49dc-a3d3-b6159569db77",
+    "libraryId": "e14c7837-8698-4d68-a92d-0b259e3bb0c6",
     "environment": "spo",
     "packageManager": "npm",
-    "isCreatingSolution": true,
+    "solutionName": "hello-spfx-react",
+    "solutionShortDescription": "hello-spfx-react description",
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "componentType": "webpart"
   }

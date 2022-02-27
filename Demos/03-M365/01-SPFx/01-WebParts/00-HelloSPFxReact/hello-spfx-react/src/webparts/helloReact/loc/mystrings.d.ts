@@ -1,4 +1,4 @@
-declare interface IHelloSpfxWebPartStrings {
+declare interface IHelloReactWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
@@ -8,7 +8,7 @@ declare interface IHelloSpfxWebPartStrings {
   AppTeamsTabEnvironment: string;
 }
 
-declare module 'HelloSpfxWebPartStrings' {
-  const strings: IHelloSpfxWebPartStrings;
+declare module 'HelloReactWebPartStrings' {
+  const strings: IHelloReactWebPartStrings;
   export = strings;
 }

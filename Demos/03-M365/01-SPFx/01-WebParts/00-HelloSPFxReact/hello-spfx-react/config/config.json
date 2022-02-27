@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "hello-sp-fx-react-web-part": {
+    "hello-react-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/helloSpFxReact/HelloSpFxReactWebPart.js",
-          "manifest": "./src/webparts/helloSpFxReact/HelloSpFxReactWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/helloReact/HelloReactWebPart.js",
+          "manifest": "./src/webparts/helloReact/HelloReactWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "HelloSpFxReactWebPartStrings": "lib/webparts/helloSpFxReact/loc/{locale}.js"
+    "HelloReactWebPartStrings": "lib/webparts/helloReact/loc/{locale}.js"
   }
 }

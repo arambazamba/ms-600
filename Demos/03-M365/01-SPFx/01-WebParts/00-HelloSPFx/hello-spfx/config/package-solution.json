@@ -2,17 +2,37 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "hello-spfx-client-side-solution",
-    "id": "36d83051-5fc5-4da5-b2b1-7f5d83da50f6",
+    "id": "b5eb681f-4a4b-477c-b21f-3a032df30084",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": ""
-    }
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "hello-spfx description"
+      },
+      "longDescription": {
+        "default": "hello-spfx description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "hello-spfx Feature",
+        "description": "The feature that activates elements of the hello-spfx solution.",
+        "id": "14f2e5be-eb56-4548-8ff0-f2251f962cac",
+        "version": "1.0.0.0"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/hello-spfx.sppkg"

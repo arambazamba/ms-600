@@ -1,6 +1,6 @@
-@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import '~office-ui-fabric-react/dist/sass/References.scss';
 
-.helloSpfx {
+.helloReact {
   overflow: hidden;
   padding: 1em;
   color: "[theme:bodyText, default: #323130]";

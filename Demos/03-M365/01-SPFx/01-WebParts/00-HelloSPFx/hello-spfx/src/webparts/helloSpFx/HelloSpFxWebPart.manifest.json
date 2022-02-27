@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "a4774eaf-02e3-41d1-a174-c92009db632f",
-  "alias": "HelloSpFxWebPart",
+  "id": "4756927a-34e9-4fe3-bc8f-851b53901833",
+  "alias": "HelloSpfxWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -12,16 +12,17 @@
   // Components that allow authors to embed arbitrary script code should set this to true.
   // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
   "requiresCustomScript": false,
-  "supportedHosts": ["SharePointWebPart"],
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
 
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "HelloSPFx" },
-    "description": { "default": "HelloSPFx description" },
+    "title": { "default": "hello-spfx" },
+    "description": { "default": "hello-spfx description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "HelloSPFx"
+      "description": "hello-spfx"
     }
   }]
 }
