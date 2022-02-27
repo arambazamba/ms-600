@@ -2,8 +2,7 @@
 
 This exercise will demonstrate the different account types that are used within the Microsoft identity platform.
 
-> [!NOTE]
-> This exercise demonstrates signing into a web application using two different accounts. These two accounts will come from two organizations, one of them being the organization where the Azure AD application is registered. Therefore, in order to complete the exercise, you'll need access to two user accounts in different Azure AD directories.
+>Note: This exercise demonstrates signing into a web application using two different accounts. These two accounts will come from two organizations, one of them being the organization where the Azure AD application is registered. Therefore, in order to complete the exercise, you'll need access to two user accounts in different Azure AD directories.
 
 ## Task 1: Create an application that only allows a single organization's users to sign in
 
@@ -52,8 +51,7 @@ When the **Authentication** page refreshes, select **Add URI**, add **https://lo
 
 ### 2. Create a single organization ASP.NET core web application
 
-> [!NOTE]
-> The instructions below assume you are using .NET 5. They were last tested using v5.0.202 of the .NET 5 SDK.
+>Note: The instructions below assume you are using .NET 6. They were last tested using v5.0.202 of the .NET 6 SDK.
 
 Open your command prompt, navigate to a directory where you want to save your work, create a new folder, and change directory into that folder.
 
@@ -177,7 +175,7 @@ Repeat the remaining steps to set the applications Redirect URIs, Logout URL, an
 ### 2. Create a multiple organization ASP.NET core web application
 
 > [!NOTE]
-> The instructions below assume you are using .NET 5. They were last tested using v5.0.202 of the .NET 5 SDK.
+> The instructions below assume you are using .NET 6. They were last tested using v5.0.202 of the .NET 6 SDK.
 
 Open your command prompt, navigate to a directory where you want to save your work, create a new folder, and change directory into that folder.
 

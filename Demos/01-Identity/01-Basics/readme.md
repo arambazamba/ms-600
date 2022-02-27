@@ -2,7 +2,11 @@
 
 ## Demos
 
--   Create App Registration & assign permissions
+- Account Types - Single Tenant vs Multitenant Apps
+- Identity topology options - Guest Users
+- Use RBAC and Application Roles
+- Create App Registration & assign permissions
+- Using Visual Studio Code [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) Extension - optional
 
 ## Readings
 
@@ -13,8 +17,6 @@
 [Identity Protection Policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies)
 
 [Permissions and consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)
-
-[Scoping application permissions to specific Exchange Online mailboxes](https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access)
 
 ## CLI Reference
 
