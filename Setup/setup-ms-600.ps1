@@ -38,10 +38,8 @@ code --install-extension GitHub.vscode-pull-request-github
 code --install-extension redhat.vscode-yaml
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mhutchie.git-graph 
-code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension xabikos.JavaScriptSnippets			
 code --install-extension eliostruyf.spfx-snippets
-code --install-extension TeamsDevApp.ms-teams-vscode-extension
 code --install-extension madewithcards/adaptivecardsstudio
 code --install-extension humao.rest-client
 code --install-extension eliostruyf.vscode-msgraph-autocomplete
