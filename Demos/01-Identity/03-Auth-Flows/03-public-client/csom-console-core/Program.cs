@@ -44,8 +44,8 @@ namespace csom_console_core
 
             ctx.Load(ctx.Web);
             ctx.ExecuteQuery();
-            Console.WriteLine("web title");
-            Console.WriteLine(ctx.Web.Title);
+            Console.WriteLine($"Authentication successful");
+            Console.WriteLine($"Web title:{ctx.Web.Title}");
 
             //Create item
             var listName = "Aufgaben";
