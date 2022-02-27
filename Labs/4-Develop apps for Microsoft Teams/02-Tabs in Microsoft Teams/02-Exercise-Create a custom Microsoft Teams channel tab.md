@@ -111,7 +111,8 @@ Locate the `useEffect` method that depends upon the `context` variable. This met
 ```typescript
 useEffect(() => {
   if (context) {
-    setMathOperator(context.entityId.replace("MathPage", ""));
+    // causing a bug
+    // setMathOperator(context.entityId.replace("MathPage", ""));
     entityId.current = context.entityId;
     microsoftTeams.settings.registerOnSaveHandler(onSaveHandler);
     microsoftTeams.settings.setValidityState(true);

@@ -1,9 +1,0 @@
-{
-  "generator-teams": {
-    "promptValues": {
-      "developer": "Integrations"
-    },
-    "libraryName": "mathTab",
-    "generator-version": "3.3.1"
-  }
-}
