@@ -20,7 +20,7 @@ export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps,
 
         this.setState(
             Object.assign({}, this.state, {
-                youTubeVideoId: 'vO570HeAreI',
+                youTubeVideoId: 'V1bFr2SWP1I',
             })
         );
 
