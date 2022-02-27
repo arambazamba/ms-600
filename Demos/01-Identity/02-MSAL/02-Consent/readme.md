@@ -2,7 +2,7 @@
 
 ## Demo
 
--   Create new app reg and show consent
+-  Create new app reg and show consent
 
 ## Readings
 
