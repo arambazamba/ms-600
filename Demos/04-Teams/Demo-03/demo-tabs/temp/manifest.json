@@ -6,9 +6,9 @@
   "packageName": "demotabs",
   "developer": {
     "name": "Alexander Pajer",
-    "websiteUrl": "https://940e-80-108-224-121.ngrok.io",
-    "privacyUrl": "https://940e-80-108-224-121.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://940e-80-108-224-121.ngrok.io/tou.html"
+    "websiteUrl": "https://6f0e-80-108-224-121.ngrok.io",
+    "privacyUrl": "https://6f0e-80-108-224-121.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://6f0e-80-108-224-121.ngrok.io/tou.html"
   },
   "name": {
     "short": "DemoTabs",
@@ -23,12 +23,20 @@
     "color": "icon-color.png"
   },
   "accentColor": "#D85028",
-  "configurableTabs": [],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://6f0e-80-108-224-121.ngrok.io/mathTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
   "staticTabs": [
     {
       "entityId": "ac89022d-2870-4312-85aa-8b02fff685b5",
       "name": "StaticTasks",
-      "contentUrl": "https://940e-80-108-224-121.ngrok.io/staticTasksTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "contentUrl": "https://6f0e-80-108-224-121.ngrok.io/staticTasksTab/?name={loginHint}&tenant={tid}&theme={theme}",
       "scopes": [
         "personal"
       ]
@@ -42,7 +50,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "940e-80-108-224-121.ngrok.io"
+    "6f0e-80-108-224-121.ngrok.io"
   ],
   "showLoadingIndicator": false
 }

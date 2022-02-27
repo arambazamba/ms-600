@@ -8,3 +8,7 @@ export const render = (type: any, element: HTMLElement) => {
 };
 // Automatically added for the staticTasksTab tab
 export * from "./staticTasksTab/StaticTasksTab";
+// Automatically added for the mathTab tab
+export * from "./mathTab/MathTab";
+export * from "./mathTab/MathTabConfig";
+export * from "./mathTab/MathTabRemove";

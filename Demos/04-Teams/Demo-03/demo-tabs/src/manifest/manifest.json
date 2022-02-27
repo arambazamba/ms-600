@@ -23,7 +23,15 @@
     "color": "icon-color.png"
   },
   "accentColor": "#D85028",
-  "configurableTabs": [],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/mathTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
   "staticTabs": [
     {
       "entityId": "ac89022d-2870-4312-85aa-8b02fff685b5",
