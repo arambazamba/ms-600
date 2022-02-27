@@ -18,9 +18,4 @@ echo "*** botid: " $botid
 
 az bot msteams create -n $bot -g $grp
 
-## Complete lab and continue later after you have executed gulp ngrok-serve
-## Replace ngrok url
-
-ngrok=https://6cd0-80-108-224-121.ngrok.io
-
-az bot update -n $bot -g $grp --endpoint $ngrok/api/messages
+## Complete lab and continue later after you have executed gulp ngrok-serve and execute update-endpoint.azcli
