@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.10",
+  "id": "e3602210-97d1-11ec-8138-2d69990955d6",
+  "version": "0.0.1",
+  "packageName": "configurabletab",
+  "developer": {
+    "name": "Alexander Pajer",
+    "websiteUrl": "https://68fe-80-108-224-121.ngrok.io",
+    "privacyUrl": "https://68fe-80-108-224-121.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://68fe-80-108-224-121.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "ConfigurableTab",
+    "full": "ConfigurableTab"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://68fe-80-108-224-121.ngrok.io/configurableTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": ["groupchat"]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "68fe-80-108-224-121.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}
