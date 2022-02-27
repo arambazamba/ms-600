@@ -3,7 +3,7 @@
     "promptValues": {
       "developer": "Alexander Pajer"
     },
-    "libraryName": "configurableTab",
-    "generator-version": "3.5.0"
+    "libraryName": "demoTabs",
+    "generator-version": "3.4.0"
   }
 }

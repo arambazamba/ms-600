@@ -1,4 +1,4 @@
-# ConfigurableTab - Microsoft Teams App
+# DemoTabs - Microsoft Teams App
 
 Generate a Microsoft Teams application.
 

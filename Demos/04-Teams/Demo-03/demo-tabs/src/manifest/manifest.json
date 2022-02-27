@@ -1,6 +1,6 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.10",
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
   "id": "{{APPLICATION_ID}}",
   "version": "{{VERSION}}",
   "packageName": "{{PACKAGE_NAME}}",
@@ -11,8 +11,8 @@
     "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "ConfigurableTab",
-    "full": "ConfigurableTab"
+    "short": "DemoTabs",
+    "full": "DemoTabs"
   },
   "description": {
     "short": "TODO: add short description here",
@@ -23,14 +23,17 @@
     "color": "icon-color.png"
   },
   "accentColor": "#D85028",
-  "configurableTabs": [
+  "configurableTabs": [],
+  "staticTabs": [
     {
-      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/configurableTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
-      "canUpdateConfiguration": true,
-      "scopes": ["groupchat"]
+      "entityId": "ac89022d-2870-4312-85aa-8b02fff685b5",
+      "name": "StaticTasks",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/staticTasksTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
     }
   ],
-  "staticTabs": [],
   "bots": [],
   "connectors": [],
   "composeExtensions": [],

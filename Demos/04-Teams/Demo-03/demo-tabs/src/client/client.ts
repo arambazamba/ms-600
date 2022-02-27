@@ -6,7 +6,5 @@ import * as React from "react";
 export const render = (type: any, element: HTMLElement) => {
     ReactDOM.render(React.createElement(type, {}), element);
 };
-// Automatically added for the configurableTab tab
-export * from "./configurableTab/ConfigurableTab";
-export * from "./configurableTab/ConfigurableTabConfig";
-export * from "./configurableTab/ConfigurableTabRemove";
+// Automatically added for the staticTasksTab tab
+export * from "./staticTasksTab/StaticTasksTab";
