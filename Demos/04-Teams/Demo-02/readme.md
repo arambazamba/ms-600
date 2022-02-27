@@ -6,11 +6,13 @@
 
 ## Basic Teams Workflow
 
+Typcially Teams development is done using the web version of teams at [http://teams.microsoft.com](http://teams.microsoft.com) because it allows easy browser Dev Tools debugging.
+
 Three scaffolding options:
 
 -   `generator-teams@2.17.1` creates a class based structure that corresponds to the lab guides.
--   The current generator (V3.x) creates a React Hooks based structure. Read [more](https://developer.microsoft.com/en-us/office/blogs/announcing-microsoft-teams-app-generator-yo-teams-version-3/)
--   Teams toolkit also creates a different structure
+-   The current generator (V3.x) creates a [React Hooks](https://reactjs.org/docs/hooks-intro.html) based structure.
+-   [Teams Toolkit](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/teams-toolkit-fundamentals) also creates a different structure
 
 Scaffolding:
 
@@ -24,9 +26,7 @@ Interpolates env to manifest & create `./package/*.zip`:
 gulp manifest
 ```
 
-> Note: Usually .env is inclued in `.gitignore`
-
-Build the project:
+Build the project and create the `./dist/*` folder:
 
 ```
 gulp build
@@ -43,6 +43,16 @@ Establish a secure tunnel to test:
 ```
 gulp ngrok-serve
 ```
+
+![ngrok-serve](_images/ngrok-serve.png)
+
+>Note: Update `PUBLIC_HOSTNAME` in `.env` to use your current ngrok tunnel after restart. If you use ngkrok for the first time use `ngrok authtoken 3XjdFZdf4PgB2898gcdbu_...` to set your ngrok auth token.
+
+To upload your app go to [http://teams.microsoft.com](http://teams.microsoft.com):
+
+![upload](_images/upload.png)
+
+
 
 ## Ngrok
 

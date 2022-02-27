@@ -43,7 +43,10 @@ const config = [{
             use: ["ts-loader"]
         }]
     },
-    plugins: []
+    plugins: [],
+    performance: {
+        hints: false
+    }
 },
 {
     entry: {
