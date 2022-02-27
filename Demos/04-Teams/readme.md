@@ -7,8 +7,8 @@
 ## Demos
 
 - Environment Setup
-- Explore Structure of Teams App & First Teams App
-- Personal- & Configurable Tabs
+- Explore Structure of Teams App & with a PersonalTab
+- Configurable Tabs
 - TaskModules & Adaptive Cards
 - Outgoing- and Incoming-Webhooks
 - Bots
