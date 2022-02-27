@@ -43,7 +43,7 @@ namespace GraphThrottling
                     {
                         successRequests++;
                     }
-                    else
+                    else if(response.StatusCode == HttpStatusCode.TooManyRequests)
                     {
                         Console.Write('X');
                         failResponseCode = response.StatusCode;
