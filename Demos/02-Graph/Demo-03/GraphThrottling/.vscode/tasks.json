@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/GraphConsole.csproj",
+                "${workspaceFolder}/GraphThrottling.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/GraphConsole.csproj",
+                "${workspaceFolder}/GraphThrottling.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/GraphConsole.csproj"
+                "${workspaceFolder}/GraphThrottling.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
