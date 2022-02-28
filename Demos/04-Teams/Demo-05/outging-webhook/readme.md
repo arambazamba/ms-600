@@ -1,6 +1,6 @@
 ## OutgoingWebhook
 
--   Listens for requests at `/api/webhook` using `requestHandler()` defined in WEBHOOKNAME.ts
+-   Listens for requests at `https://NGROKURL/api/webhook` using `requestHandler()` defined in WEBHOOKNAME.ts
 -   Uses an adavtive card `planetDisplayCard.json`
 -   Processes the request using `processAuthenticatedRequest`
 -   Serve in two seperate terminals using:
@@ -21,7 +21,7 @@
 
     ![ow-config-wh](_images/ow-config-wh.jpg)
 
--   Copy token. Stop project and add it to `.env`. Restart proj using `gulp serve`
+-   Copy token. Stop project and add it to `.env`. Restart proj using `gulp serve --debug`
 
     ![ow-copy-token](_images/ow-copy-token.jpg)
 

@@ -41,7 +41,7 @@ gulp serve
 Establish a secure tunnel to test:
 
 ```
-gulp ngrok-serve
+gulp ngrok-serve [--debug]
 ```
 
 ![ngrok-serve](_images/ngrok-serve.png)
@@ -52,9 +52,27 @@ To upload your app go to [http://teams.microsoft.com](http://teams.microsoft.com
 
 ![upload](_images/upload.png)
 
+## Troubleshooting
 
+### Webpack
 
-## Ngrok
+Do avoid webpack size warning during you getting started process you can disable performance hints in `webpack.config.js` of your project by adding:
+
+```json
+performance: {
+    hints: false
+}
+```
+
+![webpack-performance.png](_images/webpack-performance.png)
+
+### ESlint
+
+To disable ESlint add `*` to the `.eslintignore`
+
+### Update Ngrok Url and re-create package
+
+>Note: Starting with version 3.x of yeoman generator this is not needed anymore. Leaving it in here just in case some issue pops up.
 
 To avoid having the ngrok name changed all the time use from within a Teams project in two seperate terminals, or even better run gulp start-ngrok in a seperate standalone console window.
 
@@ -84,27 +102,6 @@ tunnels:
     addr: 3007
     subdomain: integrationsonline
 ```
-
-## Webpack
-
-Do avoid webpack size warning during you getting started process you can disable performance hints in `webpack.config.js` of your project by adding:
-
-```json
-performance: {
-    hints: false
-}
-```
-
-![webpack-performance.png](_images/webpack-performance.png)
-
-## ESlint
-
-To disable ESlint add the following line to your settings of VS Code:
-
-```
-"eslint.enable": false
-```
-
 ## Labs
 
 [01-Tabs, Exercise 1: 01-Exercise-Create a custom Microsoft Teams personal tab](../../../Labs/4-Teams/01-Tabs/01-Exercise-Create%20a%20custom%20Microsoft%20Teams%20personal%20tab.md)
