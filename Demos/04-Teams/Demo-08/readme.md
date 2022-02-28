@@ -4,12 +4,6 @@
 
 ## Demo
 
-Demo uses v3 of teams yeoman generator
-
-```
-npm i -g generator-teams@3.1.0
-```
-
 Options for scaffolding:
 
 ![scaffolding](_images/scaffolding.png)
