@@ -1,4 +1,4 @@
-# Bots
+# Conversational Bots
 
 [Bots in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
 
@@ -12,38 +12,62 @@
 
 ## Demos
 
-### Conversational Bot using Yeoman
+Make sure you have the latest production release of the yo team generator installed:
 
-When completing all Bot related samples, you will be asked to update the messaging endpoint with your ngrok url + `api/messages`. As Microsoft was not able or willing to fix this issue for at least 2 years now please update the messaging endpoint using the script `update-endpoint.azcli` and your own values. 
+![npm-global.png](_images/npm-global.png)
+
+### App Registration
+
+Create an App Registration to provide a service principal that can be used with the bot by executing:
 
 ```bash
-loc=westeurope
-grp=ms600-m04-convbot
-bot=convbot-tab
+rnd=$RANDOM
+app=conversationalbot$rnd
 
-ngrok=https://f3af-80-108-224-121.ngrok.io
+id=$(az ad app create --display-name $app --query appId -o tsv)
+secret=$(az ad app credential reset --id $id --append --query password -o tsv)
 
-az bot update -n $bot -g $grp --endpoint $ngrok/api/messages
+echo "Use id in your bot registration: " $id
+echo "Use secret in your bot registration: " $secret
 ```
 
-![ai-bug.png](_images/ai-bug.png)
+### Bot Registration
 
-### Conversational Bot using Toolkit
+Navigate to [Microsoft 365 Teams Developer Portal / Tools / Bot Management - https://dev.teams.microsoft.com/bots](https://dev.teams.microsoft.com/bots) and create a new bot:
 
--   Scaffold using Teams Toolkit
--   Start: `ngrok http -host-header=rewrite 3978`
--   Register Url in Teams Toolkit as Messaging endpoint, ie: https://384b6183b176.ngrok.io/api/messages
+![teamsdev-bot.png](_images/teamsdev-bot.png)
 
-    ![ngrok](_images/ngrok.png)
+Click on your new bot and notice the metadata on the Configure blade
 
--   Run App
+![new-bot.png](_images/new-bot.png)
 
-    ```
-    npm install
-    npm start
-    ```
+Navigate to [Bot Framework Registration](https://dev.botframework.com/bots), select your bot and update the metadata:
 
--   Sideload Extension using `F5` and `Add`
+![bot-metadata.png](_images/bot-metadata.png)
+
+![metadata-appid.png](_images/metadata-appid.png)
+
+### Scaffold and test bot project using yeoman teams generator
+
+```cmd
+md FOLDER
+cd FOLDER
+yo teams
+```
+
+![yo.png](_images/yo.png)
+
+Update `.env` with the `secret` from the app reg that you have created:
+
+![env.png](_images/env.png)
+
+Execute `gulp ngrok-serve` and note the `ngrok url`:
+
+![ngrok-url.png](_images/ngrok-url.png)
+
+Update the endpoint:
+
+![endpoint.png](_images/endpoint.png)
 
 ## Labs
 
