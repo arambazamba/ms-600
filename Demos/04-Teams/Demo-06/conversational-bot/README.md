@@ -1,4 +1,4 @@
-# conv-bot-tab - Microsoft Teams App
+# conversational bot - Microsoft Teams App
 
 Generate a Microsoft Teams application.
 

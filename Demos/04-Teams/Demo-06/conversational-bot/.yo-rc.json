@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Alexander Pajer"
+    },
+    "libraryName": "conversationalBot",
+    "generator-version": "3.4.0"
+  }
+}

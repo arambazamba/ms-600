@@ -8,7 +8,7 @@
       "spacing": "medium",
       "size": "default",
       "weight": "bolder",
-      "text": "Welcome to conv-bot-tab",
+      "text": "Welcome to conversational bot",
       "wrap": true,
       "maxLines": 0
     },
@@ -30,8 +30,8 @@
         },
         {
           "type": "Action.OpenUrl",
-          "title": "conv-bot-tab",
-          "url": "https://convbottab.azurewebsites.net"
+          "title": "conversational bot",
+          "url": "https://conversationalbot.azurewebsites.net"
         }
       ]
     }

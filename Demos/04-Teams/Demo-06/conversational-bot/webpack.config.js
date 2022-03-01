@@ -68,7 +68,7 @@ const config = [{
         path: path.join(__dirname, "/dist/web/scripts"),
         filename: "[name].js",
         libraryTarget: "umd",
-        library: "convBotTab",
+        library: "conversationalBot",
         publicPath: "/scripts/"
     },
     externals: {},
@@ -97,7 +97,30 @@ const config = [{
                 configFile: "./src/client/tsconfig.json"
             }
         })
-    ]
+    ],
+    devServer: {
+        hot: false,
+        host: "localhost",
+        port: 9000,
+        allowedHosts: "all",
+        client: {
+            overlay: {
+                warnings: false,
+                errors: true
+            }
+        },
+        devMiddleware: {
+            writeToDisk: true,
+            stats: {
+                all: false,
+                colors: true,
+                errors: true,
+                warnings: true,
+                timings: true,
+                entrypoints: true
+            }
+        }
+    }
 }
 ];
 
