@@ -10,7 +10,7 @@
 
 [Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents)
 
-## Updated guide for Bot Registration in subsequent modules and Labs
+## Updated guide for Bot Registration in subsequent Modules and Labs
 
 ### Create App Registration
 
