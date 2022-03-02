@@ -1,9 +1,0 @@
-{
-  "generator-teams": {
-    "promptValues": {
-      "developer": "Integrations"
-    },
-    "libraryName": "ssoTab",
-    "generator-version": "3.3.1"
-  }
-}

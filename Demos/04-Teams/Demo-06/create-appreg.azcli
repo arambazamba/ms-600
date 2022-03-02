@@ -1,0 +1,8 @@
+rnd=$RANDOM
+app=conversationalbot$rnd
+
+id=$(az ad app create --display-name $app --query appId -o tsv)
+secret=$(az ad app credential reset --id $id --append --query password -o tsv)
+
+echo "Use id in your bot registration: " $id
+echo "Use secret in your bot registration: " $secret
