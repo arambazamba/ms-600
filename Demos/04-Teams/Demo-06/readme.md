@@ -10,9 +10,9 @@
 
 [Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents)
 
-## Demos
+## Updated guide for Bot Registration in subsequent modules and Labs
 
-Make sure you have the latest production release of the yo team generator installed:
+Make sure you have the latest production release of the yo team generator installed and use v11 for scaffolding
 
 ![npm-global.png](_images/npm-global.png)
 
@@ -31,7 +31,7 @@ echo "Use id in your bot registration: " $id
 echo "Use secret in your bot registration: " $secret
 ```
 
-### Bot Registration
+### Complete Bot Registration
 
 Navigate to [Microsoft 365 Teams Developer Portal / Tools / Bot Management - https://dev.teams.microsoft.com/bots](https://dev.teams.microsoft.com/bots) and create a new bot:
 
