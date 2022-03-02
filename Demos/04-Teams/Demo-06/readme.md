@@ -12,10 +12,6 @@
 
 ## Updated guide for Bot Registration in subsequent modules and Labs
 
-Make sure you have the latest production release of the yo team generator installed and use v11 for scaffolding
-
-![npm-global.png](_images/npm-global.png)
-
 ### App Registration
 
 Create an App Registration to provide a service principal that can be used with the bot by executing:
@@ -41,13 +37,23 @@ Click on your new bot and notice the metadata on the Configure blade
 
 ![new-bot.png](_images/new-bot.png)
 
-Navigate to [Bot Framework Registration](https://dev.botframework.com/bots), select your bot and update the metadata:
+Navigate to [Bot Framework Registration](https://dev.botframework.com/bots) and select your bot
+
+Check if Teams Channel is enabled:
+
+![teams-channel.png.png](_images/teams-channel.png)
+
+Complete the bot metadata:
 
 ![bot-metadata.png](_images/bot-metadata.png)
 
 ![metadata-appid.png](_images/metadata-appid.png)
 
 ### Scaffold and test bot project using yeoman teams generator
+
+>Note: Make sure you have the latest production release of the yo team generator installed and use mainfest version 11 for scaffolding
+
+![npm-global.png](_images/npm-global.png)
 
 ```cmd
 md FOLDER
