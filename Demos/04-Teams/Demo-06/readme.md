@@ -12,7 +12,7 @@
 
 ## Updated guide for Bot Registration in subsequent modules and Labs
 
-### App Registration
+### Create App Registration
 
 Create an App Registration to provide a service principal that can be used with the bot by executing:
 
