@@ -1,5 +1,5 @@
 rnd=$RANDOM
-app=conversationalbot$rnd
+app=messagingext$rnd
 
 id=$(az ad app create --display-name $app --available-to-other-tenants true --query appId -o tsv)
 secret=$(az ad app credential reset --id $id --append --query password -o tsv)
