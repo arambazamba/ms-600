@@ -9,3 +9,7 @@
 ## Readings
 
 [Microsoft Identity Platform Documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
+
+## Additional Labs & Walkthroughs
+
+[Implement Microsoft identity – Associate](https://docs.microsoft.com/en-us/learn/paths/m365-identity-associate/)

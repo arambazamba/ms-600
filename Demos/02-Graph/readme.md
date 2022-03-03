@@ -30,3 +30,9 @@
 ## Extensions
 
 [MS Graph Completion](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-autocomplete)
+
+## Additional Labs & Walkthroughs
+
+[Build apps with Microsoft Graph – Associate](https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-associate/)
+
+[Access a user's calendar events in an ASP.NET Core app with Microsoft Graph](https://docs.microsoft.com/en-us/learn/modules/msgraph-dotnet-core-access-user-events/)
