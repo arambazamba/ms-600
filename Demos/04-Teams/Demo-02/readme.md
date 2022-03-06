@@ -58,7 +58,7 @@ To upload your app go to [http://teams.microsoft.com](http://teams.microsoft.com
 
 Do avoid webpack size warning during you getting started process you can disable performance hints in `webpack.config.js` of your project by adding:
 
-```json
+```
 performance: {
     hints: false
 }
