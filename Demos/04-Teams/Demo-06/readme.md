@@ -77,4 +77,4 @@ Update the endpoint:
 
 ## Labs
 
-[04-Bots, 01-Exercise-Creating conversational bots](../../../Labs/4-Teams/04-Bots/01-Exercise-Creating%20conversational%20bots.md)
+[01-Bots](../../../Labs/4-Develop%20apps%20for%20Microsoft%20Teams%2F04-Create%20interactive%20conversational%20bots%2F/)

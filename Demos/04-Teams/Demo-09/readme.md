@@ -51,3 +51,7 @@ List all teams the current user has joined:
 ```json
 GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
+
+## Labs
+
+[07-Graph Endpoint](../../../Labs/4-Develop%20apps%20for%20Microsoft%20Teams%2F07-The%20Microsoft%20Graph%20teamwork%20endpoint%2F/)

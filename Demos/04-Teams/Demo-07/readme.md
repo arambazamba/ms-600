@@ -8,4 +8,4 @@
 
 ## Labs
 
-[05-MsgExt, 01-Exercise-Create action command messaging extensions](../../../Labs/4-Teams/05-MsgExt/01-Exercise-Create%20action%20command%20messaging%20extensions.md)
+[01-Bots](../../../Labs/4-Develop%20apps%20for%20Microsoft%20Teams%2F04-Create%20interactive%20conversational%20bots%2F/)

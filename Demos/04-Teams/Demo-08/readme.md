@@ -26,3 +26,7 @@
     - Azure AD Application > Expose an API > Application ID URI
 
 Add SSO Demo https://docs.microsoft.com/en-us/learn/modules/msteams-sso/
+
+## Labs
+
+[08-Single Sign-on](../../../Labs/4-Develop%20apps%20for%20Microsoft%20Teams%2F08-Authentication%20and%20single%20sign-on%20in%20Microsoft%20Teams%2F/)

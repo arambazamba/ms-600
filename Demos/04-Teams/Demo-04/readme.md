@@ -12,9 +12,7 @@
 
 ## Labs
 
-[02-Task Modules, Exercise 1: 01-Exercise-Collecting user input with task modules](../../../Labs/4-Teams/02-TaskModules/01-Exercise-Create%20a%20custom%20Microsoft%20Teams%20personal%20tab.md)
-
-[02-Task Modules, Exercise 2: 02-Exercise-Using adaptive cards and deep links in task modules](../../../Labs/4-Teams/02-TaskModules/01-Exercise-Create%20a%20custom%20Microsoft%20Teams%20personal%20tab.md)
+[05-TaskModules](../../../Labs/4-Develop%20apps%20for%20Microsoft%20Teams%2F03-Task-oriented%20interactions%20with%20messaging%20extensions%2F/)
 
 ## Demo
 
