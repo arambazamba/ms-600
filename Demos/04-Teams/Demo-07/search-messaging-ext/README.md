@@ -1,4 +1,4 @@
-# Msg-Ext-Yeoman - Microsoft Teams App
+# NpmSearch - Microsoft Teams App
 
 Generate a Microsoft Teams application.
 
