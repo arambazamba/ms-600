@@ -104,4 +104,4 @@ tunnels:
 ```
 ## Labs
 
-[01-Tabs, Exercise 1: 01-Exercise-Create a custom Microsoft Teams personal tab](../../../Labs/4-Teams/01-Tabs/01-Exercise-Create%20a%20custom%20Microsoft%20Teams%20personal%20tab.md)
+[01-Tabs, Exercise 1: 01-Exercise-Create a custom Microsoft Teams personal tab](../../../Labs/4-Develop apps for Microsoft Teams/02-Tabs in Microsoft Teams/)
