@@ -1,7 +1,0 @@
-loc=westeurope
-grp=ms600-m04-msg-ext
-bot=msg-ext-yo
-
-ngrok=https://575a-80-108-224-121.ngrok.io
-
-az bot update -n $bot -g $grp --endpoint $ngrok/api/messages
