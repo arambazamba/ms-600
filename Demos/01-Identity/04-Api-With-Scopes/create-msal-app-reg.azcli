@@ -1,4 +1,4 @@
-app=food-app-test
+app=food-app-staging
 urlApi=https://localhost:5001
 urlUI=http://localhost:4200
 # generate unique guid using: 
@@ -6,19 +6,13 @@ guid=$(uuidgen)
 # --identifier-uris must be unique - value does not matter
 apiIdentifierUris=api://food-api-$guid
 
-az config set extension.use_dynamic_install=yes_without_prompt
-tenantId=$(az account tenant list --query [0].tenantId)
-echo "*** tenantID:" $tenantId
-
 # create api app
 idApi=$(az ad app create --display-name $app-api --required-resource-accesses @manifest-api.json --identifier-uris $apiIdentifierUris --reply-urls $urlApi --oauth2-allow-implicit-flow true --query appId -o tsv)  
-echo "*** clientId api:" $idApi 
 
 # create ui app
 idUI=$(az ad app create --display-name $app-ui --required-resource-accesses @manifest-ui.json \
     --oauth2-allow-implicit-flow true \
     --query appId -o tsv)    
-echo "*** clientId ui:" $idUI     
 
 # disable oauth permissions that are created by default
 az ad app update --id $idUI --set oauth2Permissions[0].isEnabled=false
@@ -27,7 +21,7 @@ az ad app update --id $idUI --set oauth2Permissions=[]
 # set application type to spa
 uiobj=$(az ad app list --display-name $app-ui --query [0].objectId -o tsv)
 az rest --method PATCH --uri 'https://graph.microsoft.com/v1.0/applications/'$uiobj --headers 'Content-Type=application/json' --body '{"spa":{"redirectUris":["'$urlUI'"]}}'
-az rest --method GET --uri 'https://graph.microsoft.com/v1.0/applications/'$uiobj
+# az rest --method GET --uri 'https://graph.microsoft.com/v1.0/applications/'$uiobj
 
 # set api permissions
 az ad app permission add --id $idUI --api $idApi --api-permissions $guid=Scope
@@ -35,3 +29,10 @@ az ad app permission add --id $idUI --api $idApi --api-permissions $guid=Scope
 # provide admin consent
 az ad app permission admin-consent --id $idApi    
 az ad app permission admin-consent --id $idUI
+
+
+az config set extension.use_dynamic_install=yes_without_prompt
+tenantId=$(az account tenant list --query [0].tenantId)
+echo "*** tenantID:" $tenantId
+echo "*** clientId api:" $idApi 
+echo "*** clientId ui:" $idUI     
