@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "G+3pIOj3vXh+C8jNYVko5B/g8yzFar0NyPHHvCsZpfc=",
+  "Source": "msal-daemon-app",
+  "BasePath": "_content/msal-daemon-app",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
