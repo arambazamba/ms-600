@@ -28,3 +28,17 @@ Authorization: Bearer {{auth.response.body.access_token}}
 ### Get the list of groups where a user is an owner
 GET {{graph}}/users/{{user.response.body.id}}/ownedObjects
 Authorization: Bearer {{auth.response.body.access_token}}
+
+### get a specific user photo
+# @name photo
+GET {{graph}}/users/alexander.pajer@integrations.at/photo/$value
+Authorization: Bearer {{auth.response.body.access_token}}
+
+### list groups
+# @name grps
+GET https://graph.microsoft.com/v1.0/groups
+Authorization: Bearer {{auth.response.body.access_token}}
+
+### get grp ownder
+GET https://graph.microsoft.com/v1.0/groups/{{grps.response.body.value[0].id}}/owners
+Authorization: Bearer {{auth.response.body.access_token}}

@@ -1,4 +1,4 @@
-# Manage a group lifecycle on Microsoft Graph
+# User & group mgmt using Microsoft Graph
 
 Get groups:
 
