@@ -24,7 +24,7 @@ namespace GraphConsole
             //Data request
             var userRequest = client.Users
                                     .Request()
-                                    .Select(u => new { u.DisplayName, u.Mail });
+                                    .Select(u => new {u.Id, u.DisplayName, u.Mail });
 
             var users = userRequest.GetAsync().Result;
             foreach(var user in users)
