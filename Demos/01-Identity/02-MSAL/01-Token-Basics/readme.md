@@ -10,7 +10,9 @@
 
 Demos require [http-server](https://www.npmjs.com/package/http-server)
 
--   Use `msal-token-flow` app registration
+-   Use `msal-token-flow` app registration or create it using `create-appreg.azcli`
+
+[az ad app create](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest#az-ad-app-create)
 
 ## App Registration
 
