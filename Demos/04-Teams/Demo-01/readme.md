@@ -32,6 +32,5 @@ Install Generators:
 
 ```
 npm i -g yo gulp-cli typescript
-npm i -g generator-teams@2.17.1 (Class Based)
-npm i -g generator-teams (3.x -> Hook Based)
+npm i -g generator-teams
 ```
