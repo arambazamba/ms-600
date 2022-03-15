@@ -36,9 +36,37 @@ Authorization: Bearer {{auth.response.body.access_token}}
 
 ### list groups
 # @name grps
-GET https://graph.microsoft.com/v1.0/groups
+GET {{graph}}/groups
 Authorization: Bearer {{auth.response.body.access_token}}
 
 ### get grp owner
-GET https://graph.microsoft.com/v1.0/groups/{{grps.response.body.value[0].id}}/owners
+GET {{graph}}/groups/{{grps.response.body.value[0].id}}/owners
 Authorization: Bearer {{auth.response.body.access_token}}
+
+### create grp
+# @name grp
+POST {{graph}}/groups/
+Content-type: application/json
+Authorization: Bearer {{auth.response.body.access_token}}
+
+{
+  "description": "a dynamic group for ms-600",
+  "displayName": "ms600-dynamic",
+  "groupTypes": [
+    "Unified"
+  ],
+  "mailEnabled": false,
+  "mailNickname": "ms600-dynamic",
+  "securityEnabled": true
+}
+
+### add dynamic members
+PATCH https://graph.microsoft.com/v1.0/groups/{{grp.response.body.id}}
+Content-type: application/json
+Authorization: Bearer {{auth.response.body.access_token}}
+
+{
+    "groupTypes": 
+    ["Unified", "DynamicMembership"],
+    "membershipRule": "user.department -eq 'IT'","membershipRuleProcessingState": "on"
+}
