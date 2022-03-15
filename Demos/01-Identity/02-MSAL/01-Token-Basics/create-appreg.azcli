@@ -1,4 +1,4 @@
-app=token-flow-node
+app=msal-token-flow-$RANDOM
 uri=http://localhost:8080
 
 id=$(az ad app create --display-name $app --required-resource-accesses @manifest.json \
@@ -6,7 +6,6 @@ id=$(az ad app create --display-name $app --required-resource-accesses @manifest
     --reply-urls $uri --query appId -o tsv)
 
 az ad app permission admin-consent --id $id
-
 
 # List all registered apps
 az ad app list --all --query "[][displayName, appId]" -o table
