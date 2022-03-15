@@ -31,6 +31,5 @@ npm list -g --depth 0
 Install Generators:
 
 ```
-npm i -g yo gulp-cli typescript
-npm i -g generator-teams
+npm i -g yo gulp-cli typescript generator-teams
 ```
