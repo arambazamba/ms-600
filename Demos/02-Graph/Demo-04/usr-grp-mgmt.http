@@ -11,36 +11,32 @@ grant_type=client_credentials
 &client_secret={{clientSecret}}
 &scope={{scope}}
 
+### get a specific user
+# @name user
+GET {{graph}}/users/alexander.pajer@integrations.at
+Authorization: Bearer {{auth.response.body.access_token}}
+
+### get a specific user photo
+# @name photo
+GET {{graph}}/users/{{user.response.body.id}}/photo/$value
+Authorization: Bearer {{auth.response.body.access_token}}
+
 ### Get groups
 # @name grps
 GET {{graph}}/groups
 Authorization: Bearer {{auth.response.body.access_token}}
 
 ### Get group owner
-GET {{graph}}/groups/11a924f6-6baf-4500-b056-6488c1284951/owners
-Authorization: Bearer {{auth.response.body.access_token}}
-
-### get a specific user
-# @name user
-GET {{graph}}/users/alexander.pajer@integrations.at
+GET {{graph}}/groups/{{grps.response.body.value[0].id}}/owners
 Authorization: Bearer {{auth.response.body.access_token}}
 
 ### Get the list of groups where a user is an owner
 GET {{graph}}/users/{{user.response.body.id}}/ownedObjects
 Authorization: Bearer {{auth.response.body.access_token}}
 
-### get a specific user photo
-# @name photo
-GET {{graph}}/users/alexander.pajer@integrations.at/photo/$value
-Authorization: Bearer {{auth.response.body.access_token}}
-
 ### list groups
 # @name grps
 GET {{graph}}/groups
-Authorization: Bearer {{auth.response.body.access_token}}
-
-### get grp owner
-GET {{graph}}/groups/{{grps.response.body.value[0].id}}/owners
 Authorization: Bearer {{auth.response.body.access_token}}
 
 ### create grp
