@@ -1,5 +1,7 @@
 # Using Graph and Query Params
 
+[MS Graph Query Params](https://docs.microsoft.com/en-us/graph/query-parameters)
+
 -   Use Graph in .NET use App Reg graph-console
 -   Ad-hoc Demos
 
