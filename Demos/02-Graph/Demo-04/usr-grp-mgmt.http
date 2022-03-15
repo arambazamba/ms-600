@@ -39,6 +39,6 @@ Authorization: Bearer {{auth.response.body.access_token}}
 GET https://graph.microsoft.com/v1.0/groups
 Authorization: Bearer {{auth.response.body.access_token}}
 
-### get grp ownder
+### get grp owner
 GET https://graph.microsoft.com/v1.0/groups/{{grps.response.body.value[0].id}}/owners
 Authorization: Bearer {{auth.response.body.access_token}}
