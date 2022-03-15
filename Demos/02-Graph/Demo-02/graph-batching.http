@@ -33,7 +33,7 @@ Authorization: Bearer {{auth.response.body.access_token}}
             "id": "1"
         },
         {
-            "url": "/users/{{users.response.body.value[0].userPrincipalName }}/events",
+            "url": "/users/{{users.response.body.value[3].userPrincipalName }}/events",
             "method": "GET",
             "id": "2"
         }

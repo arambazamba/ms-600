@@ -45,7 +45,7 @@ namespace GraphThrottling
                     }
                     else if(response.StatusCode == HttpStatusCode.TooManyRequests)
                     {
-                        Console.Write('X');
+                        Console.Write('-');
                         failResponseCode = response.StatusCode;
                         failedHeaders = response.Headers;
                     }
