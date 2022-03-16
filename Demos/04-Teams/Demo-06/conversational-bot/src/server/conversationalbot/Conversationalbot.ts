@@ -8,6 +8,11 @@ import {
     AdaptiveCardInvokeResponse,
     StatusCodes,
     AdaptiveCardInvokeValue,
+    MessageFactory,
+    Activity,
+    BotFrameworkAdapter,
+    teamsGetChannelId,
+    ConversationParameters,
 } from 'botbuilder';
 import { DialogBot } from './dialogBot';
 import { MainDialog } from './dialogs/mainDialog';
@@ -54,6 +59,28 @@ export class Conversationalbot extends DialogBot {
         });
     }
 
+    private async teamsCreateConversation(context: TurnContext, message: Partial<Activity>): Promise<void> {
+        // get a reference to the bot adapter & create a connection to the Teams API
+        const adapter = <BotFrameworkAdapter>context.adapter;
+        const connectorClient = adapter.createConnectorClient(context.activity.serviceUrl);
+
+        // set current teams channel in new conversation parameters
+        const teamsChannelId = teamsGetChannelId(context.activity);
+        const conversationParameters: ConversationParameters = {
+            isGroup: true,
+            channelData: {
+                channel: {
+                    id: teamsChannelId,
+                },
+            },
+            activity: message as Activity,
+            bot: context.activity.recipient,
+        };
+
+        // create conversation and send message
+        await connectorClient.conversations.createConversation(conversationParameters);
+    }
+
     protected async onAdaptiveCardInvoke(context: TurnContext, invokeValue: AdaptiveCardInvokeValue): Promise<any> {
         let cardResponse: AdaptiveCardInvokeResponse;
 
@@ -89,7 +116,15 @@ export class Conversationalbot extends DialogBot {
                         type: 'application/vnd.microsoft.activity.message',
                         value: 'Deleting activity...',
                     });
-
+                case 'newconversation': {
+                    const message = MessageFactory.text('This will be the first message in a new thread');
+                    await this.teamsCreateConversation(context, message);
+                    return Promise.resolve({
+                        statusCode: 200,
+                        type: 'application/vnd.microsoft.activity.message',
+                        value: 'Thread created',
+                    });
+                }
                 default:
                     return Promise.resolve({
                         statusCode: 200,

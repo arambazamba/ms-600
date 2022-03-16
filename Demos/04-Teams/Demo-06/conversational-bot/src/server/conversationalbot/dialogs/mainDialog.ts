@@ -74,10 +74,6 @@ export class MainDialog extends ComponentDialog {
              */
             const result = stepContext.result.trim().toLocaleLowerCase();
 
-            // if (stepContext.context.activity.conversation.conversationType === 'channel') {
-            //     TurnContext.removeRecipientMention(stepContext.context.activity);
-            // }
-
             switch (result) {
                 case 'who':
                 case 'who am i?': {
@@ -97,6 +93,9 @@ export class MainDialog extends ComponentDialog {
                 }
             }
         } else if (this.onboarding) {
+            if (stepContext.context.activity.conversation.conversationType === 'channel') {
+                TurnContext.removeRecipientMention(stepContext.context.activity);
+            }
             switch (stepContext.context.activity.text) {
                 case 'who': {
                     return await stepContext.beginDialog('teamsInfoDialog');
@@ -108,7 +107,7 @@ export class MainDialog extends ComponentDialog {
                     return await stepContext.beginDialog('mentionUserDialog');
                 }
                 default: {
-                    await stepContext.context.sendActivity('Ok, maybe next time 😉');
+                    await this.sendResponseCard(stepContext.context);
                     return await stepContext.next();
                 }
             }

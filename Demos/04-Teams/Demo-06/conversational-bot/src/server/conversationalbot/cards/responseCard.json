@@ -40,6 +40,11 @@
             "title": "Delete card",
             "verb": "delete",
             "$when": "${showDelete}"
+          },
+          {
+            "type":"Action.Execute",
+            "title":"Create new thread in this channel",
+            "verb":"newconversation"
           }
         ]
       }
