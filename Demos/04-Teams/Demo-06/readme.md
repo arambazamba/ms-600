@@ -12,22 +12,7 @@
 
 ## Updated guide for Bot Registration in subsequent Modules and Labs
 
-### Create App Registration
-
-Create an App Registration to provide a service principal that can be used with the bot by executing:
-
-```bash
-rnd=$RANDOM
-app=conversationalbot$rnd
-
-id=$(az ad app create --display-name $app --query appId -o tsv)
-secret=$(az ad app credential reset --id $id --append --query password -o tsv)
-
-echo "Use id in your bot registration: " $id
-echo "Use secret in your bot registration: " $secret
-```
-
-### Complete Bot Registration
+### Create Bot Registration
 
 Navigate to [Microsoft 365 Teams Developer Portal / Tools / Bot Management - https://dev.teams.microsoft.com/bots](https://dev.teams.microsoft.com/bots) and create a new bot:
 
@@ -43,7 +28,7 @@ Check if Teams Channel is enabled:
 
 ![teams-channel.png.png](_images/teams-channel.png)
 
-Complete the bot metadata:
+Complete the bot metadata using the `Settings`:
 
 ![bot-metadata.png](_images/bot-metadata.png)
 
@@ -51,7 +36,7 @@ Complete the bot metadata:
 
 ### Scaffold and test bot project using yeoman teams generator
 
->Note: Make sure you have the latest production release of the yo team generator installed and use mainfest version 11 for scaffolding
+>Note: Make sure you have the latest production release of the yo team generator installed.
 
 ![npm-global.png](_images/npm-global.png)
 
@@ -71,7 +56,7 @@ Execute `gulp ngrok-serve` and note the `ngrok url`:
 
 ![ngrok-url.png](_images/ngrok-url.png)
 
-Update the endpoint:
+Update the endpoint using the ngrok url and `/api/messages`:
 
 ![endpoint.png](_images/endpoint.png)
 
