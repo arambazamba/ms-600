@@ -6,9 +6,9 @@
   "packageName": "conversationalbot",
   "developer": {
     "name": "Alexander Pajer",
-    "websiteUrl": "https://7ff2-80-108-224-121.ngrok.io",
-    "privacyUrl": "https://7ff2-80-108-224-121.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://7ff2-80-108-224-121.ngrok.io/tou.html"
+    "websiteUrl": "https://08fb-80-108-224-121.ngrok.io",
+    "privacyUrl": "https://08fb-80-108-224-121.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://08fb-80-108-224-121.ngrok.io/tou.html"
   },
   "name": {
     "short": "conversational-bot",
@@ -27,7 +27,7 @@
   "staticTabs": [],
   "bots": [
     {
-      "botId": "dd8fd5b8-67c7-431e-839e-8ef0a1de3b18",
+      "botId": "c6676e1d-4b0c-43cc-bdde-41ed875a4f45",
       "needsChannelSelector": true,
       "isNotificationOnly": false,
       "scopes": [
@@ -66,7 +66,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "7ff2-80-108-224-121.ngrok.io"
+    "08fb-80-108-224-121.ngrok.io"
   ],
   "showLoadingIndicator": false
 }
