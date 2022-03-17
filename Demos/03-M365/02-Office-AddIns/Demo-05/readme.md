@@ -24,3 +24,7 @@ npm run start:web
 Sideload Addin:
 
 ![sideload-addin](_images/sideload-addin.png)
+
+## Additional Labs & Walkthroughs
+
+[Build Office add-ins for Outlook](https://docs.microsoft.com/en-us/learn/modules/office-add-ins-outlook/?ns-enrollment-type=LearningPath&ns-enrollment-id=learn-m365.m365-office-add-in-associate)

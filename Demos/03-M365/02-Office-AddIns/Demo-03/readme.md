@@ -10,3 +10,7 @@ Run Demo:
 npm start
 npm run start:web
 ```
+
+## Additional Labs & Walkthroughs
+
+[Build Office add-ins for Excel](https://docs.microsoft.com/en-us/learn/modules/office-add-ins-excel/?ns-enrollment-type=LearningPath&ns-enrollment-id=learn-m365.m365-office-add-in-associate)
