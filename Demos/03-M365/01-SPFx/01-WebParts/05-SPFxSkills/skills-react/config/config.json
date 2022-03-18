@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "skills-react-v-2-web-part": {
+    "skills-react-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/skillsReactV2/SkillsReactV2WebPart.js",
-          "manifest": "./src/webparts/skillsReactV2/SkillsReactV2WebPart.manifest.json"
+          "entrypoint": "./lib/webparts/skillsReact/SkillsReactWebPart.js",
+          "manifest": "./src/webparts/skillsReact/SkillsReactWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "SkillsReactV2WebPartStrings": "lib/webparts/skillsReactV2/loc/{locale}.js"
+    "SkillsReactWebPartStrings": "lib/webparts/skillsReact/loc/{locale}.js"
   }
 }
