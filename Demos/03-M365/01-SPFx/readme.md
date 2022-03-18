@@ -18,9 +18,7 @@ Machine Setup for SPFx Dev:
 
 ```
 choco install nodejs-lts --version=14.18.1 -y
-npm install -g yo gulp
-npm install -g @microsoft/generator-sharepoint
-npm install -g @pnp/generator-spfx
+npm install -g yo gulp @microsoft/generator-sharepoint --force
 ```
 
 >Note: As an alternative to installing a specific Node version you can use [Node Version Manager (nvm) for Windows](https://github.com/coreybutler/nvm-windows). Remove existing Node Installations before installing nvm.
@@ -50,4 +48,4 @@ gulp trust-dev-cert
 
 ## Additional Labs & Walkthroughs
 
-[https://docs.microsoft.com/en-us/learn/paths/m365-sharepoint-associate/](Extend Microsoft SharePoint – Associate)
+[Extend Microsoft SharePoint – Associate](https://docs.microsoft.com/en-us/learn/paths/m365-sharepoint-associate)
